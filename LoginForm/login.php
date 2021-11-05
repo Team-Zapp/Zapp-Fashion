@@ -28,14 +28,14 @@
 							
 		<div class="white-panel">
 			<div class="login-show">
-				<h2>LOGIN</h2>
+				<h2 class="form_head">Sign in</h2>
 				<input type="text" placeholder="Email">
 				<input type="password" placeholder="Password">
 				<input type="button" value="Login">
 				<a href="">Forgot password?</a>
 			</div>
 			<div class="register-show">
-				<h2>REGISTER</h2>
+				<h2 class="form_head">Sign Up</h2>
 				<input type="text" placeholder="Email">
 				<input type="password" placeholder="Password">
 				<input type="password" placeholder="Confirm Password">

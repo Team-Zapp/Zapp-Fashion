@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@900&display=swap");
 body {
   height: 100vh;
   min-height: 550px;
@@ -55,24 +56,30 @@ a {
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
+  box-shadow: 4px 4px 10px #000000;
 }
 .login-info-box {
-  width: 30%;
+  width: 40%;
   padding: 0 50px;
   top: 20%;
   left: 0;
   position: absolute;
-  text-align: left;
+  text-align: center;
   color: #ffff;
+  align-items: center;
 }
 .register-info-box {
-  width: 30%;
+  width: 40%;
   padding: 0 50px;
   top: 20%;
   right: 0;
   position: absolute;
-  text-align: left;
+  text-align: center;
   color: #ffff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 .right-log {
   right: 50px !important;
@@ -98,20 +105,22 @@ a {
   display: block;
   margin: 20px 0;
   padding: 15px;
-  border: 1px solid #b5b5b5;
+  border-style: none;
+  border-bottom: 1px solid #b5b5b5;
   outline: none;
 }
 .login-show input[type="button"] {
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
-  background: #444444;
+  background: #dd6965;
   color: #f9f9f9;
   border: none;
   padding: 10px;
   text-transform: uppercase;
-  border-radius: 2px;
+  border-radius: 10px;
   float: right;
   cursor: pointer;
+  box-shadow: 4px 4px 10px #000000;
 }
 .login-show a {
   display: inline-block;
@@ -124,20 +133,22 @@ a {
   display: block;
   margin: 20px 0;
   padding: 15px;
-  border: 1px solid #b5b5b5;
   outline: none;
+  border-style: none;
+  border-bottom: 1px solid #b5b5b5;
 }
 .register-show input[type="button"] {
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
-  background: #444444;
+  background: #dd6965;
   color: #f9f9f9;
   border: none;
   padding: 10px;
   text-transform: uppercase;
-  border-radius: 2px;
+  border-radius: 10px;
   float: right;
   cursor: pointer;
+  box-shadow: 4px 4px 10px #000000;
 }
 .credit {
   position: absolute;
@@ -164,10 +175,14 @@ a {
 }
 
 .h_account {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1200;
   font-size: 40px;
-  color: #ffff;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #4a52ec;
+  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+}
+.form_head {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
 }
