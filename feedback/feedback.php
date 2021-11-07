@@ -26,7 +26,7 @@
         <div class="topRight">
             <img src="LogoSample_ByTailorBrands.png" alt="" class="logo" style="width: 10%;">
             <div class="date">
-                <p>Today Nov4  
+                <p>Today Nov4
                     <ion-icon name="calendar-number-outline"></ion-icon>
                 </p>
             </div>
@@ -36,12 +36,12 @@
         <p class="lastsignIn">Last sign in 2 Hours ago</p>
         <nav class="navbar navbar-light bg-light">
             <form class="container-fluid justify-content-start">
-                    <button class="btn btn-outline-primary me-2" type="button" > Dashboard </button>
+                <button class="btn btn-outline-primary me-2" type="button"> Dashboard </button>
 
-            <button class="btn btn-outline-primary me-2" type="button">Stock Management</button>
-            <button class="btn btn-outline-primary me-2" type="button">Customer info</button>
-            <button class="btn btn-outline-primary me-2" type="button">Transaction </button>
-            <a href="#feedbackForm"><button class="btn btn-outline-primary me-2" type="button">Feedback</button></a>
+                <button class="btn btn-outline-primary me-2" type="button">Stock Management</button>
+                <a href="http://localhost/Team1/CustomerInfo/Customerinfo.php"><button class="btn btn-outline-primary me-2" type="button">Customer info</button></a>
+                <button class="btn btn-outline-primary me-2" type="button">Transaction </button>
+                <a href="http://localhost/Team1/FeedBack/feedback.php"><button class="btn btn-primary me-2" type="button">Feedback</button></a>
             </form>
         </nav>
     </div>
@@ -51,12 +51,12 @@
             <p class="name">
                 <img src="STEVE JOBS_ Apple, India, Buddhism, and Zen.jpg" alt="" class="UserProfile">
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                asdfkjlkaf;
+                    asdfkjlkaf;
                 </button>
             </p>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                first
+                    first
                 </div>
             </div>
         </div>
@@ -65,12 +65,12 @@
             <p class="name">
                 <img src="STEVE JOBS_ Apple, India, Buddhism, and Zen.jpg" alt="" class="UserProfile">
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#baryar" aria-expanded="false" aria-controls="baryar">
-                asdfkjlkaf;
+                    asdfkjlkaf;
                 </button>
             </p>
             <div class="collapse" id="baryar">
                 <div class="card card-body">
-                second
+                    second
                 </div>
             </div>
         </div>
