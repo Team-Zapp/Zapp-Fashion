@@ -179,6 +179,7 @@ a {
   font-weight: 1200;
   font-size: 40px;
   background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+  -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
 }
 .form_head {
@@ -187,5 +188,5 @@ a {
 }
 
 .googleimg {
-  height: 100px;
+  height: 20px;
 }
