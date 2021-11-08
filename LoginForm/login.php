@@ -12,6 +12,7 @@
     <title>Document</title>
 </head>
 <body>
+	
     <div class="login-reg-panel">
 		<div class="login-info-box">
 			<h2 class="h_account">Have an account?</h2>
@@ -33,6 +34,11 @@
 				<input type="password" placeholder="Password">
 				<input type="button" value="Login">
 				<a href="">Forgot password?</a>
+					<div class="login-div">
+						<span class="login-links"><a href="www.gmail.com" class="login-photo"><img class="googleimg" src="Google Logo.png" alt="" srcset=""></a></span>
+						<span class="login-links"><a href="www.facebook.com" class="login-photo">Facebook</a></span>
+						<span class="login-links"><a href="www.twitter.com" class="login-photo">Twitter</a></span>
+					</div>
 			</div>
 			<div class="register-show">
 				<h2 class="form_head">Sign Up</h2>
