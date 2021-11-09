@@ -6,7 +6,7 @@ $.get("../deflink.html", function (data) {
   $("head").prepend(data);
 });
 
-function initial() {
-  $("#5").removeClass("btn-outline-primary");
-  $("#5").addClass("btn-primary");
-}
+// function initial() {
+//   $("#5").removeClass("btn-outline-primary");
+//   $("#5").addClass("btn-primary");
+// }

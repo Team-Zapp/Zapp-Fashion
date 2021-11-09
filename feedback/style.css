@@ -23,6 +23,11 @@
   margin-top: 2%;
   width: 50%;
 }
+#no5 {
+  background: linear-gradient(to top left, #7a00b4, #715eea);
+  color: white;
+  box-shadow: 3px 3px 5px rgb(126, 119, 119);
+}
 
 @media only screen and (max-width: 720px) {
   body {

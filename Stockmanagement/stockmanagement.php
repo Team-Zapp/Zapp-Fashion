@@ -7,7 +7,9 @@
     <title>Document</title>
     <script src="jquery.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="stockmgmt.css">
 </head>
 <body onload="initial()">
 </body>
+
 </html>
