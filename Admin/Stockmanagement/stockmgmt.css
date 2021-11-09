@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#no2 {
+  background: linear-gradient(to top left, #7a00b4, #715eea);
+  color: white;
+  box-shadow: 3px 3px 5px rgb(126, 119, 119);
+}
+
+.chartbg {
+  background-color: #ffffff !important;
+  width: auto;
+  height: 50vh;
+  position: relative;
+}
+
+#chart {
+  width: 90vw !important;
+}
+
+.mgmtdiv {
+  width: 100%;
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+h3 {
+  color: #000000;
+  margin-left: 50px;
+  text-decoration: underline;
+}
+
+.mgmt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 50vh;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-left: 10%;
+  margin-top: 5vh;
+}
+
+.inputdiv {
+  width: 27%;
+  margin: 3%;
+  height: 30vh;
+  border-radius: 20px;
+  background: #dd6965;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="submit"] {
+  position: absolute;
+  margin-top: 40vh;
+  width: 8vw;
+  height: 6vh;
+}
+.delbth,
+.subbtn {
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 3px 3px 5px gray;
+}
+.subbtn {
+  margin-left: 66%;
+}
+
+.delbth {
+  margin-right: 66%;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  margin: 15px;
+  width: 80% !important;
+}
+
+select {
+  margin: 15px;
+  width: 80% !important;
+}
+
+input[type="file"] {
+  width: 80% !important;
+  margin: 15px;
+}
+
+.money {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+span {
+  border-radius: 10px !important;
+  background: #ffffff !important;
+}

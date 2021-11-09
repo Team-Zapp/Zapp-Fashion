@@ -65,7 +65,6 @@ body {
 .container-fluid {
   position: relative;
   left: 10vh;
-  top: 3vh;
   width: 100%;
 }
 .container-fluid button {

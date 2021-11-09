@@ -12,7 +12,7 @@
     <script src="feedback.js" defer></script>
 </head>
 
-<body onload="initial()">
+<body>
     <div class="feedbackForm" id="feedbackForm">
         <h4>Reviews</h4>
         <div class="ProflieAndName">
