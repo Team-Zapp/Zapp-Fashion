@@ -15,14 +15,17 @@
 <div class="chartbg">
         <div id="chart"></div>
     </div>
+    <form action="../../Controllers/stockmgmtcontrol.php" method="post">
     <div class="mgmtdiv">
-    <h3>Stock Management</h3>
-    <form action="">
+    <h3 class="stockhead">Stock Management</h3>
     <div class="mgmt">
         <div class="inputdiv">
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Product Name">
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Product ID">
-            <input type="file" class="form-control" id="inputGroupFile02" placeholder="Choose Image">
+            <div class="findpd">
+                <input type="text" name="pdname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Product Name">
+                <span class="searchbtn"><button type="button" class="btn btn-secondary text-center searchbtn">Search</button></span>
+            </div>
+            <input class="form-control" type="text" placeholder="Create Date" aria-label="Disabled input example" disabled>
+            <input type="file" name="pdimage" class="form-control" id="inputGroupFile02" placeholder="Choose Image">
         </div>
         <div class="inputdiv">
             <select class="form-select" id="inputGroupSelect01">
@@ -31,24 +34,80 @@
                 <option value="2">Women</option>
                 <option value="3">Kid</option>
             </select>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Product Catagory">
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Products Catagory</option>
+                <option value="1">Shirt</option>
+                <option value="2">Pant</option>
+                <option value="3">Shoes</option>
+            </select>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Made">
         </div>
         <div class="inputdiv">
             <div class="money"> 
-            <input type="text" class="form-control " aria-label="Dollar amount (with dot and two decimal places)" placeholder="Original Price">
+            <input type="number" class="form-control " aria-label="Dollar amount (with dot and two decimal places)" placeholder="Original Price">
             <span class="input-group-text">$</span>
             </div>
             <div class="money">
-            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Sale Price">
+            <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Sale Price">
             <span class="input-group-text">$</span>
             </div>
+            <input type="number" name="pdid"class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantities">
         </div>
         <input class="subbtn" type="submit" value="Submit">
+        <input class="update" type="submit" value="Update">
         <input class="delbth" type="submit" value="Delete">
     </div>
-    </form>
     </div>
+    </form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10 text-center">
+                <table class="table table-success table-hover mx-5 mt-5">
+                    <th>Product Name </th>
+                    <th>Gender</th>
+                    <th>Product Catagory</th>
+                    <th>Original Price</th>
+                    <th>Sale Price</th>
+                    <th>Quantities</th>
+                    <tr>
+                        <td>Blue Shirt</td>
+                        <td>Male</td>
+                        <td>Shirt</td>
+                        <td>100</td>
+                        <td>150</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Shirt</td>
+                        <td>Male</td>
+                        <td>Shirt</td>
+                        <td>100</td>
+                        <td>150</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Shirt</td>
+                        <td>Male</td>
+                        <td>Shirt</td>
+                        <td>100</td>
+                        <td>150</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Shirt</td>
+                        <td>Male</td>
+                        <td>Shirt</td>
+                        <td>100</td>
+                        <td>150</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+   <div class="footer">
+
+   </div>
 </body>
 
 </html>

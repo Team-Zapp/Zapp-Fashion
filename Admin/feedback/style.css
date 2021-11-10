@@ -3,10 +3,17 @@
   padding: 0;
 }
 .feedbackForm {
-  position: relative;
-
-  top: 3%;
-  left: 3%;
+  height: 70vh;
+  width: 100vw;
+  background: linear-gradient(
+    162deg,
+    rgba(185, 231, 246, 1) 0%,
+    rgba(100, 111, 255, 1) 100%,
+    rgba(89, 97, 249, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding-left: 3%;
+  padding-top: 3%;
 }
 
 .UserProfile {

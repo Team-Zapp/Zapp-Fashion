@@ -1,3 +1,8 @@
+$(document).ready(function () {
+  $.get("../cslinks.html", function (data) {
+    $("head").prepend(data);
+  });
+});
 //FixedBar
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
@@ -70,8 +75,3 @@ function remveActiveClasses() {
 }
 
 //ready
-$(document).ready(function () {
-  $.get("cslinks.html", function (data) {
-    $("head").append(data);
-  });
-});
