@@ -1,3 +1,12 @@
+$.get("../../deflink.html", function (data) {
+  $("head").prepend(data);
+});
+
+$.get("../../def.html", function (data) {
+  $("body").prepend(data);
+});
+
+
 //firts chart
 var options = {
     series: [{
