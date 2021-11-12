@@ -14,10 +14,10 @@
       <div class="bg-white py-3 head">
         <img src="LogoSample_ByTailorBrands.png" alt="" class="logo" />
         <div class="titles">
-          <span class="name"><a href="">HOME</a></span>
-          <span class="name"><a href="">MEN</a></span>
-          <span class="name"><a href="">WOMEN</a></span>
-          <span class="name"><a href="">KID</a></span>
+          <span class="name"><a href="" class="title">HOME</a></span>
+          <span class="name"><a href="" class="title">MEN</a></span>
+          <span class="name"><a href="" class="title">WOMEN</a></span>
+          <span class="name"><a href="" class="title">KID</a></span>
           <input
             class="form-control me-2 SearchBar"
             type="search"

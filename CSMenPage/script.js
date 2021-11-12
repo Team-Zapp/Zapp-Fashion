@@ -68,6 +68,15 @@ function remveActiveClasses() {
     panel.classList.remove("active");
   });
 }
+//slick slider
+$(".multiple-items").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow:
+    '<span class="prevArrow"><ion-icon name="chevron-back-outline" class="leftAro"></ion-icon></span>',
+  nextArrow:
+    '<span class="nextArrow"><ion-icon name="chevron-forward-outline" class="rightAro"></ion-icon></i></span>',
+});
 
 //ready
 $(document).ready(function () {

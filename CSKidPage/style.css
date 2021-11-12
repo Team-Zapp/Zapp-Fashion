@@ -24,9 +24,12 @@ body {
 .name,
 a {
   margin: 25px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-decoration: none !important;
   cursor: pointer !important;
+}
+.title {
+  color: black !important;
 }
 .SearchBar {
   height: 20px !important;
