@@ -15,7 +15,7 @@
 <div class="chartbg">
         <div id="chart"></div>
     </div>
-    <form action="../../Controllers/stockmgmtcontrol.php" method="post">
+    <form action="../../Controllers/stockmgmtinsert.php" method="POST">
     <div class="mgmtdiv">
     <h3 class="stockhead">Stock Management</h3>
     <div class="mgmt">
@@ -28,34 +28,34 @@
             <input type="file" name="pdimage" class="form-control" id="inputGroupFile02" placeholder="Choose Image">
         </div>
         <div class="inputdiv">
-            <select class="form-select" id="inputGroupSelect01">
+            <select class="form-select" id="inputGroupSelect01" name="pdgender">
                 <option selected>Gender</option>
                 <option value="1">Men</option>
                 <option value="2">Women</option>
                 <option value="3">Kid</option>
             </select>
-            <select class="form-select" id="inputGroupSelect01">
+            <select class="form-select" id="inputGroupSelect01" name="category">
                 <option selected>Products Catagory</option>
                 <option value="1">Shirt</option>
                 <option value="2">Pant</option>
                 <option value="3">Shoes</option>
             </select>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Made">
+            <input type="text" name="madeof" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Made">
         </div>
         <div class="inputdiv">
             <div class="money"> 
-            <input type="number" class="form-control " aria-label="Dollar amount (with dot and two decimal places)" placeholder="Original Price">
+            <input type="number" class="form-control " name="orgprice" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Original Price">
             <span class="input-group-text">$</span>
             </div>
             <div class="money">
-            <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Sale Price">
+            <input type="number" class="form-control" name="saleprice" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Sale Price">
             <span class="input-group-text">$</span>
             </div>
-            <input type="number" name="pdid"class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantities">
+            <input type="number" name="stock" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantities">
         </div>
-        <input class="subbtn" type="submit" value="Submit">
-        <input class="update" type="submit" value="Update">
-        <input class="delbth" type="submit" value="Delete">
+        <input class="subbtn" type="submit" name="submit" value="Submit">
+        <input class="update" type="submit" name="update" value="Update">
+        <input class="delbth" type="submit" name="delete" value="Delete">
     </div>
     </div>
     </form>
