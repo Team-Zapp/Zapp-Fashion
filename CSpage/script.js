@@ -1,3 +1,4 @@
+//ready
 $(document).ready(function () {
   $.get("../cslinks.html", function (data) {
     $("head").prepend(data);
@@ -83,4 +84,41 @@ $(".multiple-items").slick({
     '<span class="nextArrow"><ion-icon name="chevron-forward-outline" class="rightAro"></ion-icon></i></span>',
 });
 
-//ready
+//display function
+// let menDisplay = document.querySelector(".Men");
+// let womenDisplay = document.querySelector(".Women");
+// let kidDisplay = document.querySelector(".Kid");
+
+// let manBtn =document.querySelector(".manbtn");
+// let manBtn =document.querySelector(".womenbtn");
+// let manBtn =document.querySelector(".kidbtn");
+
+$(".manbtn").click(function () {
+  $(".Women").css("display", "none");
+  $(".Kid").css("display", "none");
+  $(".Men").css("display", "block");
+  $(".tag").text("MEN");
+  document.getElementById("shirt").href = "#scrollspyHeading1";
+  document.getElementById("pants").href = "#scrollspyHeading2";
+  document.getElementById("shoe").href = "#scrollspyHeading3";
+});
+
+$(".womanbtn").click(function () {
+  $(".Women").css("display", "block");
+  $(".Kid").css("display", "none");
+  $(".Men").css("display", "none");
+  $(".tag").text("WOMEN");
+  document.getElementById("shirt").href = "#scrollspyHeading4";
+  document.getElementById("pants").href = "#scrollspyHeading5";
+  document.getElementById("shoe").href = "#scrollspyHeading6";
+});
+
+$(".kidbtn").click(function () {
+  $(".Women").css("display", "none");
+  $(".Kid").css("display", "block");
+  $(".Men").css("display", "none");
+  $(".tag").text("KID");
+  document.getElementById("shirt").href = "#scrollspyHeading7";
+  document.getElementById("pants").href = "#scrollspyHeading8";
+  document.getElementById("shoe").href = "#scrollspyHeading9";
+});

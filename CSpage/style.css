@@ -21,21 +21,19 @@ body {
 .head {
   display: flex;
 }
-.name,
-a {
+.name {
   margin: 25px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-decoration: none !important;
   cursor: pointer !important;
+  font-weight: bold;
 }
-.title {
-  color: black !important;
-}
+
 .SearchBar {
   height: 20px !important;
   padding: 20px;
   margin-top: 17px;
-  margin-left: 25px;
+  margin-left: 150px;
 }
 .search {
   height: 43px !important;
@@ -73,19 +71,20 @@ a {
 .tag {
   font-size: 30px;
 }
+.feature {
+  position: absolute;
+  font-style: italic;
+  left: 40px;
+  bottom: 520px;
+}
 .slider {
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .trending {
   position: absolute;
   font-style: italic;
   left: 40px;
-  bottom: -160px;
-}
-.buttons {
-  position: absolute;
-  right: 50px;
-  bottom: -150px;
+  bottom: -280px;
 }
 .btn1 {
   border-radius: 50% !important;
@@ -138,7 +137,7 @@ section {
   width: 270px;
   height: 360px;
   margin: 20px;
-
+  box-shadow: 3px 3px 15px silver;
   border-style: none;
   background: #ccc;
   transform: rotateX(0) rotateY(0);
@@ -240,36 +239,34 @@ section {
     display: none;
   }
 }
-.copy {
-  text-align: center;
-  color: white;
-}
 .footer {
-  background-color: black;
-  height: 5vh;
+  background-color: grey;
+  height: 23vh;
+  margin-top: 10vh;
 }
 .recommend {
   position: absolute;
   font-style: italic;
   left: 40px;
-  bottom: -850px;
+  bottom: -900px;
 }
 .Pants {
   position: absolute;
   font-style: italic;
   left: 40px;
-  bottom: -1390px;
+  bottom: -1450px;
 }
 .Shoes {
   position: absolute;
   font-style: italic;
   left: 40px;
-  bottom: -1950px;
+  bottom: -2000px;
 }
 .prevArrow {
   position: relative;
   left: 1250px;
   text-align: center;
+  cursor: pointer;
 }
 .leftAro,
 .rightAro {
@@ -279,10 +276,26 @@ section {
   position: relative;
   bottom: 446px;
   right: -1320px;
+  cursor: pointer;
 }
 .Men {
-  display: none;
+  display: block;
 }
 .Women {
-  display: block;
+  display: None;
+}
+.Kid {
+  display: none;
+}
+.mar {
+  text-align: center;
+  color: yellow;
+  font-weight: bold;
+}
+.contact {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.copy {
+  text-align: center;
 }
