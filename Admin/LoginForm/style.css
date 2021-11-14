@@ -109,7 +109,8 @@ a {
   border-bottom: 1px solid #b5b5b5;
   outline: none;
 }
-.login-show input[type="button"] {
+.login-show input[type="button"],
+.login-show input[type="submit"] {
   max-width: 200px;
   width: 100%;
   background: #dd6965;
@@ -137,7 +138,7 @@ a {
   border-style: none;
   border-bottom: 1px solid #b5b5b5;
 }
-.register-show input[type="button"] {
+.register-show input[type="submit"] {
   max-width: 200px;
   width: 100%;
   background: #dd6965;
@@ -179,7 +180,7 @@ a {
   font-weight: 1200;
   font-size: 40px;
   background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-stroke: 8px transparent;
 }
 .form_head {
