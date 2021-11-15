@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="Logo 2.png" type="image/x-icon" />
-    <script src="jquery.js"></script>
+    <script src="jquery.js" ></script>
     <script src="script.js" defer></script>
     <link
       rel="stylesheet"
@@ -20,7 +20,7 @@
       <div class="bg-white py-3 head">
         <img src="LogoSample_ByTailorBrands.png" alt="" class="logo" />
         <div class="titles">
-          <span class="name homebtn"> <a href="#scrollspyHeadinghome" class="homebtns"> HOME</a></span>
+          <span class="name homebtn">HOME</span>
           <span class="name manbtn">MEN</span>
           <span class="name womanbtn">WOMEN</span>
           <span class="name kidbtn">KID</span>
@@ -580,6 +580,7 @@
           </div>
         </div>
       </div> <!-- Parallx Card 3 End -->
+</div>
      </div> <!--Home End -->
     <div class="Men">
       <div class="feature">

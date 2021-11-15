@@ -95,23 +95,13 @@ $(".multiple-items").slick({
 
 $(".manbtn").click(function () {
   $(".Women").css("display", "none");
+  $(".home").css("display", "none");
   $(".Kid").css("display", "none");
   $(".Men").css("display", "block");
   $(".tag").text("MEN");
   document.getElementById("shirt").href = "#scrollspyHeading1";
   document.getElementById("pants").href = "#scrollspyHeading2";
   document.getElementById("shoe").href = "#scrollspyHeading3";
-});
-
-$(".womanbtn").click(function () {
-  $(".Women").css("display", "block");
-  $(".home").css("display", "none");
-  $(".Kid").css("display", "none");
-  $(".Men").css("display", "none");
-  $(".tag").text("WOMEN");
-  document.getElementById("shirt").href = "#scrollspyHeading4";
-  document.getElementById("pants").href = "#scrollspyHeading5";
-  document.getElementById("shoe").href = "#scrollspyHeading6";
 });
 
 $(".kidbtn").click(function () {
