@@ -211,7 +211,7 @@
         <div class="trending">
           <h2>Trending</h2>
         </div>
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <img
             src="men-s-shoes-clothing-accessories.jpg"
             class="card-img-top"
@@ -227,7 +227,7 @@
           </div>
         </div>
         <!--Card1-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card2-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -244,7 +244,7 @@
           </div>
         </div>
         <!--Card2-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card3-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -581,6 +581,7 @@
         </div>
       </div> <!-- Parallx Card 3 End -->
      </div> <!--Home End -->
+    </div> 
     <div class="Men">
       <div class="feature">
         <h2>Feature</h2>
@@ -636,7 +637,7 @@
         <div class="trending">
           <h2>Trending</h2>
         </div>
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <img
             src="men-s-shoes-clothing-accessories.jpg"
             class="card-img-top"
@@ -652,7 +653,7 @@
           </div>
         </div>
         <!--Card1-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card2-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -669,7 +670,7 @@
           </div>
         </div>
         <!--Card2-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card3-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -1061,7 +1062,7 @@
         <div class="trending">
           <h2>Trending</h2>
         </div>
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <img
             src="men-s-shoes-clothing-accessories.jpg"
             class="card-img-top"
@@ -1077,7 +1078,7 @@
           </div>
         </div>
         <!--Card1-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card2-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -1094,7 +1095,7 @@
           </div>
         </div>
         <!--Card2-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card3-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -1488,7 +1489,7 @@
         <div class="trending">
           <h2>Trending</h2>
         </div>
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <img
             src="men-s-shoes-clothing-accessories.jpg"
             class="card-img-top"
@@ -1504,7 +1505,7 @@
           </div>
         </div>
         <!--Card1-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card2-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -1521,7 +1522,7 @@
           </div>
         </div>
         <!--Card2-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card3-->
           <img
             src="men-s-shoes-clothing-accessories.jpg"
@@ -1859,7 +1860,6 @@
       </div>
       <!-- Parallx Card 3 End -->
     </div>
-    
     <!-- Footer Div -->
     <div class="footer">
       <div class="mardiv">

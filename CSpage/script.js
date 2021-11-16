@@ -1,6 +1,6 @@
 //ready
 $(document).ready(function () {
-  $.get("../cslinks.html", function (data) {
+  $.get("cslinks.html", function (data) {
     $("head").prepend(data);
   });
 });
@@ -95,6 +95,7 @@ $(".multiple-items").slick({
 
 $(".manbtn").click(function () {
   $(".Women").css("display", "none");
+  $(".home").css("display", "none");
   $(".Kid").css("display", "none");
   $(".Men").css("display", "block");
   $(".tag").text("MEN");
@@ -123,17 +124,6 @@ $(".kidbtn").click(function () {
   document.getElementById("shirt").href = "#scrollspyHeading7";
   document.getElementById("pants").href = "#scrollspyHeading8";
   document.getElementById("shoe").href = "#scrollspyHeading9";
-});
-
-$(".womanbtn").click(function () {
-  $(".Women").css("display", "block");
-  $(".Kid").css("display", "none");
-  $(".Men").css("display", "none");
-  $(".home").css("display", "none");
-  $(".tag").text("WOMEN");
-  document.getElementById("shirt").href = "#scrollspyHeading4";
-  document.getElementById("pants").href = "#scrollspyHeading5";
-  document.getElementById("shoe").href = "#scrollspyHeading6";
 });
 
 $(".homebtn").click(function () {

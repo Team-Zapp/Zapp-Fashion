@@ -236,7 +236,7 @@ section {
   }
   .panel:nth-of-type(4),
   .panel:nth-of-type(5) {
-    display: none;
+    /* display: none;*/
   }
 }
 .footer {
@@ -281,7 +281,7 @@ section {
 }
 
 .home {
-  display: block;
+  display: none;
 }
 
 .homebtns {
@@ -290,7 +290,7 @@ section {
 }
 
 .Men {
-  display: none;
+  display: block;
 }
 .Women {
   display: none;
@@ -1252,3 +1252,110 @@ body {
 .homeslide {
   margin-top: 50px !important;
 }
+/*
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .logo {
+    height: 5vh;
+    width: 20vw;
+    margin-left: 150px;
+  }
+  .titles {
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+  }
+  .name {
+    margin: 5px;
+    font-size: 1.1rem;
+  }
+  .SearchBar {
+    position: absolute;
+    margin: 0;
+    width: 180px;
+    height: 20px;
+    left: 120px;
+    top: 130px;
+  }
+  .search {
+    position: absolute;
+    left: 310px;
+    top: 114px;
+  }
+  .user {
+    position: absolute;
+    right: 250px;
+    top: 115px;
+  }
+  .cart {
+    position: absolute;
+    right: 160px;
+    top: 115px;
+  }
+  .ulclass {
+    margin-top: 70px;
+    height: 19vh !important;
+    width: 480px;
+  }
+  .tag {
+    font-size: 20px;
+  }
+  .panel {
+    height: 60vh;
+  }
+  .trending {
+    bottom: -170px;
+  }
+  .card1 {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .card-body {
+    height: 300px;
+  }
+  .card {
+    width: 120px;
+    height: 250px;
+  }
+  .card__image img {
+    width: 120px;
+    height: 190px;
+  }
+  .card2 {
+    margin-left: 0px;
+  }
+  .prevArrow {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+  }
+  .nextArrow {
+    position: absolute;
+    left: 300px;
+    right: 1320px;
+    bottom: 300px;
+  }
+  .btn {
+    width: 100px;
+    height: 60px;
+  }
+  .Shoes {
+    bottom: -1415px;
+  }
+  .Pants {
+    bottom: -1065px;
+  }
+  .recommend {
+    bottom: -700px;
+  }
+}*/
