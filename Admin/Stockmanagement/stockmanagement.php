@@ -61,15 +61,19 @@
     </form>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-10 text-center">
-                <table class="table table-success table-hover mx-5 mt-5">
-                    <th>Product Name </th>
-                    <th>Gender</th>
-                    <th>Product Catagory</th>
-                    <th>Original Price</th>
-                    <th>Sale Price</th>
-                    <th>Quantities</th>
+            <div class="col-10 text-center ">
+                <table class="table table-hover mx-5 mt-5 mytable">
+                    <thead class="table-dark">
+                        <th>No.</th>
+                        <th>Product Name </th>
+                        <th>Gender</th>
+                        <th>Product Catagory</th>
+                        <th>Original Price</th>
+                        <th>Sale Price</th>
+                        <th>Quantities</th>
+                    </thead>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>
@@ -78,6 +82,7 @@
                         <td>10</td>
                     </tr>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>
@@ -86,6 +91,7 @@
                         <td>10</td>
                     </tr>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>
@@ -94,6 +100,7 @@
                         <td>10</td>
                     </tr>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>

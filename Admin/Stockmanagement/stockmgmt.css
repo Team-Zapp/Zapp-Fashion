@@ -116,6 +116,11 @@ span {
   margin-right: 8px;
 }
 
+.mytable {
+  background: #dae1fe !important;
+  border-radius: 5px !important;
+}
+
 .footer {
   bottom: 0;
   margin-top: 10vh;
