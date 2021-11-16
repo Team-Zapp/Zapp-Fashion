@@ -1,6 +1,6 @@
 <?php
 //This is registration form for new customers whish keep customer info in DataBase
-require "DBConnection.php";
+require "../../DBconnect.php";
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $password = $_POST['password'];
 
 
-    $db = new DBConnect();
+    $db = new Dbconnect();
     $dbconnect = $db->connect();
 
     $sql = $dbconnect->prepare(

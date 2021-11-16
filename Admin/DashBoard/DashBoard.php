@@ -16,7 +16,9 @@
 
 <body>
 
-
+    <script>
+        let AdminName = "<?php echo $_GET["name"] ?>"
+    </script>
 
     <div class="row">
         <div class="Torder">
