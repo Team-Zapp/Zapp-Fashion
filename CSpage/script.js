@@ -3,6 +3,8 @@ $(document).ready(function () {
   $.get("../cslinks.html", function (data) {
     $("head").prepend(data);
   });
+  //zayar
+  sessionStorage.setItem("UserID", UserID);
 });
 //FixedBar
 document.addEventListener("DOMContentLoaded", function () {

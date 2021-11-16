@@ -16,7 +16,7 @@ if (isset($_POST["submit"])) {
         //defult password only for Admins
         if ($UserInputpassword == "admin123") {
             //We deliever Admins to the Admin view
-            header("Location: ../DashBoard/DashBoard.php");
+            header("Location: ../DashBoard/DashBoard.php?name=" . $UserInputname);
         } else echo "wrong password";
     }
     //If the name from login form is equal to the name from the DataBase
@@ -24,7 +24,9 @@ if (isset($_POST["submit"])) {
         //and if the Passwords are equals too
         if ($UserInputpassword == $result[0]["password"]) {
             //we take our customer to the cspage which is a customer view 
-            header("Location: ../../CSpage/cspage.php");
+            echo $result[0]['id'];
+
+            header("Location: ../../CSpage/cspage.php?id=" . $result[0]["id"]);
         } else echo "wrong password";
     }
 }
