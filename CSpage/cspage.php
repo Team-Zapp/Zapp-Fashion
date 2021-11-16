@@ -202,9 +202,18 @@
         <div class="trending">
           <h2>Trending</h2>
         </div>
+<<<<<<< HEAD
+        <div class="card1">
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          /><!--Card1-->
+=======
         <div class="card1" style="width: 28rem">
           <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
           <!--Card1-->
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
           <div class="card-body">
             <h5 class="card-title">Shoe</h5>
             <p class="card-text">
@@ -215,7 +224,7 @@
           </div>
         </div>
         <!--Card1-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card2-->
           <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -228,7 +237,7 @@
           </div>
         </div>
         <!--Card2-->
-        <div class="card1" style="width: 28rem">
+        <div class="card1">
           <!--Card3-->
           <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -539,6 +548,20 @@
           </div>
         </div>
       </div> <!-- Parallx Card 3 End -->
+<<<<<<< HEAD
+     </div> <!--Home End -->
+    </div> 
+    <div class="Men">
+      <div class="feature">
+        <h2>Feature</h2>
+      </div>
+      <div class="slider">
+        <div class="container">
+          <!--Expanding Card start-->
+          <div
+            class="panel active"
+            style="
+=======
     </div>
   </div>
   <!--Home End -->
@@ -550,6 +573,7 @@
       <div class="container">
         <!--Expanding Card start-->
         <div class="panel active" style="
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
               background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
             ">
           <h3>Explore the World</h3>
@@ -575,6 +599,44 @@
           <h3>Care</h3>
         </div>
       </div>
+<<<<<<< HEAD
+      <div class="cards1">
+        <!-- Card start-->
+        <div class="trending">
+          <h2>Trending</h2>
+        </div>
+        <div class="card1">
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          /><!--Card1-->
+          <div class="card-body">
+            <h5 class="card-title">Shoe</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+        <!--Card1-->
+        <div class="card1">
+          <!--Card2-->
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Shirt</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+=======
       <!--Expanding Card End-->
     </div>
     <div class="cards1">
@@ -592,11 +654,29 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card1-->
       <div class="card1" style="width: 28rem">
         <!--Card2-->
+<<<<<<< HEAD
+        <div class="card1">
+          <!--Card3-->
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pants</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary mx-7">Show Details</a>
+          </div>
+=======
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Shirt</h5>
@@ -605,6 +685,7 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card2-->
@@ -954,6 +1035,44 @@
           <h3>Care</h3>
         </div>
       </div>
+<<<<<<< HEAD
+      <div class="cards1">
+        <!-- Card start-->
+        <div class="trending">
+          <h2>Trending</h2>
+        </div>
+        <div class="card1">
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          /><!--Card1-->
+          <div class="card-body">
+            <h5 class="card-title">Shoe</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+        <!--Card1-->
+        <div class="card1">
+          <!--Card2-->
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Shirt</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+=======
       <!--Expanding Card End-->
     </div>
     <div class="cards1">
@@ -971,11 +1090,29 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card1-->
       <div class="card1" style="width: 28rem">
         <!--Card2-->
+<<<<<<< HEAD
+        <div class="card1">
+          <!--Card3-->
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pants</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary mx-7">Show Details</a>
+          </div>
+=======
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Shirt</h5>
@@ -984,6 +1121,7 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card2-->
@@ -1334,6 +1472,44 @@
           <h3>Care</h3>
         </div>
       </div>
+<<<<<<< HEAD
+      <div class="cards1">
+        <!-- Card start-->
+        <div class="trending">
+          <h2>Trending</h2>
+        </div>
+        <div class="card1">
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          /><!--Card1-->
+          <div class="card-body">
+            <h5 class="card-title">Shoe</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+        <!--Card1-->
+        <div class="card1">
+          <!--Card2-->
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Shirt</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+=======
       <!--Expanding Card End-->
     </div>
     <div class="cards1">
@@ -1351,11 +1527,29 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card1-->
       <div class="card1" style="width: 28rem">
         <!--Card2-->
+<<<<<<< HEAD
+        <div class="card1">
+          <!--Card3-->
+          <img
+            src="men-s-shoes-clothing-accessories.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pants</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary mx-7">Show Details</a>
+          </div>
+=======
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Shirt</h5>
@@ -1364,6 +1558,7 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card2-->
@@ -1678,6 +1873,12 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
+    <!-- Footer Div -->
+    <div class="footer">
+      <div class="mardiv">
+        <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
+=======
     <!-- Parallx Card 3 End -->
   </div>
 
@@ -1685,6 +1886,7 @@
   <div class="footer">
     <div class="mardiv">
       <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
+>>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         <div class="mar">Thank You For Coming To Our Shop</div>
       </marquee>
     </div>
