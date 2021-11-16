@@ -5,16 +5,45 @@ $.get("../../deflink.html", function (data) {
 $.get("../../def.html", function (data) {
   $("body").prepend(data);
 });
-$(document).ready(function () {
-
-  sessionStorage.setItem("AdminName",AdminName)
-  $("#adminName").text(sessionStorage.getItem("AdminName"))
-  document.getElementById("href1").href="'http://localhost/Team1/Admin/DashBoard/DashBoard.php?name="+sessionStorage.getItem("AdminName") ;
-  document.getElementById("href2").setAttribute("href","http://localhost/Team1/Admin/Stockmanagement/stockmanagement.php?name="+sessionStorage.getItem("AdminName") )
-  document.getElementById("href3").setAttribute("href","http://localhost/Team1/Admin/CustomerInfo/Customerinfo.php?name="+sessionStorage.getItem("AdminName") )
-  document.getElementById("href4").setAttribute("href","http://localhost/Team1/Admin/Transcation/Transcation.php?name="+sessionStorage.getItem("AdminName") )
-  document.getElementById("href5").setAttribute("href","http://localhost/Team1/Admin/FeedBack/feedback.php?name="+sessionStorage.getItem("AdminName") )
-})
+// $(document).ready(function () {
+//   sessionStorage.setItem("AdminName", AdminName);
+//   $("#adminName").text(sessionStorage.getItem("AdminName"));
+//   document
+//     .getElementById("href1")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/DashBoard/DashBoard.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href2")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/Stockmanagement/stockmanagement.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href3")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/CustomerInfo/Customerinfo.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href4")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/Transcation/Transcation.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href5")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/FeedBack/feedback.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+// });
 
 var options = {
   series: [
@@ -25,10 +54,6 @@ var options = {
     {
       name: "Total Stock",
       data: [76, 85, 101, 98, 87, 105, 91, 114, 94, 24],
-    },
-    {
-      name: "Free Cash Flow",
-      data: [35, 41, 36, 26, 45, 48, 52, 53, 41, 51],
     },
   ],
   chart: {

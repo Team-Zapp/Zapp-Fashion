@@ -63,3 +63,20 @@ if(isset($_POST['submit'])){
 }else{
     echo "No";
 }
+
+
+$file = $_FILES['pdimage']['name'];
+$location = $_FILES['fileupload']['tmp_name'];
+$extension = pathinfo($file)['extension'];
+$filename = pathinfo($file)['filename'];
+if(move_uploaded_file($location,"../Stockmanagement/pdphotos/".$file.".".$extension)){
+echo 'File is successfully uploaded.';
+}
+else{
+echo 'There was some error moving the file to upload directory.';
+}
+
+ header("Location: http://localhost/Team1/Admin/Stockmanagement/stockmanagement.php?name=Zaw");
+
+
+ 
