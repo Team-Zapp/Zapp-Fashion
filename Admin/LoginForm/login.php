@@ -37,13 +37,16 @@
 
 					<input type="text" name="Username" placeholder="Username">
 					<input type="password" name="Password" placeholder="Password">
-					<input type="submit" name="submit" value="Login">
+					<input class="loginbtn" type="submit" name="submit" value="Login">
 
 					<a href="">Forgot password?</a>
+					<span class="checkbox"
+            ><input type="checkbox" name="remember-me" id="rememberme" />
+            Remember Me</span>
 					<div class="login-div">
 						<span class="login-links"><a href="www.gmail.com" class="login-photo"><img class="googleimg" src="Google Logo.png" alt="" srcset=""></a></span>
-						<span class="login-links"><a href="www.facebook.com" class="login-photo">Facebook</a></span>
-						<span class="login-links"><a href="www.twitter.com" class="login-photo">Twitter</a></span>
+						<span class="login-links"><a href="www.facebook.com" class="login-photo"><img class="fbimg" src="Facebook Logo.png" alt="" /></a></span>
+						<span class="login-links"><a href="www.twitter.com" class="login-photo"><img class="twitimg" src="Twitter Logo.png" alt=""/></a></span>
 					</div>
 				</div>
 		</form>
