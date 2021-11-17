@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 $(document).ready(function () {
   $.get("../../deflink.html", function (data) {
     $("head").prepend(data);
@@ -38,6 +39,50 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
   });
 
 })
+=======
+$.get("../../def.html", function (data) {
+  $("body").prepend(data);
+});
+// $(document).ready(function () {
+//   sessionStorage.setItem("AdminName", AdminName);
+//   $("#adminName").text(sessionStorage.getItem("AdminName"));
+//   document
+//     .getElementById("href1")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/DashBoard/DashBoard.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href2")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/Stockmanagement/stockmanagement.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href3")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/CustomerInfo/Customerinfo.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href4")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/Transcation/Transcation.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+//   document
+//     .getElementById("href5")
+//     .setAttribute(
+//       "href",
+//       "http://localhost/Team1/Admin/FeedBack/feedback.php?name=" +
+//         sessionStorage.getItem("AdminName")
+//     );
+// });
+>>>>>>> cfa381e920ee88a055105e4e6ac5f18044c38503
 
 var options = {
   series: [
@@ -48,10 +93,6 @@ var options = {
     {
       name: "Total Stock",
       data: [76, 85, 101, 98, 87, 105, 91, 114, 94, 24],
-    },
-    {
-      name: "Free Cash Flow",
-      data: [35, 41, 36, 26, 45, 48, 52, 53, 41, 51],
     },
   ],
   chart: {

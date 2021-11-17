@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="jquery.js"></script>
+    <script src="stockmgmt.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
-    <script src="stockmgmt.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="stockmgmt.css">
 </head>
 
@@ -64,15 +65,19 @@
     </form>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-10 text-center">
-                <table class="table table-success table-hover mx-5 mt-5">
-                    <th>Product Name </th>
-                    <th>Gender</th>
-                    <th>Product Catagory</th>
-                    <th>Original Price</th>
-                    <th>Sale Price</th>
-                    <th>Quantities</th>
+            <div class="col-10 text-center ">
+                <table class="table table-hover mx-5 mt-5 mytable">
+                    <thead class="table-dark">
+                        <th>No.</th>
+                        <th>Product Name </th>
+                        <th>Gender</th>
+                        <th>Product Catagory</th>
+                        <th>Original Price</th>
+                        <th>Sale Price</th>
+                        <th>Quantities</th>
+                    </thead>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>
@@ -81,6 +86,7 @@
                         <td>10</td>
                     </tr>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>
@@ -89,6 +95,7 @@
                         <td>10</td>
                     </tr>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>
@@ -97,6 +104,7 @@
                         <td>10</td>
                     </tr>
                     <tr>
+                        <td>1.</td>
                         <td>Blue Shirt</td>
                         <td>Male</td>
                         <td>Shirt</td>
@@ -113,7 +121,7 @@
     </div>
     <script>
         let AdminName = "<?php echo $_GET["name"] ?>"
-    </script>
+    </script> 
 </body>
 
 </html>
