@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-<<<<<<< HEAD
+
   $.get("../../deflink.html", function (data) {
     $("head").prepend(data);
   });
@@ -37,47 +37,18 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
   document.getElementById("adminPic").setAttribute("src","flower.jpg")
 }
   });
+
+  $.ajax({
+    type:'get',
+    url:'search.php',
+    success :function(data){
+      let json = JSON.parse(data);
+      console.log(json)
+      $("#visit").text(json)
+    }
+  })
 })
-=======
-  sessionStorage.setItem("AdminName", AdminName);
-  $("#adminName").text(sessionStorage.getItem("AdminName"));
-  document
-    .getElementById("href1")
-    .setAttribute(
-      "href",
-      "http://localhost/Team1/Admin/DashBoard/DashBoard.php?name=" +
-        sessionStorage.getItem("AdminName")
-    );
-  document
-    .getElementById("href2")
-    .setAttribute(
-      "href",
-      "http://localhost/Team1/Admin/Stockmanagement/stockmanagement.php?name=" +
-        sessionStorage.getItem("AdminName")
-    );
-  document
-    .getElementById("href3")
-    .setAttribute(
-      "href",
-      "http://localhost/Team1/Admin/CustomerInfo/Customerinfo.php?name=" +
-        sessionStorage.getItem("AdminName")
-    );
-  document
-    .getElementById("href4")
-    .setAttribute(
-      "href",
-      "http://localhost/Team1/Admin/Transcation/Transcation.php?name=" +
-        sessionStorage.getItem("AdminName")
-    );
-  document
-    .getElementById("href5")
-    .setAttribute(
-      "href",
-      "http://localhost/Team1/Admin/FeedBack/feedback.php?name=" +
-        sessionStorage.getItem("AdminName")
-    );
-});
->>>>>>> cfa381e920ee88a055105e4e6ac5f18044c38503
+
 
 //firts chart
 var options = {

@@ -31,7 +31,7 @@
         </div>
         <div class="Torder">
             <p class="head">Visit</p>
-            <p class="foot">1000</p>
+            <p class="foot" id="visit"></p>
         </div>
         <div class="Torder">
             <p class="head">Feedback</p>

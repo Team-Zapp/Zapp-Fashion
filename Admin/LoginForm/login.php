@@ -35,28 +35,27 @@
 				<div class="login-show">
 					<h2 class="form_head">Sign in</h2>
 
-					<input type="text" name="Username" placeholder="Username">
-					<input type="password" name="Password" placeholder="Password">
+					<input type="text" name="Username" placeholder="Username" required>
+					<input type="password" name="Password" placeholder="Password" required>
 					<input class="loginbtn" type="submit" name="submit" value="Login">
 
-					<a href="">Forgot password?</a>
-					<span class="checkbox"
-            ><input type="checkbox" name="remember-me" id="rememberme" />
-            Remember Me</span>
+					<a href="ForgetPassword.php">Forgot password?</a>
+					<span class="checkbox"><input type="checkbox" name="remember-me" id="rememberme" />
+						Remember Me</span>
 					<div class="login-div">
 						<span class="login-links"><a href="www.gmail.com" class="login-photo"><img class="googleimg" src="Google Logo.png" alt="" srcset=""></a></span>
 						<span class="login-links"><a href="www.facebook.com" class="login-photo"><img class="fbimg" src="Facebook Logo.png" alt="" /></a></span>
-						<span class="login-links"><a href="www.twitter.com" class="login-photo"><img class="twitimg" src="Twitter Logo.png" alt=""/></a></span>
+						<span class="login-links"><a href="www.twitter.com" class="login-photo"><img class="twitimg" src="Twitter Logo.png" alt="" /></a></span>
 					</div>
 				</div>
 		</form>
 		<form action="newCustomers.php" method="POST">
 			<div class="register-show">
 				<h2 class="form_head">Sign Up</h2>
-				<input type="text" name="name" placeholder="Name">
-				<input type="text" name="email" placeholder="Email">
-				<input type="text" name="phnumber" placeholder="Phone Number">
-				<input type="password" name="password" placeholder="Password">
+				<input type="text" name="name" placeholder="Name" required>
+				<input type="text" name="email" placeholder="Email" required>
+				<input type="text" name="phnumber" placeholder="Phone Number" required>
+				<input type="password" name="password" placeholder="Password" required>
 				<input type="submit" name="submit" value="Register">
 			</div>
 		</form>
