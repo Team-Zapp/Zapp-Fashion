@@ -30,9 +30,9 @@ a {
   background-color: rgba(255, 255, 255, 1);
   height: 500px;
   position: absolute;
-  top: -50px;
+  top: 50px;
   width: 50%;
-  right: calc(50% - 50px);
+  right: 50vh;
   transition: 0.3s ease-in-out;
   z-index: 0;
   box-shadow: 0 0 15px 9px #00000096;
@@ -183,7 +183,7 @@ a {
 }
 .form_head {
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 .login-div {
   margin-top: 120px;
@@ -213,7 +213,7 @@ a {
 
 .loginbtn {
   margin-top: 60px;
-  margin-right: 110px;
+  margin-right: 30vh;
 }
 
 .regbtn {

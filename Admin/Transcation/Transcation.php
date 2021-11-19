@@ -14,6 +14,9 @@
 </head>
 
 <body onload="initial()">
+    <script>
+        let AdminName = "<?php echo $_GET["name"] ?>"
+    </script>
     <div class="container tablediv">
         <table class="table table-dark table-striped">
             <tr class="table-secondary table">

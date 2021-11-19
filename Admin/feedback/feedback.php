@@ -13,6 +13,9 @@
 </head>
 
 <body>
+    <script>
+        let AdminName = "<?php echo $_GET["name"] ?>"
+    </script>
     <div class="feedbackForm" id="feedbackForm">
         <h4>Reviews</h4>
         <div class="ProflieAndName">

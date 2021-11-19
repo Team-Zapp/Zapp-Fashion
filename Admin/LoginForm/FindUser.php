@@ -4,7 +4,7 @@ require "../../DBconnect.php";
 
 if (isset($_POST["submit"])) {
     $UserInputName = $_POST["Username"]; //Username
-    $UserInputPassword = $_POST["Password"]; //Password
+
 }
 
 $db = new Dbconnect();
@@ -14,5 +14,10 @@ $sql = $dbconnect->prepare("SELECT * FROM m_user WHERE name='$UserInputName' ");
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
+if (count($result) > 0) {
 
-require "CheckPath.php";//deliever fecthed Username and Password to CheckPath.php
+    header("Location: FindPassword.php?name=" . $UserInputName);
+} else {
+    echo "<script>alert('Username not found.');</script>";
+    require "ForgetPassword.php";
+}
