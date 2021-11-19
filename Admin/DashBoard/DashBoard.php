@@ -9,9 +9,9 @@
     <script src="script.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo 2.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 
 <body>

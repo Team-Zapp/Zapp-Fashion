@@ -50,5 +50,10 @@ if (isset($_POST['submit'])) {
 
         $sql->execute();
     }
-    require "login.php";
+    echo "<script>alert('Successfully Account Created.');</script>";
+    echo "<script>
+    setTimeout(function( )
+    {window.location='login.php';  },
+    500);
+    </script>";
 }

@@ -109,6 +109,22 @@ a {
   border-bottom: 1px solid #b5b5b5;
   outline: none;
 }
+#icon {
+  position: absolute;
+  left: 58vh;
+  width: 10vh;
+  height: 3vh;
+  bottom: 38vh;
+  cursor: pointer;
+}
+#icon2 {
+  position: absolute;
+  left: 58vh;
+  width: 10vh;
+  height: 3vh;
+  bottom: 18vh;
+  cursor: pointer;
+}
 .login-show input[type="submit"] {
   max-width: 200px;
   width: 100%;

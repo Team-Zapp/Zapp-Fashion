@@ -202,54 +202,50 @@
         <div class="trending">
           <h2>Trending</h2>
         </div>
-<<<<<<< HEAD
-        <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
-=======
-        <div class="card1" style="width: 28rem">
+        <<<<<<< HEAD <div class="card1">
           <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
           <!--Card1-->
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+          =======
+          <div class="card1" style="width: 28rem">
+            <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+            <!--Card1-->
+            >>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </div>
-        </div>
-        <!--Card1-->
-        <div class="card1">
+          <!--Card1-->
+          <div class="card1">
+            <!--Card2-->
+            <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Shirt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
           <!--Card2-->
-          <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Shirt</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+          <div class="card1">
+            <!--Card3-->
+            <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pants</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary mx-7">Show Details</a>
+            </div>
           </div>
-        </div>
-        <!--Card2-->
-        <div class="card1">
           <!--Card3-->
-          <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-        </div>
-        <!--Card3-->
       </div>
       <!-- Card End-->
       <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
@@ -548,20 +544,6 @@
           </div>
         </div>
       </div> <!-- Parallx Card 3 End -->
-<<<<<<< HEAD
-     </div> <!--Home End -->
-    </div> 
-    <div class="Men">
-      <div class="feature">
-        <h2>Feature</h2>
-      </div>
-      <div class="slider">
-        <div class="container">
-          <!--Expanding Card start-->
-          <div
-            class="panel active"
-            style="
-=======
     </div>
   </div>
   <!--Home End -->
@@ -573,7 +555,6 @@
       <div class="container">
         <!--Expanding Card start-->
         <div class="panel active" style="
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
               background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
             ">
           <h3>Explore the World</h3>
@@ -599,44 +580,6 @@
           <h3>Care</h3>
         </div>
       </div>
-<<<<<<< HEAD
-      <div class="cards1">
-        <!-- Card start-->
-        <div class="trending">
-          <h2>Trending</h2>
-        </div>
-        <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-        <!--Card1-->
-        <div class="card1">
-          <!--Card2-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Shirt</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-=======
       <!--Expanding Card End-->
     </div>
     <div class="cards1">
@@ -654,29 +597,11 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card1-->
       <div class="card1" style="width: 28rem">
         <!--Card2-->
-<<<<<<< HEAD
-        <div class="card1">
-          <!--Card3-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-=======
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Shirt</h5>
@@ -685,7 +610,6 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card2-->
@@ -1035,18 +959,14 @@
           <h3>Care</h3>
         </div>
       </div>
-<<<<<<< HEAD
-      <div class="cards1">
+      <<<<<<< HEAD <div class="cards1">
         <!-- Card start-->
         <div class="trending">
           <h2>Trending</h2>
         </div>
         <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
+          <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+          <!--Card1-->
           <div class="card-body">
             <h5 class="card-title">Shoe</h5>
             <p class="card-text">
@@ -1059,11 +979,7 @@
         <!--Card1-->
         <div class="card1">
           <!--Card2-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
+          <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Shirt</h5>
             <p class="card-text">
@@ -1072,835 +988,816 @@
             </p>
             <a href="#" class="btn btn-primary">Add to Cart</a>
           </div>
-=======
-      <!--Expanding Card End-->
-    </div>
-    <div class="cards1">
-      <!-- Card start-->
-      <div class="trending">
-        <h2>Trending</h2>
-      </div>
-      <div class="card1" style="width: 28rem">
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <!--Card1-->
-        <div class="card-body">
-          <h5 class="card-title">Shoe</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
+          =======
+          <!--Expanding Card End-->
         </div>
-      </div>
-      <!--Card1-->
-      <div class="card1" style="width: 28rem">
-        <!--Card2-->
-<<<<<<< HEAD
-        <div class="card1">
+        <div class="cards1">
+          <!-- Card start-->
+          <div class="trending">
+            <h2>Trending</h2>
+          </div>
+          <div class="card1" style="width: 28rem">
+            <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+            <!--Card1-->
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+              >>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
+            </div>
+          </div>
+          <!--Card1-->
+          <div class="card1" style="width: 28rem">
+            <!--Card2-->
+            <<<<<<< HEAD <div class="card1">
+              <!--Card3-->
+              <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Pants</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary mx-7">Show Details</a>
+              </div>
+              =======
+              <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Shirt</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+                >>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
+              </div>
+          </div>
+          <!--Card2-->
+          <div class="card1" style="width: 28rem">
+            <!--Card3-->
+            <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pants</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary mx-7">Show Details</a>
+            </div>
+          </div>
           <!--Card3-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-=======
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Shirt</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
+        <!-- Card End-->
+        <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+          <h2 id="scrollspyHeading4">Shirts</h2>
+        </div>
+        <!-- Parallx Card start-->
+        <div class="card2">
+          <div class="multiple-items">
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Woman shirt.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$120</span>
+                  <h3>Shirt</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Woman shirt.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$300</span>
+                  <h3>Shirt</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Woman shirt.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$50</span>
+                  <h3>Shirt</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Woman shirt.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$250</span>
+                  <h3>Shirt</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Woman shirt.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$70</span>
+                  <h3>Shirt</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Woman shirt.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$299</span>
+                  <h3>Shirt</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parallx Card End-->
+        <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+          <h2 id="scrollspyHeading5">Pants</h2>
+        </div>
+        <!-- Parallx Card 2 Start -->
+        <div class="card2">
+          <div class="multiple-items">
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women pants.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$120</span>
+                  <h3>Pants</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women pants.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$300</span>
+                  <h3>Pants</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women pants.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$50</span>
+                  <h3>Pants</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women pants.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$250</span>
+                  <h3>Pants</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women pants.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$70</span>
+                  <h3>Pants</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women pants.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$299</span>
+                  <h3>Pants</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parallx Card 2 End -->
+        <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+          <h2 id="scrollspyHeading6">Shoes</h2>
+        </div>
+        <!-- Parallx Card 3 Start -->
+        <div class="card2">
+          <div class="multiple-items">
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women shoes.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$120</span>
+                  <h3>Shoes</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women shoes.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$300</span>
+                  <h3>Shoes</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women shoes.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$50</span>
+                  <h3>Shoes</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women shoes.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$250</span>
+                  <h3>Shoes</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women shoes.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$70</span>
+                  <h3>Shoes</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="card-1" class="card rounded">
+                <div class="card__overlay"></div>
+                <div class="card__image">
+                  <img src="Women shoes.jpg" alt="" />
+                </div>
+                <div class="card__heading">
+                  <span class="small">$299</span>
+                  <h3>Shoes</h3>
+                  <button type="button" class="btn btn-primary">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parallx Card 3 End -->
+    </div>
+    <!-- Kid Start -->
+    <div class="Kid">
+      <div class="feature">
+        <h2>Feature</h2>
       </div>
-      <!--Card2-->
-      <div class="card1" style="width: 28rem">
-        <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Pants</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary mx-7">Show Details</a>
-        </div>
-      </div>
-      <!--Card3-->
-    </div>
-    <!-- Card End-->
-    <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading4">Shirts</h2>
-    </div>
-    <!-- Parallx Card start-->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Parallx Card End-->
-    <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading5">Pants</h2>
-    </div>
-    <!-- Parallx Card 2 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Parallx Card 2 End -->
-    <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading6">Shoes</h2>
-    </div>
-    <!-- Parallx Card 3 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Parallx Card 3 End -->
-  </div>
-  <!-- Kid Start -->
-  <div class="Kid">
-    <div class="feature">
-      <h2>Feature</h2>
-    </div>
-    <div class="slider">
-      <div class="container">
-        <!--Expanding Card start-->
-        <div class="panel active" style="
+      <div class="slider">
+        <div class="container">
+          <!--Expanding Card start-->
+          <div class="panel active" style="
               background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
             ">
-          <h3>Explore the World</h3>
-        </div>
-        <div class="panel" style="
+            <h3>Explore the World</h3>
+          </div>
+          <div class="panel" style="
               background-image: url('https://images.unsplash.com/photo-1604156425963-9be03f86a428?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
             ">
-          <h3>Get Paid</h3>
-        </div>
-        <div class="panel" style="
+            <h3>Get Paid</h3>
+          </div>
+          <div class="panel" style="
               background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
             ">
-          <h3>Workout</h3>
-        </div>
-        <div class="panel" style="
+            <h3>Workout</h3>
+          </div>
+          <div class="panel" style="
               background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
             ">
-          <h3>Be Better</h3>
-        </div>
-        <div class="panel" style="
+            <h3>Be Better</h3>
+          </div>
+          <div class="panel" style="
               background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
             ">
-          <h3>Care</h3>
-        </div>
-      </div>
-<<<<<<< HEAD
-      <div class="cards1">
-        <!-- Card start-->
-        <div class="trending">
-          <h2>Trending</h2>
-        </div>
-        <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <h3>Care</h3>
           </div>
         </div>
-        <!--Card1-->
-        <div class="card1">
-          <!--Card2-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Shirt</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+        <<<<<<< HEAD <div class="cards1">
+          <!-- Card start-->
+          <div class="trending">
+            <h2>Trending</h2>
           </div>
-=======
-      <!--Expanding Card End-->
-    </div>
-    <div class="cards1">
-      <!-- Card start-->
-      <div class="trending">
-        <h2>Trending</h2>
-      </div>
-      <div class="card1" style="width: 28rem">
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <!--Card1-->
-        <div class="card-body">
-          <h5 class="card-title">Shoe</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
-        </div>
-      </div>
-      <!--Card1-->
-      <div class="card1" style="width: 28rem">
-        <!--Card2-->
-<<<<<<< HEAD
-        <div class="card1">
-          <!--Card3-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-=======
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Shirt</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
-        </div>
-      </div>
-      <!--Card2-->
-      <div class="card1" style="width: 28rem">
-        <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Pants</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary mx-7">Show Details</a>
-        </div>
-      </div>
-      <!--Card3-->
-    </div>
-    <!-- Card End-->
-    <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading7">Shirts</h2>
-    </div>
-    <!-- Parallx Card start-->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+          <div class="card1">
+            <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+            <!--Card1-->
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
             </div>
           </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
+          <!--Card1-->
+          <div class="card1">
+            <!--Card2-->
+            <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Shirt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
             </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            =======
+            <!--Expanding Card End-->
+          </div>
+          <div class="cards1">
+            <!-- Card start-->
+            <div class="trending">
+              <h2>Trending</h2>
+            </div>
+            <div class="card1" style="width: 28rem">
+              <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+              <!--Card1-->
+              <div class="card-body">
+                <h5 class="card-title">Shoe</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+                >>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
+              </div>
+            </div>
+            <!--Card1-->
+            <div class="card1" style="width: 28rem">
+              <!--Card2-->
+              <<<<<<< HEAD <div class="card1">
+                <!--Card3-->
+                <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Pants</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary mx-7">Show Details</a>
+                </div>
+                =======
+                <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Shirt</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                  >>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
+                </div>
+            </div>
+            <!--Card2-->
+            <div class="card1" style="width: 28rem">
+              <!--Card3-->
+              <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Pants</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary mx-7">Show Details</a>
+              </div>
+            </div>
+            <!--Card3-->
+          </div>
+          <!-- Card End-->
+          <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <h2 id="scrollspyHeading7">Shirts</h2>
+          </div>
+          <!-- Parallx Card start-->
+          <div class="card2">
+            <div class="multiple-items">
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shirt.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$120</span>
+                    <h3>Shirt</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shirt.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$300</span>
+                    <h3>Shirt</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shirt.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$50</span>
+                    <h3>Shirt</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shirt.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$250</span>
+                    <h3>Shirt</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shirt.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$70</span>
+                    <h3>Shirt</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shirt.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$299</span>
+                    <h3>Shirt</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+          <!-- Parallx Card End-->
+          <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <h2 id="scrollspyHeading8">Pants</h2>
+          </div>
+          <!-- Parallx Card 2 Start -->
+          <div class="card2">
+            <div class="multiple-items">
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid pants.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$120</span>
+                    <h3>Pants</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid pants.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$300</span>
+                    <h3>Pants</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid pants.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$50</span>
+                    <h3>Pants</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid pants.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$250</span>
+                    <h3>Pants</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid pants.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$70</span>
+                    <h3>Pants</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid pants.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$299</span>
+                    <h3>Pants</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+          <!-- Parallx Card 2 End -->
+          <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <h2 id="scrollspyHeading9">Shoes</h2>
+          </div>
+          <!-- Parallx Card 3 Start -->
+          <div class="card2">
+            <div class="multiple-items">
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shoe.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$120</span>
+                    <h3>Shoes</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shoe.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$300</span>
+                    <h3>Shoes</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shoe.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$50</span>
+                    <h3>Shoes</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shoe.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$250</span>
+                    <h3>Shoes</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shoe.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$70</span>
+                    <h3>Shoes</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="card-1" class="card rounded">
+                  <div class="card__overlay"></div>
+                  <div class="card__image">
+                    <img src="Kid shoe.jpg" alt="" />
+                  </div>
+                  <div class="card__heading">
+                    <span class="small">$299</span>
+                    <h3>Shoes</h3>
+                    <button type="button" class="btn btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Parallx Card End-->
-    <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading8">Pants</h2>
-    </div>
-    <!-- Parallx Card 2 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Parallx Card 2 End -->
-    <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading9">Shoes</h2>
-    </div>
-    <!-- Parallx Card 3 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<<<<<<< HEAD
-    <!-- Footer Div -->
-    <div class="footer">
-      <div class="mardiv">
-        <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
-=======
-    <!-- Parallx Card 3 End -->
-  </div>
+          <<<<<<< HEAD <!-- Footer Div -->
+            <div class="footer">
+              <div class="mardiv">
+                <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
+                  =======
+                  <!-- Parallx Card 3 End -->
+              </div>
 
-  <!-- Footer Div -->
-  <div class="footer">
-    <div class="mardiv">
-      <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
-        <div class="mar">Thank You For Coming To Our Shop</div>
-      </marquee>
-    </div>
-    <div class="contact">
-      <li>Contact</li>
-      <ul style="list-style-type: square;">
-        <li>ZappFashio@gmail.com</li>
-        <li>+016577289</li>
-      </ul>
-    </div>
-    <p class="copy">
-      Copyrightt <span>&#169;</span>ZappFashion
-    </p>
-  </div>
+              <!-- Footer Div -->
+              <div class="footer">
+                <div class="mardiv">
+                  <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
+                    >>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
+                    <div class="mar">Thank You For Coming To Our Shop</div>
+                  </marquee>
+                </div>
+                <div class="contact">
+                  <li>Contact</li>
+                  <ul style="list-style-type: square;">
+                    <li>ZappFashio@gmail.com</li>
+                    <li>+016577289</li>
+                  </ul>
+                </div>
+                <p class="copy">
+                  Copyrightt <span>&#169;</span>ZappFashion
+                </p>
+              </div>
 </body>
 
 </html>
