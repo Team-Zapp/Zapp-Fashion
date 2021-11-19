@@ -1,8 +1,26 @@
 //ready
+
 $(document).ready(function () {
-  $.get("cslinks.html", function (data) {
+  $.get("../cslinks.html", function (data) {
     $("head").prepend(data);
   });
+  $.ajax({
+    type: "get",
+    url: "add.php",
+    success: function (data) {
+      let Mdata = JSON.parse(data);
+      console.log(Mdata);
+      var Mshirtprice = document.getElementsByClassName("Mshirtprice");
+      var Mshirtname = document.getElementsByClassName("Mshirtname");
+      var M = 0;
+      for (const iterator of Mdata) {
+        Mshirtprice[M].innerHTML = `${iterator.saleprice}$`;
+        Mshirtname[M].innerHTML = `${iterator.name}`;
+        M++;
+      }
+    },
+  });
+
   //zayar
   sessionStorage.setItem("UserID", UserID);
 });
@@ -21,46 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-//Parallx card
-(function ($) {
-  $.fn.tilt = function () {
-    var perspective = "500px",
-      delta = 20,
-      width = this.width(),
-      height = this.height(),
-      midWidth = width / 2,
-      midHeight = height / 2;
-    this.on({
-      mousemove: function (e) {
-        var pos = $(this).offset(),
-          cursPosX = e.pageX - pos.left,
-          cursPosY = e.pageY - pos.top,
-          cursCenterX = midWidth - cursPosX,
-          cursCenterY = midHeight - cursPosY;
-
-        $(this).css(
-          "transform",
-          "perspective(" +
-            perspective +
-            ") rotateX(" +
-            cursCenterY / delta +
-            "deg) rotateY(" +
-            -(cursCenterX / delta) +
-            "deg)"
-        );
-        $(this).removeClass("is-out");
-      },
-      mouseleave: function () {
-        $(this).addClass("is-out");
-      },
-    });
-    //Return
-    return this;
-  };
-})(jQuery);
-
-//Set plugin on cards
-$(".card").tilt();
 
 //Expanding Card
 const panels = document.querySelectorAll(".panel");
@@ -76,15 +54,6 @@ function remveActiveClasses() {
     panel.classList.remove("active");
   });
 }
-//slick slider
-$(".multiple-items").slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  prevArrow:
-    '<span class="prevArrow"><ion-icon name="chevron-back-outline" class="leftAro"></ion-icon></span>',
-  nextArrow:
-    '<span class="nextArrow"><ion-icon name="chevron-forward-outline" class="rightAro"></ion-icon></i></span>',
-});
 
 //display function
 // let menDisplay = document.querySelector(".Men");
@@ -115,6 +84,17 @@ $(".kidbtn").click(function () {
   document.getElementById("shirt").href = "#scrollspyHeading7";
   document.getElementById("pants").href = "#scrollspyHeading8";
   document.getElementById("shoe").href = "#scrollspyHeading9";
+});
+
+$(".womanbtn").click(function () {
+  $(".Women").css("display", "block");
+  $(".Kid").css("display", "none");
+  $(".Men").css("display", "none");
+  $(".home").css("display", "none");
+  $(".tag").text("WOMEN");
+  document.getElementById("shirt").href = "#scrollspyHeading4";
+  document.getElementById("pants").href = "#scrollspyHeading5";
+  document.getElementById("shoe").href = "#scrollspyHeading6";
 });
 
 $(".homebtn").click(function () {
