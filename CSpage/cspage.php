@@ -9,8 +9,10 @@
   <link rel="shortcut icon" href="Logo 2.png" type="image/x-icon" />
   <script src="jquery.js"></script>
   <script src="script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+    />
   <title>Zapp Fashion</title>
 </head>
 
@@ -70,581 +72,50 @@
   </div>
   <!-- Home Start -->
   <div class="home">
-    <div class="slider homeslide" id="scrollspyHeadinghome">
-      <div class="demo-cont homeslide">
-        <!-- slider start -->
-        <div class="fnc-slider example-slider">
-          <div class="fnc-slider__slides">
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-green m--active-slide">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>New </span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>Normal</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    About Us
-                    <span data-text="Credits">Credits</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-dark">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>New</span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>Designs</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    Credits
-                    <span data-text="Credits">Credits</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-red">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>Fresh</span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>Night Out</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    Credits
-                    <span data-text="Credits">Credits</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-blue">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>Not Only</span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>Adault</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    Credits
-                    <span data-text="Credits">Credits</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-          </div>
-          <nav class="fnc-nav">
-            <div class="fnc-nav__bgs">
-              <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
-              <div class="fnc-nav__bg m--navbg-dark"></div>
-              <div class="fnc-nav__bg m--navbg-red"></div>
-              <div class="fnc-nav__bg m--navbg-blue"></div>
-            </div>
-            <div class="fnc-nav__controls">
-              <button class="fnc-nav__control">
-                New Normal
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-              <button class="fnc-nav__control">
-                New Designs
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-              <button class="fnc-nav__control">
-                Fresh Night Out
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-              <button class="fnc-nav__control">
-                Not only Adault
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-            </div>
-          </nav>
-        </div>
-        <!-- slider end -->
-      </div>
-      <div class="cards1">
-        <!-- Card start-->
-        <div class="trending">
-          <h2>Trending</h2>
-        </div>
-<<<<<<< HEAD
-        <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
-=======
-        <div class="card1" style="width: 28rem">
-          <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-          <!--Card1-->
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-        <!--Card1-->
-        <div class="card1">
-          <!--Card2-->
-          <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Shirt</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-        <!--Card2-->
-        <div class="card1">
-          <!--Card3-->
-          <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-        </div>
-        <!--Card3-->
-      </div>
-      <!-- Card End-->
-      <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h2 id="scrollspyHeading4">Shirts</h2>
-      </div>
-      <!-- Parallx Card start-->
-      <div class="card2">
-        <div class="multiple-items">
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Woman shirt.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$120</span>
-                <h3>Shirt</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Woman shirt.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$300</span>
-                <h3>Shirt</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Woman shirt.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$50</span>
-                <h3>Shirt</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Woman shirt.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$250</span>
-                <h3>Shirt</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Woman shirt.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$70</span>
-                <h3>Shirt</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Woman shirt.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$299</span>
-                <h3>Shirt</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Parallx Card End-->
-      <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h2 id="scrollspyHeading5">Pants</h2>
-      </div>
-      <!-- Parallx Card 2 Start -->
-      <div class="card2">
-        <div class="multiple-items">
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women pants.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$120</span>
-                <h3>Pants</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women pants.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$300</span>
-                <h3>Pants</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women pants.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$50</span>
-                <h3>Pants</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women pants.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$250</span>
-                <h3>Pants</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women pants.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$70</span>
-                <h3>Pants</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women pants.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$299</span>
-                <h3>Pants</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Parallx Card 2 End -->
-      <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h2 id="scrollspyHeading6">Shoes</h2>
-      </div>
-      <!-- Parallx Card 3 Start -->
-      <div class="card2">
-        <div class="multiple-items">
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women shoes.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$120</span>
-                <h3>Shoes</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women shoes.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$300</span>
-                <h3>Shoes</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women shoes.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$50</span>
-                <h3>Shoes</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women shoes.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$250</span>
-                <h3>Shoes</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women shoes.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$70</span>
-                <h3>Shoes</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="card-1" class="card rounded">
-              <div class="card__overlay"></div>
-              <div class="card__image">
-                <img src="Women shoes.jpg" alt="" />
-              </div>
-              <div class="card__heading">
-                <span class="small">$299</span>
-                <h3>Shoes</h3>
-                <button type="button" class="btn btn-primary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- Parallx Card 3 End -->
-<<<<<<< HEAD
-     </div> <!--Home End -->
-    </div> 
-    <div class="Men">
-      <div class="feature">
-        <h2>Feature</h2>
-      </div>
-      <div class="slider">
-        <div class="container">
-          <!--Expanding Card start-->
-          <div
-            class="panel active"
-            style="
-=======
-    </div>
+    
   </div>
   <!--Home End -->
   <div class="Men">
     <div class="feature">
-      <h2>Feature</h2>
+      <h2 class="fs-2 fw-bold fst-italic">Feature</h2>
     </div>
     <div class="slider">
       <div class="container">
         <!--Expanding Card start-->
         <div class="panel active" style="
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
-              background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
+              background-image: url('men slider 5.jpg');
             ">
           <h3>Explore the World</h3>
         </div>
         <div class="panel" style="
-              background-image: url('https://images.unsplash.com/photo-1604156425963-9be03f86a428?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+              background-image: url('men slider 4.jpg');
             ">
           <h3>Get Paid</h3>
         </div>
         <div class="panel" style="
-              background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
+              background-image: url('men slider 3.jpg');
             ">
           <h3>Workout</h3>
         </div>
         <div class="panel" style="
-              background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+              background-image: url('men slider1.jpg');
             ">
           <h3>Be Better</h3>
         </div>
         <div class="panel" style="
-              background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
+              background-image: url('men slider 2.jpg');
             ">
           <h3>Care</h3>
         </div>
       </div>
-<<<<<<< HEAD
-      <div class="cards1">
-        <!-- Card start-->
-        <div class="trending">
-          <h2>Trending</h2>
-        </div>
-        <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-        <!--Card1-->
-        <div class="card1">
-          <!--Card2-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Shirt</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-=======
       <!--Expanding Card End-->
     </div>
     <div class="cards1">
       <!-- Card start-->
       <div class="trending">
-        <h2>Trending</h2>
+        <h2 class="mb-3 fs-2 fw-bold fst-italic">Trending</h2>
       </div>
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <!--Card1-->
         <div class="card-body">
@@ -654,29 +125,11 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card1-->
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <!--Card2-->
-<<<<<<< HEAD
-        <div class="card1">
-          <!--Card3-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-=======
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Shirt</h5>
@@ -685,11 +138,10 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card2-->
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <!--Card3-->
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
@@ -704,307 +156,458 @@
       <!--Card3-->
     </div>
     <!-- Card End-->
-    <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading1">Shirts</h2>
-    </div>
-    <!-- Parallx Card start-->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="men shirt 1.jpg" alt="" />
+    <!-- Nslidercard 1 start-->
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading1">Shirts</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators2"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators2"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators2"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            
+                            src="Kid shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag ">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                          
+                            src="men shirt 1.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="men shirt 1.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="men shirt 2.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="men shirt 2.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="men shirt 4.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="men shirt 2.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="men shirt 3.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="men shirt 4.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="men shirt 5.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="men shirt 1.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- Parallx Card End-->
-    <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading2">Pants</h2>
-    </div>
-    <!-- Parallx Card 2 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Pants/Men Pants 1.jpg" alt="" />
+    <!-- Nslidecard 2 Start -->
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading2">Pants</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators4"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators4"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators4"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Pants/Men Pants 1.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Pants/Men Pants 2.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Pants/Men Pants 3.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Pants/Men Pants 4.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Pants/Men Pants 5.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Pants/Men Pants 6.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Pants/Men Pants 2.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Pants/Men Pants 3.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Pants/Men Pants 4.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Pants/Men Pants 5.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Pants/Men Pants 6.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- Parallx Card 2 End -->
-    <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading3">Shoes</h2>
-    </div>
     <!-- Parallx Card 3 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Shoes/Men shoes 1.jpg" alt="" />
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading3">Shoes</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators5"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators5"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators5"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Shoes/Men shoes 1.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Shoes/Men shoes 2.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Shoes/Men shoes 3.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Shoes/Men shoes 4.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Shoes/Men shoes 5.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Shoes/Men shoes 6.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Shoes/Men shoes 2.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Shoes/Men shoes 3.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Shoes/Men shoes 4.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Shoes/Men shoes 5.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Shoes/Men shoes 6.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- Parallx Card 3 End -->
+      </section>
+    </div>
+<!-- Parallx Card 3 End -->
   </div>
   <!-- Women Start -->
   <div class="Women">
     <div class="feature">
-      <h2>Feature</h2>
+      <h2 class="fs-2 fw-bold fst-italic">Feature</h2>
     </div>
     <div class="slider">
       <div class="container">
@@ -1015,72 +618,34 @@
           <h3>Explore the World</h3>
         </div>
         <div class="panel" style="
-              background-image: url('https://images.unsplash.com/photo-1604156425963-9be03f86a428?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+              background-image: url('women slider 1.jpg');
             ">
           <h3>Get Paid</h3>
         </div>
         <div class="panel" style="
-              background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
+              background-image: url('women slider 2.jpg');
             ">
           <h3>Workout</h3>
         </div>
         <div class="panel" style="
-              background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+              background-image: url('women slider 3.jpg');
             ">
           <h3>Be Better</h3>
         </div>
         <div class="panel" style="
-              background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
+              background-image: url('women slider 4.jpg');
             ">
           <h3>Care</h3>
         </div>
       </div>
-<<<<<<< HEAD
-      <div class="cards1">
-        <!-- Card start-->
-        <div class="trending">
-          <h2>Trending</h2>
-        </div>
-        <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-        <!--Card1-->
-        <div class="card1">
-          <!--Card2-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Shirt</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-=======
       <!--Expanding Card End-->
     </div>
     <div class="cards1">
       <!-- Card start-->
       <div class="trending">
-        <h2>Trending</h2>
+        <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
       </div>
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <!--Card1-->
         <div class="card-body">
@@ -1090,29 +655,11 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card1-->
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <!--Card2-->
-<<<<<<< HEAD
-        <div class="card1">
-          <!--Card3-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-=======
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Shirt</h5>
@@ -1121,11 +668,10 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card2-->
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <!--Card3-->
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
@@ -1140,308 +686,458 @@
       <!--Card3-->
     </div>
     <!-- Card End-->
-    <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading4">Shirts</h2>
-    </div>
     <!-- Parallx Card start-->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading4">Shirts</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators6"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators6"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators6"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Woman shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Woman shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Woman shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Woman shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Woman shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Woman shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Woman shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- Parallx Card End-->
-    <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading5">Pants</h2>
-    </div>
     <!-- Parallx Card 2 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading5">Shirts</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators7"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators7"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators7"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- Parallx Card 2 End -->
-    <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading6">Shoes</h2>
-    </div>
     <!-- Parallx Card 3 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading6">Shoes</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators8"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators8"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators8"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women shoes.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women shoes.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women shoes.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women shoes.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women shoes.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Women shoes.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Women shoes.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- Parallx Card 3 End -->
   </div>
   <!-- Kid Start -->
   <div class="Kid">
     <div class="feature">
-      <h2>Feature</h2>
+      <h2 class="fs-2 fw-bold fst-italic">Feature</h2>
     </div>
     <div class="slider">
       <div class="container">
@@ -1472,52 +1168,14 @@
           <h3>Care</h3>
         </div>
       </div>
-<<<<<<< HEAD
-      <div class="cards1">
-        <!-- Card start-->
-        <div class="trending">
-          <h2>Trending</h2>
-        </div>
-        <div class="card1">
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          /><!--Card1-->
-          <div class="card-body">
-            <h5 class="card-title">Shoe</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-        <!--Card1-->
-        <div class="card1">
-          <!--Card2-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Shirt</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-=======
       <!--Expanding Card End-->
     </div>
     <div class="cards1">
       <!-- Card start-->
       <div class="trending">
-        <h2>Trending</h2>
+        <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
       </div>
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <!--Card1-->
         <div class="card-body">
@@ -1527,29 +1185,11 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card1-->
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <!--Card2-->
-<<<<<<< HEAD
-        <div class="card1">
-          <!--Card3-->
-          <img
-            src="men-s-shoes-clothing-accessories.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pants</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary mx-7">Show Details</a>
-          </div>
-=======
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Shirt</h5>
@@ -1558,11 +1198,10 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         </div>
       </div>
       <!--Card2-->
-      <div class="card1" style="width: 28rem">
+      <div class="card1" style>
         <!--Card3-->
         <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
@@ -1577,308 +1216,452 @@
       <!--Card3-->
     </div>
     <!-- Card End-->
-    <div class="recommend" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading7">Shirts</h2>
-    </div>
     <!-- Parallx Card start-->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading7">Shirts</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators9"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators9"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators9"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shirt.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shirt.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shirt</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- Parallx Card End-->
-    <div class="Pants" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading8">Pants</h2>
-    </div>
     <!-- Parallx Card 2 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading8">Pants</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators11"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators11"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators11"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid pants.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid pants.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Pants</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- Parallx Card 2 End -->
-    <div class="Shoes" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h2 id="scrollspyHeading9">Shoes</h2>
-    </div>
     <!-- Parallx Card 3 Start -->
-    <div class="card2">
-      <div class="multiple-items">
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
+    <div class="nslidecard">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading9">Shoes</h3>
             </div>
-            <div class="card__heading">
-              <span class="small">$120</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
+            <div class="col-6 text-right d-flex justify-content-end">
+              <div class="p-2"> 
+            <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators12"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              </div> 
+              <div class="p-2">
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators12"
+                role="button"
+                data-bs-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators12"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shoe.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shoe.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shoe.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shoe.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shoe.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="Kid shoe.jpg"
+                          />
+                          <div class="card-body justify-content-center
+                              d-flex
+                              flex-column">
+                            <h4 class="card-title">$400</h4>
+                            <p class="card-text itemtag">Shirt</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$300</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$50</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$250</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$70</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div id="card-1" class="card rounded">
-            <div class="card__overlay"></div>
-            <div class="card__image">
-              <img src="Kid shoe.jpg" alt="" />
-            </div>
-            <div class="card__heading">
-              <span class="small">$299</span>
-              <h3>Shoes</h3>
-              <button type="button" class="btn btn-primary">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
-<<<<<<< HEAD
-    <!-- Footer Div -->
-    <div class="footer">
-      <div class="mardiv">
-        <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
-=======
     <!-- Parallx Card 3 End -->
   </div>
 
@@ -1886,7 +1669,6 @@
   <div class="footer">
     <div class="mardiv">
       <marquee behavior="" direction="right" height="40px" class=" text-danger fs-2" width="100%">
->>>>>>> 7cb69e9c6c57441d3df3f12410b1e536b7c44b9f
         <div class="mar">Thank You For Coming To Our Shop</div>
       </marquee>
     </div>
