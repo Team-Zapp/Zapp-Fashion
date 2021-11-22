@@ -17,9 +17,8 @@
 <body>
 
     <script>
-        let AdminName = "<?php echo $_GET["name"] ?>"
+        let AdminName = "<?php echo $_GET["name"] ?>";
     </script>
-
     <div class="row">
         <div class="Torder">
             <p class="head">Total Orders</p>

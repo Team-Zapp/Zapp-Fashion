@@ -218,15 +218,6 @@
     top: 8%;
     left: 4.5%;
   }
-<<<<<<< HEAD
-
-  .footer {
-    bottom: 0;
-    margin-top: 10vh;
-    width: 100%;
-    height: 10vh;
-    background: #000000;
-=======
   .footer {
     margin-top: 30vh;
     position: relative;
@@ -235,6 +226,5 @@
     bottom: 0;
     background: black;
     color: #ffffff;
->>>>>>> b0ff4785daf40d6c3ca7c6fc499da2797ab5f3ea
   }
 }

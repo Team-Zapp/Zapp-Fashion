@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 $(document).ready(function () {
   $.get("../../deflink.html", function (data) {
     $("head").prepend(data);
@@ -39,8 +38,7 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
   });
 
 })
-=======
-$.get("../../def.html", function (data) {
+/*$.get("../../def.html", function (data) {
   $("body").prepend(data);
 });
 // $(document).ready(function () {
@@ -81,8 +79,7 @@ $.get("../../def.html", function (data) {
 //       "http://localhost/Team1/Admin/FeedBack/feedback.php?name=" +
 //         sessionStorage.getItem("AdminName")
 //     );
-// });
->>>>>>> cfa381e920ee88a055105e4e6ac5f18044c38503
+// });*/
 
 var options = {
   series: [
