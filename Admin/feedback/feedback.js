@@ -1,7 +1,40 @@
 $.get("../../def.html", function (data) {
   $("body").prepend(data);
 });
-
+$(document).ready(function () {
+  var count=0;
+  $.ajax({
+    type:'get',
+    url:'getfeedback.php',
+    success :function(data){
+      let json = JSON.parse(data);
+      console.log(json)
+      for (const x of json) {
+        let pfname =x.name
+        pfname = pfname.charAt(0).toUpperCase();
+        count++;
+        $("#feedbackForm").append(`
+        <div class="ProflieAndName">
+        <div class="row">
+        <div class="UserProfile">${pfname}</div>
+            <p class="name">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#name${count}" aria-expanded="false" aria-controls="collapseExample">
+                    ${x.name}
+                </button>
+            </p>
+            </div>
+            <div class="collapse" id="name${count}">
+                <div class="card card-body">
+                    ${x.feedback}
+                </div>
+            </div>
+        </div>
+        `)
+      }
+      
+    }
+  })
+})
 $.get("../../deflink.html", function (data) {
   $("head").prepend(data);
   sessionStorage.setItem("AdminName",AdminName)
