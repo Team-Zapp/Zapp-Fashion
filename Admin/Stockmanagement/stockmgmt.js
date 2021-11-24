@@ -234,7 +234,7 @@ $(document).ready(function () {
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let month = months[d.getMonth()];
     document.getElementById("date").innerHTML = month + "/" + date;
-    document.getElementById("signInTime").innerHTML = hour + ":" + minute;
+
     if (sessionStorage.getItem("AdminName") == "Zay") {
       document.getElementById("adminPic").setAttribute("src", "~Chuky~.jpg")
     }
@@ -250,59 +250,94 @@ $(document).ready(function () {
   });
 
 })
-/*$.get("../../def.html", function (data) {
-  $("body").prepend(data);
-});
-// $(document).ready(function () {
-//   sessionStorage.setItem("AdminName", AdminName);
-//   $("#adminName").text(sessionStorage.getItem("AdminName"));
-//   document
-//     .getElementById("href1")
-//     .setAttribute(
-//       "href",
-//       "http://localhost/Team1/Admin/DashBoard/DashBoard.php?name=" +
-//         sessionStorage.getItem("AdminName")
-//     );
-//   document
-//     .getElementById("href2")
-//     .setAttribute(
-//       "href",
-//       "http://localhost/Team1/Admin/Stockmanagement/stockmanagement.php?name=" +
-//         sessionStorage.getItem("AdminName")
-//     );
-//   document
-//     .getElementById("href3")
-//     .setAttribute(
-//       "href",
-//       "http://localhost/Team1/Admin/CustomerInfo/Customerinfo.php?name=" +
-//         sessionStorage.getItem("AdminName")
-//     );
-//   document
-//     .getElementById("href4")
-//     .setAttribute(
-//       "href",
-//       "http://localhost/Team1/Admin/Transcation/Transcation.php?name=" +
-//         sessionStorage.getItem("AdminName")
-//     );
-//   document
-//     .getElementById("href5")
-//     .setAttribute(
-//       "href",
-//       "http://localhost/Team1/Admin/FeedBack/feedback.php?name=" +
-//         sessionStorage.getItem("AdminName")
-//     );
-// });*/
-
+var stock = [];
+var categories=[];
+$.ajax({
+  type:'get',
+  url:'stock.php',
+  success :function(data){
+    let json = JSON.parse(data);
+    for (const x of json) {
+      stock.push(x.stock)
+      var gender = x.gender;
+      var category = x.category;
+      if(gender=="1") gender="Man"
+      else if(gender=="2") gender="Woman"
+      else if(gender=="3") gender="Kid"
+      if(category=="1") category="Shirt"
+      else if(category=="2") category="Pant"
+      else if(category=="3") category="Shoe"
+      categories.push(category +"("+gender+")")
+    }
+console.log(categories)
 var options = {
+  series: [
+    {
+      name: "Total Stock",
+      data: stock,
+    }
+  ],
+  chart: {
+    type: "bar",
+    height: 350,
+    toolbar: {
+      show: false
+      }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "55%",
+      endingShape: "rounded",
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  title: {
+    text: "Remain Stock",
+    align: "center",
+    style: {
+      fontSize:  '20px'
+    }
+  },
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ["transparent"],
+  },
+  xaxis: {
+    categories: categories,
+  },
+  yaxis: {
+    title: {
+      text: "InStock",
+    },
+  },
+  fill: {
+    opacity: 1,
+  },
+  tooltip: {
+    y: {
+      formatter: function (val) {
+        return   val ;
+      },
+    },
+  },
+};
+
+var chart = new ApexCharts(document.getElementById("chart"), options);
+chart.render();
+
+  }
+})
+/*var options = {
   series: [
     {
       name: "Remain Stock",
       data: [80, 55, 57, 56, 61, 58, 63, 60, 66, 11],
-    },
-    {
-      name: "Total Stock",
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94, 24],
-    },
+    }
+
   ],
   chart: {
     type: "bar",
@@ -355,4 +390,4 @@ var options = {
 };
 
 var chart = new ApexCharts(document.getElementById("chart"), options);
-chart.render();
+chart.render();*/

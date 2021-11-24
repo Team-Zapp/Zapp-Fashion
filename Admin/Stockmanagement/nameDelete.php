@@ -8,6 +8,7 @@ $dbconnect = $db->connect();
 
 $sql = $dbconnect->prepare(
     "UPDATE stock_mgmt SET 
+                stock =0,
                 del_flag =1
                 WHERE id=:id;
             "
