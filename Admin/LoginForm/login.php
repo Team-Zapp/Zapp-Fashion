@@ -8,10 +8,13 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="shortcut icon" href="Logo 2.png" type="image/x-icon" />
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<script src="jquery.js"></script>
 	<script src="script.js" defer></script>
-	<title>Document</title>
+	<title>Login Form</title>
 </head>
 
 <body>
@@ -35,17 +38,21 @@
 				<div class="login-show">
 					<h2 class="form_head">Sign in</h2>
 
-					<input type="text" name="Username" placeholder="Username" required>
-					<input type="password" name="Password" placeholder="Password" required>
-					<input class="loginbtn" type="submit" name="submit" value="Login">
+					<input type="text" name="Username" placeholder="Username" id="username" required>
+
+					<input type="password" name="Password" placeholder="Password" id="userpassword" required>
+					<ion-icon name="eye-off-outline" id="icon"></ion-icon>
+
+
+					<input class="loginbtn" type="submit" name="submit" value="Login" id="submit">
 
 					<a href="ForgetPassword.php">Forgot password?</a>
-					<span class="checkbox"><input type="checkbox" name="remember-me" id="rememberme" />
+					<span class="checkbox"><input type="checkbox" name="remember-me" id="rememberme" onchange="remember()" />
 						Remember Me</span>
 					<div class="login-div">
-						<span class="login-links"><a href="www.gmail.com" class="login-photo"><img class="googleimg" src="Google Logo.png" alt="" srcset=""></a></span>
-						<span class="login-links"><a href="www.facebook.com" class="login-photo"><img class="fbimg" src="Facebook Logo.png" alt="" /></a></span>
-						<span class="login-links"><a href="www.twitter.com" class="login-photo"><img class="twitimg" src="Twitter Logo.png" alt="" /></a></span>
+						<span class="login-links"><a href="google.php" class="login-photo"><img class="googleimg" src="Google Logo.png" alt="" srcset=""></a></span>
+						<span class="login-links"><a href="https://www.facebook.com/" class="login-photo"><img class="fbimg" src="Facebook Logo.png" alt="" /></a></span>
+						<span class="login-links"><a href="https://twitter.com/i/flow/login" class="login-photo"><img class="twitimg" src="Twitter Logo.png" alt="" /></a></span>
 					</div>
 				</div>
 		</form>
@@ -55,7 +62,8 @@
 				<input type="text" name="name" placeholder="Name" required>
 				<input type="text" name="email" placeholder="Email" required>
 				<input type="text" name="phnumber" placeholder="Phone Number" required>
-				<input type="password" name="password" placeholder="Password" required>
+				<input type="password" name="password" placeholder="Password" id="newaccpassword" required>
+				<ion-icon name="eye-off-outline" id="icon2"></ion-icon>
 				<input type="submit" name="submit" value="Register">
 			</div>
 		</form>

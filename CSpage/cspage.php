@@ -10,12 +10,16 @@
   
   <script src="jquery.js"></script>
   <script src="script.js" defer></script>
+<<<<<<< HEAD
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
     />
+=======
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" />
+>>>>>>> 0fef228e3accec5a358d686c305fbe7f74c694d7
   <title>Zapp Fashion</title>
 </head>
 
@@ -74,6 +78,7 @@
     <!--FixedBar END-->
   </div>
   <!-- Home Start -->
+<<<<<<< HEAD
   <div class="Home">
             <div class="slider homeslide" id="scrollspyHeadinghome">
                 <div class="homemainslide homeslide">
@@ -273,6 +278,11 @@
                 </p>
             </div>
         </div>
+=======
+  <div class="home">
+
+  </div>
+>>>>>>> 0fef228e3accec5a358d686c305fbe7f74c694d7
   <!--Home End -->
   <div class="Men">
     <div class="feature">
@@ -364,43 +374,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading1">Shirts</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators2"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators2"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators2"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            
-                            src="Kid shirt.jpg"
-                          />
+                          <img class="img-fluid" src="Kid shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -412,11 +404,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                          
-                            src="men shirt 1.jpg"
-                          />
+                          <img class="img-fluid" src="men shirt 1.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -428,11 +416,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="men shirt 1.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="men shirt 1.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -448,11 +432,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="men shirt 2.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="men shirt 2.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -464,11 +444,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="men shirt 2.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="men shirt 2.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -480,11 +456,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="men shirt 4.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="men shirt 4.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -513,43 +485,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading2">Pants</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators4"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators4"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators4" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators4" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators4"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Pants/Men Pants 1.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Pants/Men Pants 1.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -561,11 +515,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Pants/Men Pants 2.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Pants/Men Pants 2.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -577,11 +527,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Pants/Men Pants 3.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Pants/Men Pants 3.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -597,11 +543,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Pants/Men Pants 4.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Pants/Men Pants 4.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -613,11 +555,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Pants/Men Pants 5.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Pants/Men Pants 5.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -629,11 +567,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Pants/Men Pants 6.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Pants/Men Pants 6.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -662,43 +596,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading3">Shoes</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators5"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators5"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators5" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators5" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators5"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Shoes/Men shoes 1.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Shoes/Men shoes 1.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -710,11 +626,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Shoes/Men shoes 2.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Shoes/Men shoes 2.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -726,11 +638,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Shoes/Men shoes 3.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Shoes/Men shoes 3.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -746,11 +654,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Shoes/Men shoes 4.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Shoes/Men shoes 4.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -762,11 +666,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Shoes/Men shoes 5.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Shoes/Men shoes 5.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -778,11 +678,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Shoes/Men shoes 6.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Shoes/Men shoes 6.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -801,7 +697,7 @@
         </div>
       </section>
     </div>
-<!-- Parallx Card 3 End -->
+    <!-- Parallx Card 3 End -->
   </div>
   <!-- Women Start -->
   <div class="Women">
@@ -894,43 +790,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading4">Shirts</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators6"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators6"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators6" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators6" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators6"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Woman shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Woman shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -942,11 +820,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Woman shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Woman shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -958,11 +832,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Woman shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Woman shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -978,11 +848,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Woman shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Woman shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -994,11 +860,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Woman shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Woman shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1010,11 +872,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Woman shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Woman shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1043,43 +901,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading5">Shirts</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators7"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators7"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators7" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators7" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators7"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1091,11 +931,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1107,11 +943,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1127,11 +959,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1143,11 +971,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1159,11 +983,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1192,43 +1012,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading6">Shoes</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators8"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators8"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators8" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators8" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators8"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators8" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women shoes.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1240,11 +1042,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women shoes.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1256,11 +1054,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women shoes.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1276,11 +1070,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women shoes.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1292,11 +1082,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women shoes.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1308,11 +1094,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Women shoes.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1424,43 +1206,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading7">Shirts</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators9"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators9"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators9" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators9" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators9"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators9" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1472,11 +1236,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1488,11 +1248,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1508,11 +1264,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1524,11 +1276,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1540,11 +1288,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shirt.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1573,43 +1317,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading8">Pants</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators11"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators11"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators11" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators11" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators11"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators11" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1621,11 +1347,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1637,11 +1359,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1657,11 +1375,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1673,11 +1387,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1689,11 +1399,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid pants.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1722,43 +1428,25 @@
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading9">Shoes</h3>
             </div>
             <div class="col-6 text-right d-flex justify-content-end">
-              <div class="p-2"> 
-            <a
-                class="btn btn-primary mb-3 mr-1"
-                href="#carouselExampleIndicators12"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <i class="fa fa-arrow-left"></i>
-              </a>
-              </div> 
               <div class="p-2">
-              <a
-                class="btn btn-primary mb-3"
-                href="#carouselExampleIndicators12"
-                role="button"
-                data-bs-slide="next"
-              >
-                <i class="fa fa-arrow-right"></i>
-              </a>
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators12" role="button" data-bs-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicators12" role="button" data-bs-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div class="col-12">
-              <div
-                id="carouselExampleIndicators12"
-                class="carousel slide"
-                data-ride="carousel"
-              >
+              <div id="carouselExampleIndicators12" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shoe.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1770,11 +1458,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shoe.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1786,11 +1470,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shoe.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1806,11 +1486,7 @@
                     <div class="row">
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shoe.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1822,11 +1498,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shoe.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
@@ -1838,11 +1510,7 @@
                       </div>
                       <div class="col-md-4 mb-3">
                         <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="Kid shoe.jpg"
-                          />
+                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">

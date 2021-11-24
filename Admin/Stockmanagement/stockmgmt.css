@@ -68,14 +68,38 @@ input[type="submit"] {
 }
 .subbtn {
   margin-left: 66%;
+  margin-top: 26%;
+  position: absolute;
+  margin-top: 40vh;
+  width: 8vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .delbth {
   margin-right: 66%;
+  margin-top: 21%;
+  position: absolute;
+  width: 8vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .update {
   margin-left: 46%;
+  margin-top: 21%;
+  position: absolute;
+  width: 8vw;
+  height: 6vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type="text"] {
@@ -127,4 +151,27 @@ span {
   width: 100%;
   height: 5vh;
   background: #000000;
+}
+
+.update {
+  background-color: rgb(90, 90, 90);
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+}
+.delbth {
+  background-color: rgb(95, 95, 95);
+  color: white;
+  visibility: hidden;
+}
+.update_act {
+  background-color: rgb(6, 167, 0);
+  cursor: pointer;
+  color: rgb(31, 1, 1);
+  visibility: visible;
+}
+.delbth_act {
+  background-color: rgb(168, 0, 0);
+  cursor: pointer;
+  color: white;
+  visibility: visible;
 }

@@ -1,5 +1,85 @@
 
+var stock = [];
+var categories=[];
 $(document).ready(function () {
+//to get remain stock
+
+
+$.ajax({
+  type:'get',
+  url:'stock.php',
+  success :function(data){
+    let json = JSON.parse(data);
+    for (const x of json) {
+      stock.push(x.stock)
+      var gender = x.gender;
+      var category = x.category;
+      if(gender=="1") gender="Man"
+      else if(gender=="2") gender="Woman"
+      else if(gender=="3") gender="Kid"
+      if(category=="1") category="Shirt"
+      else if(category=="2") category="Pant"
+      else if(category=="3") category="Shoe"
+      categories.push(category +"("+gender+")")
+    }
+console.log(categories)
+var options = {
+  series: [
+    {
+      name: "Total Stock",
+      data: stock,
+    }
+  ],
+  chart: {
+    type: "bar",
+    height: 350,
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "55%",
+      endingShape: "rounded",
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  title: {
+    text: "Remain Stock",
+    align: "left",
+  },
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ["transparent"],
+  },
+  xaxis: {
+    categories: categories,
+  },
+  yaxis: {
+    title: {
+      text: "InStock",
+    },
+  },
+  fill: {
+    opacity: 1,
+  },
+  tooltip: {
+    y: {
+      formatter: function (val) {
+        return   val ;
+      },
+    },
+  },
+};
+
+var chart = new ApexCharts(document.getElementById("chart"), options);
+chart.render();
+
+  }
+})
+
+})
 
   $.get("../../deflink.html", function (data) {
     $("head").prepend(data);
@@ -9,7 +89,6 @@ $(document).ready(function () {
     $("body").prepend(data);
     sessionStorage.setItem("AdminName",AdminName)
     $("#adminName").text(sessionStorage.getItem("AdminName"))
-    document.getElementById("href1").setAttribute("href","../DashBoard/DashBoard.php?name="+sessionStorage.getItem("AdminName") )
     document.getElementById("href2").setAttribute("href","../Stockmanagement/stockmanagement.php?name="+sessionStorage.getItem("AdminName") )
     document.getElementById("href3").setAttribute("href","../CustomerInfo/Customerinfo.php?name="+sessionStorage.getItem("AdminName") )
     document.getElementById("href4").setAttribute("href","../Transcation/Transcation.php?name="+sessionStorage.getItem("AdminName") )
@@ -43,28 +122,20 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
     url:'search.php',
     success :function(data){
       let json = JSON.parse(data);
-      console.log(json)
+
       $("#visit").text(json)
     }
   })
-})
+
 
 
 //firts chart
-var options = {
+/*var options = {
   series: [
     {
       name: "Net Profit",
-      data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
-    },
-    {
-      name: "Revenue",
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
-    },
-    {
-      name: "Free Cash Flow",
-      data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
-    },
+      data: stock,
+    }
   ],
   chart: {
     type: "bar",
@@ -90,7 +161,7 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: ["Shirt","Pant","Shoe"],
   },
   yaxis: {
     title: {
@@ -110,7 +181,7 @@ var options = {
 };
 
 var chart = new ApexCharts(document.getElementById("chart"), options);
-chart.render();
+chart.render();*/
 
 //second chart
 var options = {

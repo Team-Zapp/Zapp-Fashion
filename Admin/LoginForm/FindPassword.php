@@ -8,10 +8,11 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="Logo 2.png" type="image/x-icon" />
     <link rel="stylesheet" href="forget.css">
     <script src="jquery.js"></script>
     <script src="FindPassword.js" defer></script>
-    <title>Document</title>
+    <title>Forgot password</title>
 </head>
 
 <body>
