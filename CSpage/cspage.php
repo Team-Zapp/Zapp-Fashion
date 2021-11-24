@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="Logo 2.png" type="image/x-icon" />
+  
   <script src="jquery.js"></script>
   <script src="script.js" defer></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
@@ -71,9 +74,205 @@
     <!--FixedBar END-->
   </div>
   <!-- Home Start -->
-  <div class="home">
-    
-  </div>
+  <div class="Home">
+            <div class="slider homeslide" id="scrollspyHeadinghome">
+                <div class="homemainslide homeslide">
+                    <!-- slider start -->
+                    <div class="fnc-slider example-slider">
+                        <div class="fnc-slider__slides">
+                            <!-- slide start -->
+                            <div class="fnc-slide m--blend-green m--active-slide">
+                                <div class="fnc-slide__inner">
+                                    <div class="fnc-slide__mask">
+                                        <div class="fnc-slide__mask-inner"></div>
+                                    </div>
+                                    <div class="fnc-slide__content">
+                                        <h2 class="fnc-slide__heading">
+                                            <div class="fnc-slide__heading-line">
+                                                <span>New </span>
+                                            </div>
+                                            <div class="fnc-slide__heading-line">
+                                                <span>Normal</span>
+                                            </div>
+                                        </h2>
+                                        <button type="button" class="fnc-slide__action-btn">
+                                            <a href="#aboutuswords">About Us
+
+                                                <span data-text="About Us">About Us</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide end -->
+                            <!-- slide start -->
+                            <div class="fnc-slide m--blend-dark">
+                                <div class="fnc-slide__inner">
+                                    <div class="fnc-slide__mask">
+                                        <div class="fnc-slide__mask-inner"></div>
+                                    </div>
+                                    <div class="fnc-slide__content">
+                                        <h2 class="fnc-slide__heading">
+                                            <div class="fnc-slide__heading-line">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="fnc-slide__heading-line">
+                                                <span>Designs</span>
+                                            </div>
+                                        </h2>
+                                        <button type="button" class="fnc-slide__action-btn">
+                                            <a href="#aboutuswords">About Us
+
+                                                <span data-text="About Us">About Us</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide end -->
+                            <!-- slide start -->
+                            <div class="fnc-slide m--blend-red">
+                                <div class="fnc-slide__inner">
+                                    <div class="fnc-slide__mask">
+                                        <div class="fnc-slide__mask-inner"></div>
+                                    </div>
+                                    <div class="fnc-slide__content">
+                                        <h2 class="fnc-slide__heading">
+                                            <div class="fnc-slide__heading-line">
+                                                <span>Fresh</span>
+                                            </div>
+                                            <div class="fnc-slide__heading-line">
+                                                <span>Night Out</span>
+                                            </div>
+                                        </h2>
+                                        <button type="button" class="fnc-slide__action-btn">
+                                            <a href="#aboutuswords">About Us
+
+                                                <span data-text="About Us">About Us</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide end -->
+                            <!-- slide start -->
+                            <div class="fnc-slide m--blend-blue">
+                                <div class="fnc-slide__inner">
+                                    <div class="fnc-slide__mask">
+                                        <div class="fnc-slide__mask-inner"></div>
+                                    </div>
+                                    <div class="fnc-slide__content">
+                                        <h2 class="fnc-slide__heading">
+                                            <div class="fnc-slide__heading-line">
+                                                <span>Not Only</span>
+                                            </div>
+                                            <div class="fnc-slide__heading-line">
+                                                <span>Adault</span>
+                                            </div>
+                                        </h2>
+                                        <button type="button" class="fnc-slide__action-btn"><a
+                                                href="#aboutuswords">About Us
+
+                                                <span data-text="About Us">About Us</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide end -->
+                        </div>
+                        <nav class="fnc-nav">
+                            <div class="fnc-nav__bgs">
+                                <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                                <div class="fnc-nav__bg m--navbg-dark"></div>
+                                <div class="fnc-nav__bg m--navbg-red"></div>
+                                <div class="fnc-nav__bg m--navbg-blue"></div>
+                            </div>
+                            <div class="fnc-nav__controls">
+                                <button class="fnc-nav__control">
+                                    New Normal
+                                    <span class="fnc-nav__control-progress"></span>
+                                </button>
+                                <button class="fnc-nav__control">
+                                    New Designs
+                                    <span class="fnc-nav__control-progress"></span>
+                                </button>
+                                <button class="fnc-nav__control">
+                                    Fresh Night Out
+                                    <span class="fnc-nav__control-progress"></span>
+                                </button>
+                                <button class="fnc-nav__control">
+                                    Not only Adault
+                                    <span class="fnc-nav__control-progress"></span>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- home words -->
+            <div class="homewords" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <h3 class="homehead">Clothing & Shoes</h3>
+                <p class="homep">As a creator, you look for ways to excel and express yourself when and where you
+                    can, from
+                    reaching for that last rep to evolving your streetwear style. Log miles or tear down the
+                    baseline in
+                    shoes with responsive cushioning. Rep an athletic style off the field in lifestyle apparel born
+                    of sport
+                    heritage. From athletes to streetwear enthusiasts, zapp clothing and shoes exist to let you go
+                    harder,
+                    dig deeper, and get the most out of yourself, from the pitch to the street to the road less
+                    traveled.
+                </p>
+            </div>
+            <!-- Home slider -->
+            <div class=" hmslider1">
+                <div class="card hmcard2" style="width: 30vw;" data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="700">
+                    <img src="dave-goudreau-rsphsaAROz0-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body hmslide1body">
+                        <a href="#" class="btn btn-primary hmslidebt">Shop Now</a>
+                    </div>
+                </div>
+                <div class="homeslider1_text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                    <p>What you wear is how you present yourself to the world, especially today, when human contacts
+                        are so quick. Fashion is instant language.</p>
+                    <p class="quotewr1">—Miuccia Prada</p>
+                </div>
+            </div>
+
+            <div class=" hmslider2">
+                <div class="homeslider2_text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                    <p>Whoever said that money can't buy happiness, simply didn't know where to go shopping.</p>
+                    <p class="quotewr2">—Bo Derek</p>
+                </div>
+                <div class="card hmcard2" style="width: 30vw;" data-aos="fade-left" data-aos-easing="linear"
+                    data-aos-duration="700">
+                    <img src="homeslide2.jpg" class="card-img-top hmcard2" alt="...">
+                    <div class="card-body hmslide2body">
+                        <a href="#" class="btn btn-primary hmslidebt">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboutuswords" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
+                id="aboutuswords">
+                <h3 class="homehead">About Us</h3>
+                <p class="homep">
+                    Welcome to <b>ZAPP</b>, your number one source for all Shirts, Pants & Shoes.
+                    We're dedicated to giving you the very best of products, with a focus on three characteristics,
+                    dependability, customer service and uniqueness.
+                    Founded in [2021] by Zar,Zay,Phuu & Zaw. <b>ZAPP</b> has come a long way from its beginnings in a
+                    Yanong home office. When we first started out,
+                    we passion for providing the
+                    best trending equipment for all customers. We now
+                    serve customers all over the Myanmar area, and are thrilled to be a part
+                    of the eco-friendly wing of the fashion industry.
+                </p>
+                <p class="homep">
+                    We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions
+                    or
+                    comments, please don't hesitate to contact us.
+                </p>
+            </div>
+        </div>
   <!--Home End -->
   <div class="Men">
     <div class="feature">
@@ -205,8 +404,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title Mshirtprice">$400</h4>
-                            <p class="card-text Mshirtname itemtag ">Shirt</p>
+                            <h4 class="card-title Mshirtprice" id="Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag " id="Mshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -221,8 +420,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title Mshirtprice">$400</h4>
-                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <h4 class="card-title Mshirtprice" id="Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag" id="Mshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -237,8 +436,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title Mshirtprice">$400</h4>
-                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <h4 class="card-title Mshirtprice" id="Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag" id="Mshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -257,8 +456,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title Mshirtprice">$400</h4>
-                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <h4 class="card-title Mshirtprice" id="Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag" id="Mshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -273,8 +472,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title Mshirtprice">$400</h4>
-                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <h4 class="card-title Mshirtprice" id="Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag" id="Mshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -289,8 +488,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title Mshirtprice">$400</h4>
-                            <p class="card-text Mshirtname itemtag">Shirt</p>
+                            <h4 class="card-title Mshirtprice" id="Mshirtprice">$400</h4>
+                            <p class="card-text Mshirtname itemtag" id="Mshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -354,8 +553,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mpantprice" id="Mpantprice">$400</h4>
+                            <p class="card-text itemtag Mpantname" id="Mpantname">Pants</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -370,8 +569,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mpantprice" id="Mpantprice">$400</h4>
+                            <p class="card-text itemtag Mpantname" id="Mpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -386,8 +585,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mpantprice" id="Mpantprice">$400</h4>
+                            <p class="card-text itemtag Mpantname"id="Mpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -406,8 +605,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mpantprice" id="Mpantprice">$400</h4>
+                            <p class="card-text itemtag Mpantname" id="Mpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -422,8 +621,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mpantprice" id="Mpantprice">$400</h4>
+                            <p class="card-text itemtag Mpantname" id="Mpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -438,8 +637,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mpantprice" id="Mpantprice">$400</h4>
+                            <p class="card-text itemtag Mpantname" id="Mpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -503,8 +702,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mshoeprice" id="Mshoeprice">$400</h4>
+                            <p class="card-text itemtag Mshoename"  id="Mshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -519,8 +718,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mshoeprice"  id="Mshoeprice">$400</h4>
+                            <p class="card-text itemtag Mshoename"  id="Mshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -535,8 +734,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mshoeprice"  id="Mshoeprice">$400</h4>
+                            <p class="card-text itemtag Mshoename"  id="Mshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -555,8 +754,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mshoeprice"  id="Mshoeprice">$400</h4>
+                            <p class="card-text itemtag Mshoename"  id="Mshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -571,8 +770,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mshoeprice"  id="Mshoeprice">$400</h4>
+                            <p class="card-text itemtag Mshoename"  id="Mshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -587,8 +786,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Mshoeprice"  id="Mshoeprice">$400</h4>
+                            <p class="card-text itemtag Mshoename"  id="Mshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -735,8 +934,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshirtprice" id="Wshirtprice">$400</h4>
+                            <p class="card-text itemtag Wshirtname" id="Wshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -751,8 +950,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshirtprice" id="Wshirtprice">$400</h4>
+                            <p class="card-text itemtag Wshirtname" id="Wshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -767,8 +966,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshirtprice" id="Wshirtprice">$400</h4>
+                            <p class="card-text itemtag Wshirtname" id="Wshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -787,8 +986,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshirtprice" id="Wshirtprice">$400</h4>
+                            <p class="card-text itemtag Wshirtname" id="Wshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -803,8 +1002,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshirtprice" id="Wshirtprice">$400</h4>
+                            <p class="card-text itemtag Wshirtname" id="Wshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -819,8 +1018,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshirtprice" id="Wshirtprice">$400</h4>
+                            <p class="card-text itemtag Wshirtname" id="Wshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -884,8 +1083,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wpantprice" id="Wpantprice">$400</h4>
+                            <p class="card-text itemtag Wpantname" id="Wpantname">Pants</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -900,8 +1099,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wpantprice" id="Wpantprice">$400</h4>
+                            <p class="card-text itemtag Wpantname" id="Wpantname">pant</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -916,8 +1115,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wpantprice" id="Wpantprice">$400</h4>
+                            <p class="card-text itemtag Wpantname" id="Wpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -936,8 +1135,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wpantprice" id="Wpantprice">$400</h4>
+                            <p class="card-text itemtag Wpantname" id="Wpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -952,8 +1151,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wpantprice" id="Wpantprice">$400</h4>
+                            <p class="card-text itemtag Wpantname" id="Wpantname">Pant</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -968,8 +1167,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wpantprice" id="Wpantprice">$400</h4>
+                            <p class="card-text itemtag Wpantname" id="Wpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1033,8 +1232,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
+                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1049,8 +1248,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
+                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1065,8 +1264,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
+                            <p class="card-text itemtag Wshoename" id="Wshoename">Shoe</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1085,8 +1284,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
+                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1101,8 +1300,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
+                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1117,8 +1316,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
+                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1265,8 +1464,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
+                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1281,8 +1480,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
+                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1297,8 +1496,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
+                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1317,8 +1516,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
+                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1333,8 +1532,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
+                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1349,8 +1548,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
+                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1414,8 +1613,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
+                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1430,8 +1629,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
+                            <p class="card-text itemtag Kpantname" id="Kpantname">pant</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1446,8 +1645,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
+                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1466,8 +1665,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
+                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1498,8 +1697,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
+                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1563,8 +1762,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
+                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1579,8 +1778,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
+                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1595,8 +1794,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
+                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1615,8 +1814,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
+                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1631,8 +1830,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
+                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1647,8 +1846,8 @@
                           <div class="card-body justify-content-center
                               d-flex
                               flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
+                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
+                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                           </div>
                         </div>
@@ -1683,6 +1882,9 @@
       Copyrightt <span>&#169;</span>ZappFashion
     </p>
   </div>
+  <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

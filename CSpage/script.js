@@ -1,7 +1,7 @@
 //ready
 
 $(document).ready(function () {
-  $.get("../cslinks.html", function (data) {
+  $.get("cslinks.html", function (data) {
     $("head").prepend(data);
   });
   $.ajax({
@@ -10,13 +10,83 @@ $(document).ready(function () {
     success: function (data) {
       let Mdata = JSON.parse(data);
       console.log(Mdata);
+      //Men Variable
+      var MS = 0;
+      var MSH = 0;
+      var MP = 0;
       var Mshirtprice = document.getElementsByClassName("Mshirtprice");
       var Mshirtname = document.getElementsByClassName("Mshirtname");
-      var M = 0;
+      var Mshoeprice = document.getElementsByClassName("Mshoeprice");
+      var Mshoename = document.getElementsByClassName("Mshoename");
+      var Mpantprice = document.getElementsByClassName("Mpantprice");
+      var Mpantname = document.getElementsByClassName("Mpantname");
+      //Women Variable
+      var WS = 0;
+      var WSH = 0;
+      var WP = 0;
+      var Wpantprice = document.getElementsByClassName("Wpantprice");
+      var Wpantname = document.getElementsByClassName("Wpantname");
+      var Wshirtprice = document.getElementsByClassName("Wshirtprice");
+      var Wshirtname = document.getElementsByClassName("Wshirtname");
+      var Wshoeprice = document.getElementsByClassName("Wshoeprice");
+      var Wshoename = document.getElementsByClassName("Wshoename");
+      //Kid Variable
+      var KS = 0;
+      var KSH = 0;
+      var KP = 0;
+      var Kpantprice = document.getElementsByClassName("Kpantprice");
+      var Kpantname = document.getElementsByClassName("Kpantname");
+      var Kshirtprice = document.getElementsByClassName("Kshirtprice");
+      var Kshirtname = document.getElementsByClassName("Kshirtname");
+      var Kshoeprice = document.getElementsByClassName("Kshoeprice");
+      var Kshoename = document.getElementsByClassName("Kshoename");
+
       for (const iterator of Mdata) {
-        Mshirtprice[M].innerHTML = `${iterator.saleprice}$`;
-        Mshirtname[M].innerHTML = `${iterator.name}`;
-        M++;
+        if (iterator.gender == "1") {
+          if (iterator.category == "1") {
+            Mshirtprice[MS].innerHTML = `${iterator.saleprice}$`;
+            Mshirtname[MS].innerHTML = `${iterator.name}`;
+            MS++;
+          } else if (iterator.category == "2") {
+            Mpantprice[MP].innerHTML = `${iterator.saleprice}$`;
+            Mpantname[MP].innerHTML = `${iterator.name}`;
+            MP++;
+          } else if (iterator.category == "3") {
+            Mshoeprice[MSH].innerHTML = `${iterator.saleprice}$`;
+            Mshoename[MSH].innerHTML = `${iterator.name}`;
+            MSH++;
+          }
+        }
+        if (iterator.gender == "2") {
+          if (iterator.category == "1") {
+            Wshirtprice[WS].innerHTML = `${iterator.saleprice}$`;
+            Wshirtname[WS].innerHTML = `${iterator.name}`;
+            WS++;
+          } else if (iterator.category == "2") {
+            Wpantprice[WP].innerHTML = `${iterator.saleprice}$`;
+            Wpantname[WP].innerHTML = `${iterator.name}`;
+            WP++;
+          } else if (iterator.category == "3") {
+            Wshoeprice[WSH].innerHTML = `${iterator.saleprice}$`;
+            Wshoename[WSH].innerHTML = `${iterator.name}`;
+            WSH++;
+          }
+        }
+        if (iterator.gender == "3") {
+          if (iterator.category == "1") {
+            Kshirtprice[KS].innerHTML = `${iterator.saleprice}$`;
+            Kshirtname[KS].innerHTML = `${iterator.name}`;
+            KS++;
+          } else if (iterator.category == "2") {
+            Kpantprice[KP].innerHTML = `${iterator.saleprice}$`;
+            Kpantname[KP].innerHTML = `${iterator.name}`;
+            KP++;
+          } else if (iterator.category == "3") {
+            Kshoeprice[KSH].innerHTML = `${iterator.saleprice}$`;
+            Kshoename[KSH].innerHTML = `${iterator.name}`;
+            KSH++;
+          }
+        }
       }
     },
   });
@@ -66,7 +136,7 @@ function remveActiveClasses() {
 
 $(".manbtn").click(function () {
   $(".Women").css("display", "none");
-  $(".home").css("display", "none");
+  $(".Home").css("display", "none");
   $(".Kid").css("display", "none");
   $(".Men").css("display", "block");
   $(".tag").text("MEN");
@@ -77,7 +147,7 @@ $(".manbtn").click(function () {
 
 $(".kidbtn").click(function () {
   $(".Women").css("display", "none");
-  $(".home").css("display", "none");
+  $(".Home").css("display", "none");
   $(".Kid").css("display", "block");
   $(".Men").css("display", "none");
   $(".tag").text("KID");
@@ -90,7 +160,7 @@ $(".womanbtn").click(function () {
   $(".Women").css("display", "block");
   $(".Kid").css("display", "none");
   $(".Men").css("display", "none");
-  $(".home").css("display", "none");
+  $(".Home").css("display", "none");
   $(".tag").text("WOMEN");
   document.getElementById("shirt").href = "#scrollspyHeading4";
   document.getElementById("pants").href = "#scrollspyHeading5";
@@ -101,7 +171,7 @@ $(".homebtn").click(function () {
   $(".Women").css("display", "none");
   $(".Kid").css("display", "none");
   $(".Men").css("display", "none");
-  $(".home").css("display", "block");
+  $(".Home").css("display", "block");
   $(".tag").text("HOME");
   document.getElementById("shirt").href = "#scrollspyHeading10";
   document.getElementById("pants").href = "#scrollspyHeading11";
@@ -109,7 +179,7 @@ $(".homebtn").click(function () {
 });
 
 // HOME PAGE JS
-
+// HOME PAGE JS
 (function () {
   var $$ = function (selector, context) {
     var context = context || document;
@@ -279,36 +349,8 @@ $(".homebtn").click(function () {
   window.fncSlider = fncSlider;
 })();
 
-/* not part of the slider scripts */
+// Homeslide
 
-/* Slider initialization
-options:
-autoSliding - boolean
-autoSlidingDelay - delay in ms. If audoSliding is on and no value provided, default value is 5000
-blockASafterClick - boolean. If user clicked any sliding control, autosliding won't start again
-*/
 fncSlider(".example-slider", { autoSlidingDelay: 4000 });
 
-var $demoCont = document.querySelector(".demo-cont");
-
-[].slice
-  .call(document.querySelectorAll(".fnc-slide__action-btn"))
-  .forEach(function ($btn) {
-    $btn.addEventListener("click", function () {
-      $demoCont.classList.toggle("credits-active");
-    });
-  });
-
-document
-  .querySelector(".demo-cont__credits-close")
-  .addEventListener("click", function () {
-    $demoCont.classList.remove("credits-active");
-  });
-
-document
-  .querySelector(".js-activate-global-blending")
-  .addEventListener("click", function () {
-    document
-      .querySelector(".example-slider")
-      .classList.toggle("m--global-blending-active");
-  });
+var $demoCont = document.querySelector(".homemainslide");
