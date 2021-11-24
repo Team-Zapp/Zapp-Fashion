@@ -20,7 +20,7 @@ $.get("../../deflink.html", function (data) {
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   let month = months[d.getMonth()];
   document.getElementById("date").innerHTML=month +"/" + date ;
-  document.getElementById("signInTime").innerHTML=hour +":"+minute;
+
   if (sessionStorage.getItem("AdminName")=="Zay"){
     document.getElementById("adminPic").setAttribute("src","~Chuky~.jpg")
   }

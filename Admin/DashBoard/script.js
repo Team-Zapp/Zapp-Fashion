@@ -33,6 +33,9 @@ var options = {
   chart: {
     type: "bar",
     height: 350,
+    toolbar: {
+      show: false
+      }
   },
   plotOptions: {
     bar: {
@@ -47,6 +50,9 @@ var options = {
   title: {
     text: "Remain Stock",
     align: "left",
+    style: {
+      fontSize:  '20px'
+    }
   },
   stroke: {
     show: true,
@@ -102,7 +108,7 @@ localStorage.setItem("LastSigninTime",hour +":"+minute)
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let month = months[d.getMonth()];
 document.getElementById("date").innerHTML=month +"/" + date ;
-document.getElementById("signInTime").innerHTML=hour +":"+minute ;
+
 if (sessionStorage.getItem("AdminName")=="Zay"){
   document.getElementById("adminPic").setAttribute("src","~Chuky~.jpg")
 }
@@ -197,6 +203,9 @@ var options = {
     zoom: {
       enabled: false,
     },
+    toolbar: {
+      show: false
+      }
   },
   dataLabels: {
     enabled: false,
@@ -207,6 +216,9 @@ var options = {
   title: {
     text: "Earning",
     align: "left",
+        style: {
+      fontSize:  '20px'
+    }
   },
   grid: {
     row: {
