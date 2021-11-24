@@ -10,16 +10,12 @@
   
   <script src="jquery.js"></script>
   <script src="script.js" defer></script>
-<<<<<<< HEAD
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
     />
-=======
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" />
->>>>>>> 0fef228e3accec5a358d686c305fbe7f74c694d7
   <title>Zapp Fashion</title>
 </head>
 
@@ -78,7 +74,6 @@
     <!--FixedBar END-->
   </div>
   <!-- Home Start -->
-<<<<<<< HEAD
   <div class="Home">
             <div class="slider homeslide" id="scrollspyHeadinghome">
                 <div class="homemainslide homeslide">
@@ -278,11 +273,6 @@
                 </p>
             </div>
         </div>
-=======
-  <div class="home">
-
-  </div>
->>>>>>> 0fef228e3accec5a358d686c305fbe7f74c694d7
   <!--Home End -->
   <div class="Men">
     <div class="feature">
