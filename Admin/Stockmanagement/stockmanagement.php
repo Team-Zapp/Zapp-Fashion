@@ -26,93 +26,51 @@
             <div class="mgmt">
                 <div class="inputdiv">
                     <div class="findpd">
-                        <input type="text" name="pdname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Product Name">
-                        <span class="searchbtn"><button type="button" class="btn btn-secondary text-center searchbtn">Search</button></span>
+                        <input type="text" name="pdname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Product Name" id="name" required>
+                        <span class="searchbtn"><button type="button" class="btn btn-secondary text-center searchbtn" id="search">Search</button></span>
                     </div>
+
                     <input class="form-control" type="text" placeholder="Create Date" aria-label="Disabled input example" disabled>
                     <input type="file" name="pdimage" class="form-control" id="inputGroupFile02" placeholder="Choose Image">
                 </div>
                 <div class="inputdiv">
                     <select class="form-select" id="inputGroupSelect01" name="pdgender">
-                        <option selected>Gender</option>
-                        <option value="1">Men</option>
-                        <option value="2">Women</option>
-                        <option value="3">Kid</option>
+                        <option value="1" id="men">Men</option>
+                        <option value="2" id="women">Women</option>
+                        <option value="3" id="kid">Kid</option>
                     </select>
-                    <select class="form-select" id="inputGroupSelect01" name="category">
-                        <option selected>Products Catagory</option>
-                        <option value="1">Shirt</option>
-                        <option value="2">Pant</option>
-                        <option value="3">Shoes</option>
+                    <select class="form-select" id="inputGroupSelect02" name="category">
+                        <option value="1" id="shirt">Shirt</option>
+                        <option value="2" id="pant">Pant</option>
+                        <option value="3" id="shoe">Shoes</option>
                     </select>
-                    <input type="text" name="madeof" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Made">
+                    <p id="forid" hidden></p>
+                    <input type="text" name="madeof" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Made" id="made">
                 </div>
                 <div class="inputdiv">
                     <div class="money">
-                        <input type="number" class="form-control " name="orgprice" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Original Price">
+                        <input type="number" class="form-control " id="orgprice" name="orgprice" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Original Price" required>
                         <span class="input-group-text">$</span>
                     </div>
                     <div class="money">
-                        <input type="number" class="form-control" name="saleprice" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Sale Price">
+                        <input type="number" class="form-control" id="saleprice" name="saleprice" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Sale Price" required>
                         <span class="input-group-text">$</span>
                     </div>
-                    <input type="number" name="stock" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantities">
+                    <input type="number" name="stock" id="stock" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantities" required>
                 </div>
-                <input class="subbtn" type="submit" name="submit" value="Submit">
-                <input class="update" type="submit" name="update" value="Update">
-                <input class="delbth" type="submit" name="delete" value="Delete">
+                <p class="subbtn" id="submit">Submit</p>
+                <p class="update" id="update">Update</p>
+                <p class="delbth" id="delete">Delete</p>
             </div>
         </div>
     </form>
-    <div class="container-fluid">
+    <div class="container-fluid" id="table1">
         <div class="row">
             <div class="col-10 text-center ">
                 <table class="table table-hover mx-5 mt-5 mytable">
-                    <thead class="table-dark">
-                        <th>No.</th>
-                        <th>Product Name </th>
-                        <th>Gender</th>
-                        <th>Product Catagory</th>
-                        <th>Original Price</th>
-                        <th>Sale Price</th>
-                        <th>Quantities</th>
+                    <thead class="table-dark" id="table">
+
                     </thead>
-                    <tr>
-                        <td>1.</td>
-                        <td>Blue Shirt</td>
-                        <td>Male</td>
-                        <td>Shirt</td>
-                        <td>100</td>
-                        <td>150</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1.</td>
-                        <td>Blue Shirt</td>
-                        <td>Male</td>
-                        <td>Shirt</td>
-                        <td>100</td>
-                        <td>150</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1.</td>
-                        <td>Blue Shirt</td>
-                        <td>Male</td>
-                        <td>Shirt</td>
-                        <td>100</td>
-                        <td>150</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1.</td>
-                        <td>Blue Shirt</td>
-                        <td>Male</td>
-                        <td>Shirt</td>
-                        <td>100</td>
-                        <td>150</td>
-                        <td>10</td>
-                    </tr>
                 </table>
             </div>
         </div>
