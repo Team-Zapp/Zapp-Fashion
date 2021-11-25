@@ -1,3 +1,4 @@
+$(document).ready(function () {
 $.get("../../def.html", function (data) {
     $("body").prepend(data);
   });
@@ -32,4 +33,127 @@ if (sessionStorage.getItem("AdminName")=="Zaw"){
 if (sessionStorage.getItem("AdminName")=="Phu"){
   document.getElementById("adminPic").setAttribute("src","flower.jpg")
 }
+  
   });
+
+
+  $.ajax({
+    type: 'get',
+    url: 'gettranscation.php',
+    success: function (data) {
+      let json = JSON.parse(data);
+      for (const x of json) {
+        var totalbudget = x.totalbudget;
+        var orderid = x.orderid;
+        var name = x.username;
+        var buydate=x.buy_date;
+        
+        $("#table").after(
+          `
+          <tr class="tr table-success">
+          <td class="name table-primary">${name}</td>
+          <td class="orderid table-primary">${orderid}</td>
+          <td class="table-primary">${buydate}</td>
+          <td class="table-primary">${totalbudget}$</td>
+      </tr>
+        `
+        )
+      }
+      $(".tr").click(function () {
+        var orderid = $(this).find(".orderid").text()
+        $.ajax({
+          type: 'post',
+          url: 'findorder.php',
+          data: "orderid="+orderid,
+          success :function(data){
+            let json = JSON.parse(data);
+            var html="";
+          for (const x of json) {
+            var gender =x.ordergender;
+            var category =x.ordercategory;
+            if (gender == "1") gender = "Man"
+            else if (gender == "2") gender = "Woman"
+            else if (gender == "3") gender = "Kid"
+            if (category == "1") category = "Shirt"
+            else if (category == "2") category = "Pant"
+            else if (category == "3") category = "Shoe"
+
+          html += `
+          <p>Item Id : ${x.itemid}</p> <br>
+          <p>Item Category : ${category}</p> <br>
+          <p>Gender: ${gender}</p> <br>
+          <p>Quantity : ${x.quantity}</p> <br>
+          --------------------------------------------
+          `
+          }
+          Swal.fire({
+            title: '<strong>Transcation</strong>',
+            html:html,
+            showCloseButton: true,
+
+            focusConfirm: false,
+            confirmButtonText:
+              '<i class="fa fa-thumbs-up"></i> Back',
+            confirmButtonAriaLabel: 'Thumbs up, great!'
+          })
+    
+          },
+          error: function(){
+            alert("An Error has Occured")
+          }
+      })
+      })
+    }
+
+    })
+
+  
+  })   
+
+    // document.getElementById("info").addEventListener("click", function () {
+      
+
+    //   let name =$("#name").val();
+    //   let gender = $("#inputGroupSelect01").val();
+    //   let category = $("#inputGroupSelect02").val();
+    //   let orgprice =$("#orgprice").val()
+    //   let saleprice =$("#saleprice").val()
+    //   let made =$("#made").val()
+    //   let stock =$("#stock").val()
+    //   let id =$("#forid").text()
+    //   var data ={ 
+    //     "name": name,
+    //     "gender": gender,
+    //     "category":category,
+    //     "orgprice":orgprice,
+    //     "saleprice":saleprice,
+    //     "made":made,
+    //     "stock":stock,
+    //     "id":id
+    //   }
+    //   $.ajax({
+    //     type: 'post',
+    //     url: 'nameUpdate.php',
+    //     data: {send : JSON.stringify(data)},
+    //     success :function(data){
+    //       setTimeout(() => {
+    //         Swal.fire({
+    //           position: 'center',
+    //           icon: 'success',
+    //           title: 'Product Successfully Updated',
+    //           showConfirmButton: false,
+    //           timer: 3000
+    //         })
+    //       },100);
+  
+    //     },
+    //     error: function(){
+    //       alert("An Error has Occured")
+    //     }
+    // })
+    // setTimeout(function( )
+    // {  location.reload(); },
+    // 500);
+  
+    // })
+  
