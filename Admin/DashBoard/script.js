@@ -132,7 +132,15 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
       $("#visit").text(json)
     }
   })
+  $.ajax({
+    type:'get',
+    url:'feedback.php',
+    success :function(data){
+      let json = JSON.parse(data);
 
+      $("#feedback").text(json)
+    }
+  })
 
 
 //firts chart

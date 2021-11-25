@@ -1,6 +1,23 @@
 //ready
 
 $(document).ready(function () {
+  /*$("#toleft").click(function(){
+    var name =document.getElementById("toleft").getAttribute("name")
+    if(name=="chevron-back-outline") {
+      $("#toleft").attr("name","chevron-forward-outline")
+      
+    }
+    else if(name=="chevron-forward-outline") {
+      $("#toleft").attr("name","chevron-back-outline")
+      
+    }
+  })*/
+  $("#feedback").click(function () {
+    $("#feedbackform").attr(
+      "href",
+      "feedbackform.php?id=" + sessionStorage.getItem("UserID")
+    );
+  });
   $.get("cslinks.html", function (data) {
     $("head").prepend(data);
   });
@@ -28,6 +45,9 @@ $(document).ready(function () {
       var KS = 0;
       var KSH = 0;
       var KP = 0;
+      var loop6 = 0;
+      var loop7 = 0;
+      var loop8 = 0;
 
       //Men Variable
       var idMS = 100;
@@ -106,7 +126,7 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Mpantprice" id="${MP}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Mpantprice" id="${idMP}">${iterator.saleprice}</h4>
                   <p class="card-text Mpantname itemtag ">${iterator.name}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
@@ -115,6 +135,7 @@ $(document).ready(function () {
             ${end}`
             );
             MP++;
+            idMP++;
           } else if (iterator.category == "3") {
             let start = "";
             let end = "";
@@ -141,7 +162,7 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Mshoeprice" id="${MSH}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Mshoeprice" id="${idMSH}">${iterator.saleprice}</h4>
                   <p class="card-text Mshoename itemtag ">${iterator.name}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
@@ -150,6 +171,7 @@ $(document).ready(function () {
             ${end}`
             );
             MSH++;
+            idMSH++;
           }
         }
         //women shirt
@@ -180,7 +202,7 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Wshirtprice" id="${WS}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Wshirtprice" id="${idWS}">${iterator.saleprice}</h4>
                   <p class="card-text Wshirtname itemtag ">${iterator.name}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
@@ -189,23 +211,24 @@ $(document).ready(function () {
             ${end}`
             );
             WS++;
+            idWS++;
           } else if (iterator.category == "2") {
             let start = "";
             let end = "";
-            let inner = "#WomenShoe";
+            let inner = "#WomenPant";
             if (WP == 0) {
               loop4++;
-              start = ` <div class="carousel-item active"><div class="row WomenShoe${loop4}">`;
+              start = ` <div class="carousel-item active"><div class="row WomenPant${loop4}">`;
               end = "</div></div>";
             } else if (WP % 3 == 0) {
               loop4++;
-              start = `<div class="carousel-item "><div class="row WomenShoe${loop4}"> `;
+              start = `<div class="carousel-item "><div class="row WomenPant${loop4}"> `;
               end = "</div></div>";
-              inner = "#WomenShoe";
+              inner = "#WomenPant";
             } else {
               start = "";
               end = "";
-              inner = `.WomenShoe${loop4}`;
+              inner = `.WomenPant${loop4}`;
             }
             $(`${inner}`).append(
               `${start}
@@ -215,8 +238,8 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Wshoeprice" id="${WP}">${iterator.saleprice}</h4>
-                  <p class="card-text Wshoename itemtag ">${iterator.name}</p>
+                  <h4 class="card-title Wpantprice" id="${idWP}">${iterator.saleprice}</h4>
+                  <p class="card-text Wpantname itemtag ">${iterator.name}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -224,25 +247,154 @@ $(document).ready(function () {
             ${end}`
             );
             WP++;
+            idWP++;
           } else if (iterator.category == "3") {
-            Wshoeprice[WSH].innerHTML = `${iterator.saleprice}$`;
-            Wshoename[WSH].innerHTML = `${iterator.name}`;
+            let start = "";
+            let end = "";
+            let inner = "#WomenShoe";
+            if (WSH == 0) {
+              loop5++;
+              start = ` <div class="carousel-item active"><div class="row WomenShoe${loop5}">`;
+              end = "</div></div>";
+            } else if (WSH % 3 == 0) {
+              loop5++;
+              start = `<div class="carousel-item "><div class="row WomenShoe${loop5}"> `;
+              end = "</div></div>";
+              inner = "#WomenShoe";
+            } else {
+              start = "";
+              end = "";
+              inner = `.WomenShoe${loop5}`;
+            }
+            $(`${inner}`).append(
+              `${start}
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="img-fluid" src="Kid shirt.jpg" />
+                <div class="card-body justify-content-center
+                    d-flex
+                    flex-column">
+                  <h4 class="card-title Wshoeprice" id="${idWSH}">${iterator.saleprice}</h4>
+                  <p class="card-text Wshoename itemtag ">${iterator.name}</p>
+                  <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            ${end}`
+            );
             WSH++;
+            idWSH++;
           }
         }
         if (iterator.gender == "3") {
           if (iterator.category == "1") {
-            Kshirtprice[KS].innerHTML = `${iterator.saleprice}$`;
-            Kshirtname[KS].innerHTML = `${iterator.name}`;
+            let start = "";
+            let end = "";
+            let inner = "#Kidshirt";
+            if (KS == 0) {
+              loop6++;
+              start = ` <div class="carousel-item active"><div class="row Kidshirt${loop6}">`;
+              end = "</div></div>";
+            } else if (KS % 3 == 0) {
+              loop6++;
+              start = `<div class="carousel-item "><div class="row Kidshirt${loop6}"> `;
+              end = "</div></div>";
+              inner = "#Kidshirt";
+            } else {
+              start = "";
+              end = "";
+              inner = `.Kidshirt${loop6}`;
+            }
+            $(`${inner}`).append(
+              `${start}
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="img-fluid" src="Kid shirt.jpg" />
+                <div class="card-body justify-content-center
+                    d-flex
+                    flex-column">
+                  <h4 class="card-title Kidshirtprice" id="${idKS}">${iterator.saleprice}</h4>
+                  <p class="card-text Kidshirtname itemtag ">${iterator.name}</p>
+                  <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            ${end}`
+            );
             KS++;
+            idKS++;
           } else if (iterator.category == "2") {
-            Kpantprice[KP].innerHTML = `${iterator.saleprice}$`;
-            Kpantname[KP].innerHTML = `${iterator.name}`;
+            let start = "";
+            let end = "";
+            let inner = "#Kidpant";
+            if (KP == 0) {
+              loop7++;
+              start = ` <div class="carousel-item active"><div class="row Kidpant${loop7}">`;
+              end = "</div></div>";
+            } else if (KP % 3 == 0) {
+              loop7++;
+              start = `<div class="carousel-item "><div class="row Kidpant${loop7}"> `;
+              end = "</div></div>";
+              inner = "#Kidpant";
+            } else {
+              start = "";
+              end = "";
+              inner = `.Kidpant${loop7}`;
+            }
+            $(`${inner}`).append(
+              `${start}
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="img-fluid" src="Kid shirt.jpg" />
+                <div class="card-body justify-content-center
+                    d-flex
+                    flex-column">
+                  <h4 class="card-title Kidpantprice" id="${idKP}">${iterator.saleprice}</h4>
+                  <p class="card-text Kidpantname itemtag ">${iterator.name}</p>
+                  <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            ${end}`
+            );
             KP++;
+            idKP++;
           } else if (iterator.category == "3") {
-            Kshoeprice[KSH].innerHTML = `${iterator.saleprice}$`;
-            Kshoename[KSH].innerHTML = `${iterator.name}`;
+            let start = "";
+            let end = "";
+            let inner = "#Kidshoe";
+            if (KP == 0) {
+              loop8++;
+              start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
+              end = "</div></div>";
+            } else if (KP % 3 == 0) {
+              loop8++;
+              start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
+              end = "</div></div>";
+              inner = "#Kidshoe";
+            } else {
+              start = "";
+              end = "";
+              inner = `.Kidshoe${loop8}`;
+            }
+            $(`${inner}`).append(
+              `${start}
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="img-fluid" src="Kid shirt.jpg" />
+                <div class="card-body justify-content-center
+                    d-flex
+                    flex-column">
+                  <h4 class="card-title Kidshoeprice" id="${idKSH}">${iterator.saleprice}</h4>
+                  <p class="card-text Kidshoename itemtag ">${iterator.name}</p>
+                  <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            ${end}`
+            );
             KSH++;
+            idKSH++;
           }
         }
       }
@@ -514,164 +666,164 @@ fncSlider(".example-slider", { autoSlidingDelay: 4000 });
 var $demoCont = document.querySelector(".homemainslide");
 
 /* Start Shipping Cart (Phu) */
-// removeItem();
-// monitorCartAdds();
+removeItem();
+monitorCartAdds();
 
-// //Add Item To Cart
-// function monitorCartAdds() {
-//   var cartBtn = document.querySelectorAll(".btnaddcart");
-//   cartBtn.forEach(function (btn) {
-//     btn.addEventListener("click", function (event) {
-//       let imgSrc = event.target.parentElement.previousElementSibling.src;
-//       let pname = event.target.parentElement.childNodes[3].textContent;
-//       let pcode = event.target.parentElement.childNodes[1].id;
-//       let price = event.target.parentElement.childNodes[1].textContent;
+//Add Item To Cart
+function monitorCartAdds() {
+  var cartBtn = document.querySelectorAll(".btnaddcart");
+  cartBtn.forEach(function (btn) {
+    btn.addEventListener("click", function (event) {
+      let imgSrc = event.target.parentElement.previousElementSibling.src;
+      let pname = event.target.parentElement.childNodes[3].textContent;
+      let pcode = event.target.parentElement.childNodes[1].id;
+      let price = event.target.parentElement.childNodes[1].textContent;
 
-//       var item = {};
-//       newItem = pcode;
-//       item.img = imgSrc;
-//       item.title = pname;
-//       item.ID = pcode;
-//       item.price = price;
+      var item = {};
+      newItem = pcode;
+      item.img = imgSrc;
+      item.title = pname;
+      item.ID = pcode;
+      item.price = price;
 
-//       check = "";
-//       alreadyAdded();
-//       if (check === false) {
-//         var cartItem = document.createElement("div");
-//         cartItem.classList.add(
-//           "cart-item",
-//           "d-flex",
-//           "justify-content-between",
-//           "text-capitalize",
-//           "my-3",
-//           "border-bottom"
-//         );
-//         cartItem.innerHTML =
-//           '<img src="' +
-//           item.img +
-//           '" id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">' +
-//           item.title +
-//           '</p><span class="cart-item-id text-muted" class="mb-0" >(' +
-//           item.ID +
-//           '</span></div><p id="itemPrice" class="font-weight-bold">' +
-//           item.price +
-//           '</p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>';
+      check = "";
+      alreadyAdded();
+      if (check === false) {
+        var cartItem = document.createElement("div");
+        cartItem.classList.add(
+          "cart-item",
+          "d-flex",
+          "justify-content-between",
+          "text-capitalize",
+          "my-3",
+          "border-bottom"
+        );
+        cartItem.innerHTML =
+          '<img src="' +
+          item.img +
+          '" id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">' +
+          item.title +
+          '</p><span class="cart-item-id text-muted" class="mb-0" >(' +
+          item.ID +
+          '</span></div><p id="itemPrice" class="font-weight-bold">' +
+          item.price +
+          '</p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>';
 
-//         var cart = document.getElementById("cart");
-//         var total = document.getElementsByClassName("cart-total-container");
-//         cart.insertBefore(cartItem, null);
-//         var dupeFalse = document.getElementById("cart-alert-parent");
-//         dupeFalse.innerHTML =
-//           '<div id="cart-alert" class="alert alert-success" role="alert">Added To Cart</div>';
-//         document.getElementById("cart-alert").style.visibility = "visible";
-//         document.getElementById("cart-alert").style.opacity = "1";
-//         fadeOutEffect();
-//         showTotals();
+        var cart = document.getElementById("cart");
+        var total = document.getElementsByClassName("cart-total-container");
+        cart.insertBefore(cartItem, null);
+        var dupeFalse = document.getElementById("cart-alert-parent");
+        dupeFalse.innerHTML =
+          '<div id="cart-alert" class="alert alert-success" role="alert">Added To Cart</div>';
+        document.getElementById("cart-alert").style.visibility = "visible";
+        document.getElementById("cart-alert").style.opacity = "1";
+        fadeOutEffect();
+        showTotals();
 
-//         //Show Shopping Cart Dialog
-//         $("#cart-button").trigger("click");
-//       } else {
-//         //you can show Already in your Cart msg with sweet alert
-//         var dupeTrue = document.getElementById("cart-alert-parent");
-//         dupeTrue.innerHTML =
-//           '<div id="cart-alert" class="alert alert-warning" role="alert">Already In Your Cart</div>';
-//         document.querySelectorAll(".alert-warning")[0].style.visibility =
-//           "visible";
-//         document.querySelectorAll(".alert-warning")[0].style.opacity = "1";
-//         fadeOutEffect();
-//       }
-//     });
-//   });
-// }
+        //Show Shopping Cart Dialog
+        $("#cart-button").trigger("click");
+      } else {
+        //you can show Already in your Cart msg with sweet alert
+        var dupeTrue = document.getElementById("cart-alert-parent");
+        dupeTrue.innerHTML =
+          '<div id="cart-alert" class="alert alert-warning" role="alert">Already In Your Cart</div>';
+        document.querySelectorAll(".alert-warning")[0].style.visibility =
+          "visible";
+        document.querySelectorAll(".alert-warning")[0].style.opacity = "1";
+        fadeOutEffect();
+      }
+    });
+  });
+}
 
-// // Check If Item Is Already In Cart
+// Check If Item Is Already In Cart
 
-// var newItem = [];
-// var cartCheck = [];
-// var check = "";
-// var cartCheckStr = "";
+var newItem = [];
+var cartCheck = [];
+var check = "";
+var cartCheckStr = "";
 
-// function alreadyAdded() {
-//   var elements = document.querySelectorAll(".cart-item");
-//   cartCheck = [];
-//   for (var i = 0; i < elements.length; i++) {
-//     cartCheck.push(elements[i].childNodes[1].childNodes[1].innerText);
-//   }
-//   cartCheckStr = cartCheck.toString();
-//   check = cartCheckStr.includes(newItem);
-// }
+function alreadyAdded() {
+  var elements = document.querySelectorAll(".cart-item");
+  cartCheck = [];
+  for (var i = 0; i < elements.length; i++) {
+    cartCheck.push(elements[i].childNodes[1].childNodes[1].innerText);
+  }
+  cartCheckStr = cartCheck.toString();
+  check = cartCheckStr.includes(newItem);
+}
 
-// // Add to Cart PopUp Fade Effect
+// Add to Cart PopUp Fade Effect
 
-// function fadeOutEffect() {
-//   var fadeTarget = document.getElementById("cart-alert");
-//   var fadeEffect = setInterval(function () {
-//     if (!fadeTarget.style.opacity) {
-//       fadeTarget.style.opacity = 1;
-//     }
-//     if (fadeTarget.style.opacity > 0) {
-//       fadeTarget.style.opacity -= 0.1;
-//     } else {
-//       clearInterval(fadeEffect);
-//     }
-//   }, 100);
-// }
+function fadeOutEffect() {
+  var fadeTarget = document.getElementById("cart-alert");
+  var fadeEffect = setInterval(function () {
+    if (!fadeTarget.style.opacity) {
+      fadeTarget.style.opacity = 1;
+    }
+    if (fadeTarget.style.opacity > 0) {
+      fadeTarget.style.opacity -= 0.1;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 100);
+}
 
-// // Cart Functionality
+// Cart Functionality
 
-// var itemQty = 0;
+var itemQty = 0;
 
-// function showTotals() {
-//   itemQty = 0;
-//   var elements = document.querySelectorAll(".form-control");
-//   for (var i = 0; i < elements.length; i++) {
-//     itemQty += Number(elements[i].value);
-//   }
-//   document.getElementById("cart-total").textContent = itemQty;
-//   document.getElementById("cart-total-page").textContent = itemQty;
-// }
+function showTotals() {
+  itemQty = 0;
+  var elements = document.querySelectorAll(".form-control");
+  for (var i = 0; i < elements.length; i++) {
+    itemQty += Number(elements[i].value);
+  }
+  document.getElementById("cart-total").textContent = itemQty;
+  document.getElementById("cart-total-page").textContent = itemQty;
+}
 
-// // Remove Items
+// Remove Items
 
-// function removeItem() {
-//   var element = document.getElementById("cart");
-//   element.addEventListener("click", function (remove) {
-//     if (remove.target.matches(".cart-item-remove")) {
-//       var cartItemRemove = remove.target.parentElement;
-//       cartItemRemove.remove();
-//       showTotals();
-//     }
-//   });
-// }
+function removeItem() {
+  var element = document.getElementById("cart");
+  element.addEventListener("click", function (remove) {
+    if (remove.target.matches(".cart-item-remove")) {
+      var cartItemRemove = remove.target.parentElement;
+      cartItemRemove.remove();
+      showTotals();
+    }
+  });
+}
 
-// //Continue Shopping Button click
-// btnContinue.addEventListener("click", function () {
-//   $("#close").click();
-// });
+//Continue Shopping Button click
+btnContinue.addEventListener("click", function () {
+  $("#close").click();
+});
 
-// // Monitor Quantity
-// document.addEventListener(
-//   "change",
-//   function (event) {
-//     if (event.target.classList.contains("form-control")) {
-//       showTotals();
-//     }
-//   },
-//   false
-// );
+// Monitor Quantity
+document.addEventListener(
+  "change",
+  function (event) {
+    if (event.target.classList.contains("form-control")) {
+      showTotals();
+    }
+  },
+  false
+);
 
-// // Hide elements that are not selected
+// Hide elements that are not selected
 
-// function RemoveClass(element, name) {
-//   var i, arr1, arr2;
-//   arr1 = element.className.split(" ");
-//   arr2 = name.split(" ");
-//   for (i = 0; i < arr2.length; i++) {
-//     while (arr1.indexOf(arr2[i]) > -1) {
-//       arr1.splice(arr1.indexOf(arr2[i]), 1);
-//     }
-//   }
-//   element.className = arr1.join(" ");
-// }
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
 
 /*End Shipping Cart (Phu) */

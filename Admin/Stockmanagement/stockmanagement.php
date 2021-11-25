@@ -10,6 +10,9 @@
     <script src="stockmgmt.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>"
+    <script src='sweetalert2.min.js'></script>"
+    <link rel=stylesheet' href='sweetalert2.min.css'>"
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="logo 2.png" type="image/x-icon" />
     <link rel="stylesheet" href="stockmgmt.css">
@@ -20,7 +23,7 @@
     <div class="chartbg">
         <div id="chart"></div>
     </div>
-    <form action="../../Controllers/stockmgmtinsert.php" method="POST">
+    <form id="form" enctype="multipart/form-data">
         <div class="mgmtdiv">
             <h3 class="stockhead">Stock Management</h3>
             <div class="mgmt">
@@ -31,7 +34,7 @@
                     </div>
 
                     <input class="form-control" type="text" placeholder="Create Date" aria-label="Disabled input example" disabled>
-                    <input type="file" name="pdimage" class="form-control" id="inputGroupFile02" placeholder="Choose Image" >
+                    <input type="file" name="pdimage" class="form-control" id="inputGroupFile02" placeholder="Choose Image">
                 </div>
                 <div class="inputdiv">
                     <select class="form-select" id="inputGroupSelect01" name="pdgender">
@@ -58,7 +61,8 @@
                     </div>
                     <input type="number" name="stock" id="stock" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantities" required>
                 </div>
-                <p class="subbtn" id="submit">Submit</p>
+
+                <input class="subbtn" id="submit" type="submit" value="Submit">
                 <p class="update" id="update">Update</p>
                 <p class="delbth" id="delete">Delete</p>
             </div>

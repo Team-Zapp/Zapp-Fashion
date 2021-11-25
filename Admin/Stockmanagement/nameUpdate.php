@@ -38,5 +38,3 @@ $sql->bindValue(":id", $id);
 $sql->bindValue(":update_date", date("Y/m/d"));
 
 $sql->execute();
-
-echo "Update Success";

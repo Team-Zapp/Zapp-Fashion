@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="Logo 2.png" type="image/x-icon" />
-  
+
   <script src="jquery.js"></script>
   <script src="script.js" defer></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -28,6 +28,7 @@
     let UserID = <?php echo $_GET["id"] ?>
   </script>
   <!-- zayar -->
+
   <div class="header">
     <div class="bg-white py-3 head">
       <img src="LogoSample_ByTailorBrands.png" alt="" class="logo" />
@@ -40,14 +41,18 @@
         <button class="btn btn-outline-dark search" type="submit">
           <ion-icon name="search-outline" class="Search"></ion-icon>
         </button>
-        <button class="btn btn-outline-dark user" type="submit">
-          <ion-icon name="person-outline" class="User"></ion-icon>
+        <button class="btn btn-outline-dark user" type="submit" id="feedback">
+          <a href="" id="feedbackform">
+            <ion-icon name="pencil-outline" class="User"></ion-icon>
+          </a>
+
         </button>
         <button class="btn btn-outline-dark cart" type="submit">
           <ion-icon name="cart-outline" class="Cart"></ion-icon>
         </button>
       </div>
     </div>
+
     <!--FixedBar Start-->
     <div class="FixedBar">
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary ulclass">
@@ -86,6 +91,7 @@
     </div>
     <!--FixedBar END-->
   </div>
+
   <!-- Home Start -->
   <div class="Home">
             <div class="slider homeslide" id="scrollspyHeadinghome">
@@ -158,6 +164,7 @@
                                         </h2>
                                         <button type="button" class="fnc-slide__action-btn">
                                             <a href="#aboutuswords">About Us
+
                                                 <span data-text="About Us">About Us</span></a>
                                         </button>
                                     </div>
@@ -544,7 +551,7 @@
       <!--Card3-->
     </div>
     <!-- Card End-->
-    <!-- Parallx Card start-->
+    <!-- Wshirt Card start-->
     <div class="nslidecard">
       <section class="pt-5 pb-5">
         <div class="container">
@@ -574,7 +581,7 @@
         </div>
       </section>
     </div>
-    <!-- Parallx Card End-->
+    <!-- Wshirt Card End-->
     <!-- Parallx Card 2 Start -->
     <div class="nslidecard">
       <section class="pt-5 pb-5">
@@ -597,7 +604,7 @@
             </div>
             <div class="col-12">
               <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" id="WomenShoe">
+                <div class="carousel-inner" id="WomenPant">
                 </div>
               </div>
             </div>
@@ -628,87 +635,7 @@
             </div>
             <div class="col-12">
               <div id="carouselExampleIndicators8" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
-                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
-                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
-                            <p class="card-text itemtag Wshoename" id="Wshoename">Shoe</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
-                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
-                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Women shoes.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Wshoeprice" id="Wshoeprice">$400</h4>
-                            <p class="card-text itemtag Wshoename" id="Wshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="carousel-inner" id="WomenShoe">
                 </div>
               </div>
             </div>
@@ -822,87 +749,7 @@
             </div>
             <div class="col-12">
               <div id="carouselExampleIndicators9" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
-                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
-                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
-                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
-                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
-                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shirt.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshirtprice" id="Kshirtprice">$400</h4>
-                            <p class="card-text itemtag Kshirtname" id="Kshirtname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="carousel-inner" id="Kidshirt">
                 </div>
               </div>
             </div>
@@ -933,87 +780,7 @@
             </div>
             <div class="col-12">
               <div id="carouselExampleIndicators11" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
-                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
-                            <p class="card-text itemtag Kpantname" id="Kpantname">pant</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
-                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
-                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title">$400</h4>
-                            <p class="card-text itemtag">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid pants.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kpantprice" id="Kpantprice">$400</h4>
-                            <p class="card-text itemtag Kpantname" id="Kpantname">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="carousel-inner" id="Kidpant">
                 </div>
               </div>
             </div>
@@ -1044,87 +811,7 @@
             </div>
             <div class="col-12">
               <div id="carouselExampleIndicators12" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
-                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
-                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
-                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
-                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
-                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img class="img-fluid" alt="100%x280" src="Kid shoe.jpg" />
-                          <div class="card-body justify-content-center
-                              d-flex
-                              flex-column">
-                            <h4 class="card-title Kshoeprice" id="Kshoeprice">$400</h4>
-                            <p class="card-text itemtag Kshoename" id="Kshoename">Shirt</p>
-                            <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="carousel-inner" id="Kidshoe">
                 </div>
               </div>
             </div>
@@ -1209,8 +896,8 @@
   </div>
   <!-- end of cart -->
   <script>
-            AOS.init();
-        </script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
