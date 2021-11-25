@@ -26,7 +26,6 @@
         <div class="white-panel">
             <div class="login-show">
                 <h4 class="form_head">Please type in your Phone Number and E-mail</h4>
-
                 <input type="text" name="phnumber" placeholder="Phone Number" required>
                 <input type="text" name="email" placeholder="E-mail" required>
                 <input class="loginbtn" type="submit" name="submit" value="Enter">
