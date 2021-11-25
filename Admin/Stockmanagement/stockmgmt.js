@@ -81,7 +81,16 @@ $(document).ready(function () {
       url: 'nameUpdate.php',
       data: {send : JSON.stringify(data)},
       success :function(data){
-        alert(data)
+        setTimeout(() => {
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Product Successfully Updated',
+            showConfirmButton: false,
+            timer: 3000
+          })
+        },100);
+
       },
       error: function(){
         alert("An Error has Occured")

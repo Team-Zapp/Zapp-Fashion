@@ -1,4 +1,7 @@
 <?php
+echo "<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+echo "<script src='sweetalert2.min.js'></script>";
+echo "<link rel=stylesheet' href='sweetalert2.min.css'>";
 $name = $_GET['name'];
 require "../../DBconnect.php";
 
@@ -27,10 +30,16 @@ if (isset($_POST['submit'])) {
 
     $sql->execute();
 
-    echo "<script>alert('Successfully Changed Password.');</script>";
+    echo "<body><script>Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Your password has been changed',
+        showConfirmButton: false,
+        timer: 1500
+      })</script></body>";
     echo "<script>
     setTimeout(function( )
     {window.location='login.php';  },
-    500);
+    1500);
     </script>";
 }
