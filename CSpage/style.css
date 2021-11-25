@@ -984,3 +984,45 @@ body {
 a {
   text-decoration: none;
 }
+/* Shipping Cart(Phu) */
+
+#cart-alert-parent {
+  width: auto;
+}
+
+#exampleModal {
+  overflow-y: scroll;
+}
+
+.flex-contianer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+
+#btnContinue {
+  width: 200px;
+  margin: 10px 0px 10px 10px;
+}
+
+#btnCheckout {
+  width: 150px;
+  margin: 10px 10px 10px 0px;
+}
+
+/* for each cart item */
+
+#cart #item-img {
+  height: 12rem;
+  width: 9rem;
+  object-fit: contain;
+}
+
+.cart-item {
+  height: 12em;
+  width: 98%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-bottom: solid;
+}
