@@ -12,6 +12,44 @@ $(document).ready(function () {
       
     }
   })*/
+  document.getElementById("btnCheckout").addEventListener("click", function () {
+    let name = $(".name").val();
+    let category = $(".inputGroupSelect02").val();
+    let saleprice = $(".itemPrice").val();
+    let stock = $(".stock").val();
+    let itemname = $(".card-item-title").text();
+    var data = {
+      name: name,
+
+      category: category,
+
+      saleprice: saleprice,
+
+      stock: stock,
+      id: id,
+    };
+    $.ajax({
+      type: "post",
+      url: "nameUpdate.php",
+      data: { send: JSON.stringify(data) },
+      success: function (data) {
+        Swal.fire({
+          title: "Product Successfully Updated",
+          icon: "success",
+          backdrop: false,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "Ok",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            location.reload();
+          }
+        });
+      },
+      error: function () {
+        alert("An Error has Occured");
+      },
+    });
+  });
   $("#feedback").click(function () {
     $("#feedbackform").attr(
       "href",
@@ -90,8 +128,9 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Mshirtprice" id="${idMS}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Mshirtprice" id="${idMS}">${iterator.saleprice}$</h4>
                   <p class="card-text Mshirtname itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid${idMS}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -126,8 +165,9 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Mpantprice" id="${idMP}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Mpantprice" id="${idMP}">${iterator.saleprice}$</h4>
                   <p class="card-text Mpantname itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid${idMP}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -162,8 +202,10 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Mshoeprice" id="${idMSH}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Mshoeprice" id="${idMSH}">${iterator.saleprice}$</h4>
                   <p class="card-text Mshoename itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid">${iterator.id}</p>
+                  <p style="visibility: hidden;" id="itemid${idMSH}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -202,8 +244,10 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Wshirtprice" id="${idWS}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Wshirtprice" id="${idWS}">${iterator.saleprice}$</h4>
                   <p class="card-text Wshirtname itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid">${iterator.id}</p>
+                  <p style="visibility: hidden;" id="itemid${idWS}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -238,8 +282,9 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Wpantprice" id="${idWP}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Wpantprice" id="${idWP}">${iterator.saleprice}$</h4>
                   <p class="card-text Wpantname itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid${idWP}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -274,8 +319,9 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Wshoeprice" id="${idWSH}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Wshoeprice" id="${idWSH}">${iterator.saleprice}$</h4>
                   <p class="card-text Wshoename itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid${idWSH}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -313,8 +359,9 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Kidshirtprice" id="${idKS}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Kidshirtprice" id="${idKS}">${iterator.saleprice}$</h4>
                   <p class="card-text Kidshirtname itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid${idKS}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -349,8 +396,9 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Kidpantprice" id="${idKP}">${iterator.saleprice}</h4>
+                  <h4 class="card-title Kidpantprice" id="${idKP}">${iterator.saleprice}$</h4>
                   <p class="card-text Kidpantname itemtag ">${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid${idKP}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -385,8 +433,9 @@ $(document).ready(function () {
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
-                  <h4 class="card-title Kidshoeprice" id="${idKSH}">${iterator.saleprice}</h4>
-                  <p class="card-text Kidshoename itemtag ">${iterator.name}</p>
+                  <h4 class="card-title Kidshoeprice" id="${idKSH}">${iterator.saleprice}$</h4>
+                  <p class="card-text Kidshoename itemtag " >${iterator.name}</p>
+                  <p style="visibility: hidden;" id="itemid${idKSH}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -398,6 +447,170 @@ $(document).ready(function () {
           }
         }
       }
+      /* Start Shipping Cart (Phu) */
+      removeItem();
+
+      //Add Item To Cart
+
+      var cartBtn = document.querySelectorAll(".btnaddcart");
+      cartBtn.forEach(function (btn) {
+        btn.addEventListener("click", function (event) {
+          let imgSrc = event.target.parentElement.previousElementSibling.src;
+          let pname = event.target.parentElement.childNodes[3].textContent;
+          let pcode = event.target.parentElement.childNodes[1].id;
+          let price = event.target.parentElement.childNodes[1].textContent;
+          let itemid = event.target.parentElement.childNodes[5].textContent;
+          console.log(event);
+          var item = {};
+          newItem = pcode;
+          item.img = imgSrc;
+          item.title = pname;
+          item.ID = pcode;
+          item.price = price;
+          item.itemid = itemid;
+
+          check = "";
+          alreadyAdded();
+          if (check === false) {
+            var cartItem = document.createElement("div");
+            cartItem.classList.add(
+              "cart-item",
+              "d-flex",
+              "justify-content-between",
+              "text-capitalize",
+              "my-3",
+              "border-bottom"
+            );
+            cartItem.innerHTML = `<img src="
+              ${item.img}
+              " id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">
+            ${item.title}
+            </p><span class="cart-item-id text-muted" class="mb-0" >(
+             ${item.ID}
+              )</p><span class="cart-item-id text-muted" class="mb-0" style="visibility: hidden;">  
+              ${item.itemid}
+              "</span>" 
+              </div><p id="itemPrice" class="font-weight-bold">
+              ${item.price} 
+              </p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>`;
+
+            var cart = document.getElementById("cart");
+            var total = document.getElementsByClassName("cart-total-container");
+            cart.insertBefore(cartItem, null);
+            var dupeFalse = document.getElementById("cart-alert-parent");
+            dupeFalse.innerHTML =
+              '<div id="cart-alert" class="alert alert-success" role="alert">Added To Cart</div>';
+            document.getElementById("cart-alert").style.visibility = "visible";
+            document.getElementById("cart-alert").style.opacity = "1";
+            fadeOutEffect();
+            showTotals();
+
+            //Show Shopping Cart Dialog
+            $("#cart-button").trigger("click");
+          } else {
+            //you can show Already in your Cart msg with sweet alert
+            var dupeTrue = document.getElementById("cart-alert-parent");
+            dupeTrue.innerHTML =
+              '<div id="cart-alert" class="alert alert-warning" role="alert">Already In Your Cart</div>';
+            document.querySelectorAll(".alert-warning")[0].style.visibility =
+              "visible";
+            document.querySelectorAll(".alert-warning")[0].style.opacity = "1";
+            fadeOutEffect();
+          }
+        });
+      });
+
+      // Check If Item Is Already In Cart
+
+      var newItem = [];
+      var cartCheck = [];
+      var check = "";
+      var cartCheckStr = "";
+
+      function alreadyAdded() {
+        var elements = document.querySelectorAll(".cart-item");
+        cartCheck = [];
+        for (var i = 0; i < elements.length; i++) {
+          cartCheck.push(elements[i].childNodes[1].childNodes[1].innerText);
+        }
+        cartCheckStr = cartCheck.toString();
+        check = cartCheckStr.includes(newItem);
+      }
+
+      // Add to Cart PopUp Fade Effect
+
+      function fadeOutEffect() {
+        var fadeTarget = document.getElementById("cart-alert");
+        var fadeEffect = setInterval(function () {
+          if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+          }
+          if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.1;
+          } else {
+            clearInterval(fadeEffect);
+          }
+        }, 100);
+      }
+
+      // Cart Functionality
+
+      var itemQty = 0;
+
+      function showTotals() {
+        itemQty = 0;
+        var elements = document.querySelectorAll(".form-control");
+        for (var i = 0; i < elements.length; i++) {
+          itemQty += Number(elements[i].value);
+        }
+        document.getElementById("cart-total").textContent = itemQty;
+        document.getElementById("cart-total-page").textContent = itemQty;
+      }
+
+      // Remove Items
+
+      function removeItem() {
+        var element = document.getElementById("cart");
+        element.addEventListener("click", function (remove) {
+          if (remove.target.matches(".cart-item-remove")) {
+            var cartItemRemove = remove.target.parentElement;
+            cartItemRemove.remove();
+            showTotals();
+          }
+        });
+      }
+
+      //Continue Shopping Button click
+      btnContinue.addEventListener("click", function () {
+        $("#close").click();
+      });
+
+      // Monitor Quantity
+      document.addEventListener(
+        "change",
+        function (event) {
+          if (event.target.classList.contains("form-control")) {
+            showTotals();
+          }
+        },
+        false
+      );
+
+      // Hide elements that are not selected
+
+      function RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      /*End Shipping Cart (Phu) */
     },
   });
 
@@ -664,166 +877,3 @@ $(".homebtn").click(function () {
 fncSlider(".example-slider", { autoSlidingDelay: 4000 });
 
 var $demoCont = document.querySelector(".homemainslide");
-
-/* Start Shipping Cart (Phu) */
-removeItem();
-monitorCartAdds();
-
-//Add Item To Cart
-function monitorCartAdds() {
-  var cartBtn = document.querySelectorAll(".btnaddcart");
-  cartBtn.forEach(function (btn) {
-    btn.addEventListener("click", function (event) {
-      let imgSrc = event.target.parentElement.previousElementSibling.src;
-      let pname = event.target.parentElement.childNodes[3].textContent;
-      let pcode = event.target.parentElement.childNodes[1].id;
-      let price = event.target.parentElement.childNodes[1].textContent;
-
-      var item = {};
-      newItem = pcode;
-      item.img = imgSrc;
-      item.title = pname;
-      item.ID = pcode;
-      item.price = price;
-
-      check = "";
-      alreadyAdded();
-      if (check === false) {
-        var cartItem = document.createElement("div");
-        cartItem.classList.add(
-          "cart-item",
-          "d-flex",
-          "justify-content-between",
-          "text-capitalize",
-          "my-3",
-          "border-bottom"
-        );
-        cartItem.innerHTML =
-          '<img src="' +
-          item.img +
-          '" id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">' +
-          item.title +
-          '</p><span class="cart-item-id text-muted" class="mb-0" >(' +
-          item.ID +
-          '</span></div><p id="itemPrice" class="font-weight-bold">' +
-          item.price +
-          '</p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>';
-
-        var cart = document.getElementById("cart");
-        var total = document.getElementsByClassName("cart-total-container");
-        cart.insertBefore(cartItem, null);
-        var dupeFalse = document.getElementById("cart-alert-parent");
-        dupeFalse.innerHTML =
-          '<div id="cart-alert" class="alert alert-success" role="alert">Added To Cart</div>';
-        document.getElementById("cart-alert").style.visibility = "visible";
-        document.getElementById("cart-alert").style.opacity = "1";
-        fadeOutEffect();
-        showTotals();
-
-        //Show Shopping Cart Dialog
-        $("#cart-button").trigger("click");
-      } else {
-        //you can show Already in your Cart msg with sweet alert
-        var dupeTrue = document.getElementById("cart-alert-parent");
-        dupeTrue.innerHTML =
-          '<div id="cart-alert" class="alert alert-warning" role="alert">Already In Your Cart</div>';
-        document.querySelectorAll(".alert-warning")[0].style.visibility =
-          "visible";
-        document.querySelectorAll(".alert-warning")[0].style.opacity = "1";
-        fadeOutEffect();
-      }
-    });
-  });
-}
-
-// Check If Item Is Already In Cart
-
-var newItem = [];
-var cartCheck = [];
-var check = "";
-var cartCheckStr = "";
-
-function alreadyAdded() {
-  var elements = document.querySelectorAll(".cart-item");
-  cartCheck = [];
-  for (var i = 0; i < elements.length; i++) {
-    cartCheck.push(elements[i].childNodes[1].childNodes[1].innerText);
-  }
-  cartCheckStr = cartCheck.toString();
-  check = cartCheckStr.includes(newItem);
-}
-
-// Add to Cart PopUp Fade Effect
-
-function fadeOutEffect() {
-  var fadeTarget = document.getElementById("cart-alert");
-  var fadeEffect = setInterval(function () {
-    if (!fadeTarget.style.opacity) {
-      fadeTarget.style.opacity = 1;
-    }
-    if (fadeTarget.style.opacity > 0) {
-      fadeTarget.style.opacity -= 0.1;
-    } else {
-      clearInterval(fadeEffect);
-    }
-  }, 100);
-}
-
-// Cart Functionality
-
-var itemQty = 0;
-
-function showTotals() {
-  itemQty = 0;
-  var elements = document.querySelectorAll(".form-control");
-  for (var i = 0; i < elements.length; i++) {
-    itemQty += Number(elements[i].value);
-  }
-  document.getElementById("cart-total").textContent = itemQty;
-  document.getElementById("cart-total-page").textContent = itemQty;
-}
-
-// Remove Items
-
-function removeItem() {
-  var element = document.getElementById("cart");
-  element.addEventListener("click", function (remove) {
-    if (remove.target.matches(".cart-item-remove")) {
-      var cartItemRemove = remove.target.parentElement;
-      cartItemRemove.remove();
-      showTotals();
-    }
-  });
-}
-
-//Continue Shopping Button click
-btnContinue.addEventListener("click", function () {
-  $("#close").click();
-});
-
-// Monitor Quantity
-document.addEventListener(
-  "change",
-  function (event) {
-    if (event.target.classList.contains("form-control")) {
-      showTotals();
-    }
-  },
-  false
-);
-
-// Hide elements that are not selected
-
-function RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-/*End Shipping Cart (Phu) */
