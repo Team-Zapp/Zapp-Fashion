@@ -7,12 +7,17 @@
   height: 70vh;
   top: 5%;
 }
+#info {
+  margin-left: 5px;
+}
 #no4 {
   background: linear-gradient(to top left, #7a00b4, #715eea);
   color: white;
   box-shadow: 3px 3px 5px rgb(126, 119, 119);
 }
-
+.tr {
+  cursor: pointer;
+}
 @media only screen and (max-width: 720px) {
   body {
     background: rgb(185, 231, 246);
@@ -31,6 +36,7 @@
     height: 70vh;
     background-color: white;
   }
+
   .container-fluid {
     position: relative;
     width: 50%;
@@ -40,6 +46,9 @@
   }
   .container-fluid button {
     width: 85vh;
+  }
+  .table-primary {
+    margin: auto;
   }
   .topRight {
     position: relative;

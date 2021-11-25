@@ -22,7 +22,7 @@
     <div class="row">
         <div class="Torder">
             <p class="head">Total Orders</p>
-            <p class="foot">1000 Items</p>
+            <p class="foot" id="totalorder"></p>
         </div>
         <div class="Torder">
             <p class="head">Total Revenue</p>

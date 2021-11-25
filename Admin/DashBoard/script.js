@@ -22,7 +22,7 @@ $.ajax({
       else if(category=="3") category="Shoe"
       categories.push(category +"("+gender+")")
     }
-console.log(categories)
+
 var options = {
   series: [
     {
@@ -85,6 +85,101 @@ chart.render();
   }
 })
 
+$.ajax({
+  type:'get',
+  url:'popularitems.php',
+  success :function(data){
+    let json = JSON.parse(data);
+    var ordercategories=[]
+    var orderquantity=[]
+    for (const x of json) {
+      orderquantity.push(Number( x.quantity))
+      var gender = x.ordergender;
+      var category = x.ordercategory;
+      if(gender=="1") gender="Man"
+      else if(gender=="2") gender="Woman"
+      else if(gender=="3") gender="Kid"
+      if(category=="1") category="Shirt"
+      else if(category=="2") category="Pant"
+      else if(category=="3") category="Shoe"
+      ordercategories.push(category +"("+gender+")")
+    }
+
+    orderquantity.sort(function(a, b) {
+      return   b-a;
+    });
+    var highquantity=[]
+    highquantity.push(orderquantity[0],orderquantity[1],orderquantity[2],orderquantity[3],orderquantity[4])
+
+    ordercategories.sort(function(a, b) {
+      return   b-a;
+    });
+    var highcategories=[]
+    highcategories.push(ordercategories[0],ordercategories[1],ordercategories[2],ordercategories[3],ordercategories[4])
+
+    var options = {
+      series: highquantity,
+      chart: {
+        type: "pie",
+      },
+      labels: highcategories,
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200,
+            },
+            legend: {
+              position: "bottom",
+            },
+          },
+        },
+      ],
+    };
+    
+    var chart = new ApexCharts(document.querySelector("#pie"), options);
+    chart.render();
+
+    orderquantity.sort(function(a, b) {
+      return   a-b;
+    });
+    var lowquantity=[]
+    lowquantity.push(orderquantity[0],orderquantity[1],orderquantity[2],orderquantity[3])
+
+    ordercategories.sort(function(a, b) {
+      return   a-b;
+    });
+    var lowcategories=[]
+    lowcategories.push(ordercategories[0],ordercategories[1],ordercategories[2],ordercategories[3])
+
+    var options = {
+      series: lowquantity,
+      chart: {
+        type: "donut",
+      },
+      
+      labels: lowcategories,
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200,
+            },
+            legend: {
+              position: "bottom",
+            },
+          },
+        },
+      ],
+    };
+    
+    var chart = new ApexCharts(document.querySelector("#donut"), options);
+    chart.render();
+  }
+})
+
 })
 
   $.get("../../deflink.html", function (data) {
@@ -128,7 +223,6 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
     url:'search.php',
     success :function(data){
       let json = JSON.parse(data);
-
       $("#visit").text(json)
     }
   })
@@ -137,65 +231,17 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
     url:'feedback.php',
     success :function(data){
       let json = JSON.parse(data);
-
       $("#feedback").text(json)
     }
   })
-
-
-//firts chart
-/*var options = {
-  series: [
-    {
-      name: "Net Profit",
-      data: stock,
+  $.ajax({
+    type:'get',
+    url:'totalorder.php',
+    success :function(data){
+      let json = JSON.parse(data);
+      $("#totalorder").text(json)
     }
-  ],
-  chart: {
-    type: "bar",
-    height: 350,
-  },
-  plotOptions: {
-    bar: {
-      horizontal: false,
-      columnWidth: "55%",
-      endingShape: "rounded",
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  title: {
-    text: "Remain Stock",
-    align: "left",
-  },
-  stroke: {
-    show: true,
-    width: 2,
-    colors: ["transparent"],
-  },
-  xaxis: {
-    categories: ["Shirt","Pant","Shoe"],
-  },
-  yaxis: {
-    title: {
-      text: "$ (thousands)",
-    },
-  },
-  fill: {
-    opacity: 1,
-  },
-  tooltip: {
-    y: {
-      formatter: function (val) {
-        return "$ " + val + " thousands";
-      },
-    },
-  },
-};
-
-var chart = new ApexCharts(document.getElementById("chart"), options);
-chart.render();*/
+  })
 
 //second chart
 var options = {
@@ -242,50 +288,6 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#secChart"), options);
 chart.render();
 
-//pie chart
-var options = {
-  series: [44, 55, 13, 43, 22],
-  chart: {
-    type: "pie",
-  },
-  labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
-  responsive: [
-    {
-      breakpoint: 480,
-      options: {
-        chart: {
-          width: 200,
-        },
-        legend: {
-          position: "bottom",
-        },
-      },
-    },
-  ],
-};
 
-var chart = new ApexCharts(document.querySelector("#pie"), options);
-chart.render();
 //donut
-var options = {
-  series: [44, 55, 41, 17, 15],
-  chart: {
-    type: "donut",
-  },
-  responsive: [
-    {
-      breakpoint: 480,
-      options: {
-        chart: {
-          width: 200,
-        },
-        legend: {
-          position: "bottom",
-        },
-      },
-    },
-  ],
-};
 
-var chart = new ApexCharts(document.querySelector("#donut"), options);
-chart.render();
