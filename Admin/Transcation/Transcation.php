@@ -22,7 +22,7 @@
     </script>
     <div class="container tablediv">
         <table class="table table-striped">
-            <tr class="table-secondary table" id="table">
+            <tr class="table-secondary table" id="table1">
                 <th class="primary ">Name</th>
                 <th class="primary">Transcation ID</th>
                 <th class="primary">Buy Time</th>

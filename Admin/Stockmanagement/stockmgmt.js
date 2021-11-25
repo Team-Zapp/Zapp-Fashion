@@ -16,7 +16,6 @@ $(document).ready(function () {
       cache : false,
       processData: false,
       success:function(res){
-        alert("Successfully Added")
         let name =$("#name").val();
         let gender = $("#inputGroupSelect01").val();
         let category = $("#inputGroupSelect02").val();
@@ -81,46 +80,77 @@ $(document).ready(function () {
       url: 'nameUpdate.php',
       data: {send : JSON.stringify(data)},
       success :function(data){
-        setTimeout(() => {
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Product Successfully Updated',
-            showConfirmButton: false,
-            timer: 3000
-          })
-        },100);
 
+        Swal.fire({
+          title: "Product Successfully Updated",
+          icon: "success",
+          backdrop: false,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "Ok",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            location.reload();
+          }
+        });
       },
       error: function(){
         alert("An Error has Occured")
       }
   })
-  setTimeout(function( )
-  {  location.reload(); },
-  500);
+
 
   })
   document.getElementById("delete").addEventListener("click", function () {
-    let id =$("#forid").text()
-    var data ={
-      "id":id
-    }
-    $.ajax({
-      type: 'post',
-      url: 'nameDelete.php',
-      data: {send : JSON.stringify(data)},
-      success :function(data){
-        alert(data)
-      },
-      error: function(){
-        alert("An Error has Occured")
+    let id = $("#forid").text();
+    var data = {
+      id: id,
+    };
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      backdrop: false,
+      showDenyButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+      denyButtonText: "Cancel",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        $.ajax({
+          type: "post",
+          url: "nameDelete.php",
+          data: { send: JSON.stringify(data) },
+          success: function (data) {
+            Swal.fire({
+              title: "Deleted!",
+              backdrop: false,
+              text: "Your file has been deleted.",
+              icon: "success",
+              confirmButtonColor: "#3085d6",
+              confirmButtonText: "Ok",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                location.reload();
+              }
+            });
+          },
+        });
+      } else if (result.isDenied) {
+        Swal.fire({
+          title: "Changes are not saved",
+          icon: "info",
+          backdrop: false,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "Ok",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            location.reload();
+          }
+        });
       }
-  })
-  setTimeout(function( )
-  {  location.reload(); },
-  500);
-  })
+    });
+  });
   document.getElementById("search").addEventListener("click", function () {
     var name = document.getElementById("name").value;
     $.ajax({
