@@ -4,37 +4,57 @@ $(document).ready(function () {
   $.get("../../deflink.html", function (data) {
     $("head").prepend(data);
   });
-  document.getElementById("submit").addEventListener("click", function () {
-    let name =$("#name").val();
-    let gender = $("#inputGroupSelect01").val();
-    let category = $("#inputGroupSelect02").val();
-    let orgprice =$("#orgprice").val()
-    let saleprice =$("#saleprice").val()
-    let made =$("#made").val()
-    let stock =$("#stock").val()
-    var data ={ 
-      "pdname": name,
-      "pdgender": gender,
-      "category":category,
-      "orgprice":orgprice,
-      "saleprice":saleprice,
-      "madeof":made,
-      "stock":stock
-    }
+  $("#form").on("submit",function (e){
+    e.preventDefault();
+
+
     $.ajax({
       type: 'post',
       url: '../../Controllers/stockmgmtinsert.php',
-      data: {send : JSON.stringify(data)},
-      success :function(data){
-        alert("Item Successfully Submitted")
-      },
-      error: function(){
-        alert("An Error has Occured")
+      data: new FormData(this),
+      contentType: false,
+      cache : false,
+      processData: false,
+      success:function(res){
+        alert("Successfully Added")
+        let name =$("#name").val();
+        let gender = $("#inputGroupSelect01").val();
+        let category = $("#inputGroupSelect02").val();
+        let orgprice =$("#orgprice").val()
+        let saleprice =$("#saleprice").val()
+        let made =$("#made").val()
+        let stock =$("#stock").val()
+        let photoname = res
+        var data ={ 
+          "pdname": name,
+          "pdgender": gender,
+          "category":category,
+          "orgprice":orgprice,
+          "saleprice":saleprice,
+          "madeof":made,
+          "stock":stock,
+          "photoname":photoname
+        }
+        $.ajax({
+          type: 'post',
+          url: '../../Controllers/stockmgmtinsert.php',
+          data: {send : JSON.stringify(data)},
+          success :function(data){
+            document.getElementById("chart").innerHTML="";
+            stock=[];
+            categories=[];
+            remainStock();
+    
+          
+          },
+          error: function(){
+            alert("An Error has Occured")
+          }
+      })
       }
-  })
-  setTimeout(function( )
-  {  location.reload(); },
-  500);
+    })
+
+
 })
   document.getElementById("update").addEventListener("click", function () {
 
@@ -61,7 +81,16 @@ $(document).ready(function () {
       url: 'nameUpdate.php',
       data: {send : JSON.stringify(data)},
       success :function(data){
-        alert(data)
+        setTimeout(() => {
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Product Successfully Updated',
+            showConfirmButton: false,
+            timer: 3000
+          })
+        },100);
+
       },
       error: function(){
         alert("An Error has Occured")
@@ -147,8 +176,9 @@ $(document).ready(function () {
           count1++;
         }
         $(".tr").click(function () {
-          $(".update").attr("class", "update update_act")
-          $(".delbth").attr("class", "delbth delbth_act")
+          $("#search").focus();
+          $(".update").attr("class","update update_act")
+          $(".delbth").attr("class","delbth delbth_act")
           let name = $(this).find(".name").text()
           let gender = $(this).find(".gender").text()
           let category = $(this).find(".category").text()
@@ -252,85 +282,91 @@ $(document).ready(function () {
 })
 var stock = [];
 var categories=[];
-$.ajax({
-  type:'get',
-  url:'stock.php',
-  success :function(data){
-    let json = JSON.parse(data);
-    for (const x of json) {
-      stock.push(x.stock)
-      var gender = x.gender;
-      var category = x.category;
-      if(gender=="1") gender="Man"
-      else if(gender=="2") gender="Woman"
-      else if(gender=="3") gender="Kid"
-      if(category=="1") category="Shirt"
-      else if(category=="2") category="Pant"
-      else if(category=="3") category="Shoe"
-      categories.push(category +"("+gender+")")
-    }
-console.log(categories)
-var options = {
-  series: [
-    {
-      name: "Total Stock",
-      data: stock,
-    }
-  ],
-  chart: {
-    type: "bar",
-    height: 350,
-    toolbar: {
-      show: false
+remainStock();
+function remainStock(){
+  $.ajax({
+    type:'get',
+    url:'stock.php',
+    success :function(data){
+      let json = JSON.parse(data);
+      stock=[];
+      for (const x of json) {
+        stock.push(x.stock)
+        var gender = x.gender;
+        var category = x.category;
+        if(gender=="1") gender="Man"
+        else if(gender=="2") gender="Woman"
+        else if(gender=="3") gender="Kid"
+        if(category=="1") category="Shirt"
+        else if(category=="2") category="Pant"
+        else if(category=="3") category="Shoe"
+        categories.push(category +"("+gender+")")
       }
-  },
-  plotOptions: {
-    bar: {
-      horizontal: false,
-      columnWidth: "55%",
-      endingShape: "rounded",
+      var options = null;
+      console.log(stock)
+  options = {
+    series: [
+      {
+        name: "Total Stock",
+        data: stock,
+      }
+    ],
+    chart: {
+      type: "bar",
+      height: 350,
+      toolbar: {
+        show: false
+        }
     },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  title: {
-    text: "Remain Stock",
-    align: "center",
-    style: {
-      fontSize:  '20px'
-    }
-  },
-  stroke: {
-    show: true,
-    width: 2,
-    colors: ["transparent"],
-  },
-  xaxis: {
-    categories: categories,
-  },
-  yaxis: {
-    title: {
-      text: "InStock",
-    },
-  },
-  fill: {
-    opacity: 1,
-  },
-  tooltip: {
-    y: {
-      formatter: function (val) {
-        return   val ;
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: "55%",
+        endingShape: "rounded",
       },
     },
-  },
-};
+    dataLabels: {
+      enabled: false,
+    },
+    title: {
+      text: "Remain Stock",
+      align: "center",
+      style: {
+        fontSize:  '20px'
+      }
+    },
+    stroke: {
+      show: true,
+      width: 2,
+      colors: ["transparent"],
+    },
+    xaxis: {
+      categories: categories,
+    },
+    yaxis: {
+      title: {
+        text: "InStock",
+      },
+    },
+    fill: {
+      opacity: 1,
+    },
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return   val ;
+        },
+      },
+    },
+  };
+  
+  let chart = new ApexCharts(document.getElementById("chart"), options);
+  chart.render();
+  
+    }
+  })
+}
 
-var chart = new ApexCharts(document.getElementById("chart"), options);
-chart.render();
-
-  }
-})
 /*var options = {
   series: [
     {

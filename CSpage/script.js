@@ -1,6 +1,20 @@
 //ready
 
 $(document).ready(function () {
+  /*$("#toleft").click(function(){
+    var name =document.getElementById("toleft").getAttribute("name")
+    if(name=="chevron-back-outline") {
+      $("#toleft").attr("name","chevron-forward-outline")
+      
+    }
+    else if(name=="chevron-forward-outline") {
+      $("#toleft").attr("name","chevron-back-outline")
+      
+    }
+  })*/
+  $("#feedback").click(function(){
+    $("#feedbackform").attr("href","feedbackform.php?id="+sessionStorage.getItem("UserID") )
+  })
   $.get("cslinks.html", function (data) {
     $("head").prepend(data);
   });

@@ -1,5 +1,8 @@
 <?php
 //This is registration form for new customers whish keep customer info in DataBase
+echo "<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+echo "<script src='sweetalert2.min.js'></script>";
+echo "<link rel=stylesheet' href='sweetalert2.min.css'>";
 require "../../DBconnect.php";
 
 if (isset($_POST['submit'])) {
@@ -16,7 +19,10 @@ if (isset($_POST['submit'])) {
 
     if (count($result) > 0) {
 
-        echo "<script>alert('Username Already Taken');</script>";
+        echo "<body><script>Swal.fire({
+            icon: 'error',
+            title: 'Username already taken'
+          })</script></body>";
     } else {
         $db = new Dbconnect();
         $dbconnect = $db->connect();
@@ -49,11 +55,18 @@ if (isset($_POST['submit'])) {
         $sql->bindValue(":create_date", date("Y/m/d"));
 
         $sql->execute();
+        echo "<body><script>Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Your account has been created',
+            showConfirmButton: false,
+            timer: 1500
+          })</script></body>";
     }
-    echo "<script>alert('Successfully Account Created.');</script>";
+
     echo "<script>
     setTimeout(function( )
     {window.location='login.php';  },
-    500);
+    2000);
     </script>";
 }
