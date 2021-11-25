@@ -921,12 +921,11 @@ body {
 }
 
 .hmslidebt {
-  width: 15vw;
+  width: 12vw;
 }
 
 .hmslide1body {
-  display: flex !important;
-  margin-left: 15vw;
+  margin-left: 16vw;
 }
 
 .hmslider2 {
@@ -948,7 +947,6 @@ body {
 }
 
 .hmslide2body {
-  display: flex !important;
   margin-left: 15vw;
 }
 

@@ -76,7 +76,7 @@
           </div>
           <div id="cart-alert-parent" class="container d-flex justify-content-center">
               <div id="cart-alert" class="alert alert-success" role="alert">
-                Added to Your Cart!
+                Add to Your Cart!
               </div>
             </div>
             <ul class="navbar-nav">
@@ -342,7 +342,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="btn btn-primary btnaddcart">Add to Cart</a>
+          <div href="" class="btn btn-primary btnaddcart" id="1000">Add to Cart</div>
         </div>
       </div>
       <!--Card1-->
@@ -355,7 +355,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="btn btn-primary btnaddcart">Add to Cart</a>
+          <div href="" class="btn btn-primary btnaddcart" id="1001">Add to Cart</div>
         </div>
       </div>
       <!--Card2-->
@@ -368,7 +368,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="btn btn-primary mx-7">Show Details</a>
+          <div href="" class="btn btn-primary  btnaddcart" id="1002">Add to Cart</div>
         </div>
       </div>
       <!--Card3-->
@@ -545,7 +545,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="" class="btn btn-primary mx-7">Show Details</a>
+          <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
         </div>
       </div>
       <!--Card3-->
@@ -759,7 +759,7 @@
     </div>
     <!-- Parallx Card End-->
     <!-- Parallx Card 2 Start -->
-    <div class="nslidecard">
+    <div class="nslidecard" >
       <section class="pt-5 pb-5">
         <div class="container">
           <div class="row">
