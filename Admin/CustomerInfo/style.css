@@ -4,7 +4,7 @@
 }
 
 .goldTier {
-  position: relative;
+  display: block;
   margin: auto;
   top: 2%;
   width: 50%;
@@ -33,9 +33,7 @@
   text-align: center;
 }
 .silverTier {
-  position: relative;
-  left: 5%;
-  top: 7%;
+  margin-left: 2vw;
   width: 45%;
   height: 60vh;
   background: rgb(208, 208, 200);
@@ -48,9 +46,6 @@
   overflow-y: scroll;
 }
 .bronzeTier {
-  position: relative;
-  left: 53%;
-  bottom: 26.3%;
   width: 45%;
   height: 60vh;
   background: rgb(192, 148, 83);
@@ -61,6 +56,15 @@
   );
   border-radius: 13px;
   overflow-y: scroll;
+}
+
+.secondblk {
+  gap: 5vw;
+  margin-top: 10vh;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
 }
 #no3 {
   background: linear-gradient(to top left, #7a00b4, #715eea);
