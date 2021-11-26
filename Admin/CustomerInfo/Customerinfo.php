@@ -39,7 +39,7 @@
 
     <div class="silverTier">
         <h4>Silver Tier</h4>
-        <table class="table-secondary table">
+        <table class="table-secondary table" id="table2">
             <tr class="table-secondary table">
                 <th class="primary"></th>
                 <th class="primary ">Name</th>
