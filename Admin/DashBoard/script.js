@@ -109,13 +109,20 @@ $.ajax({
       return   b-a;
     });
     var highquantity=[]
-    highquantity.push(orderquantity[0],orderquantity[1],orderquantity[2],orderquantity[3],orderquantity[4])
+    for (let index = 0; index < orderquantity.length; index++) {
+    if (index<5)  highquantity.push(orderquantity[index])
+    }
+console.log(highquantity)
 
     ordercategories.sort(function(a, b) {
       return   b-a;
     });
+
     var highcategories=[]
-    highcategories.push(ordercategories[0],ordercategories[1],ordercategories[2],ordercategories[3],ordercategories[4])
+    for (let index = 0; index < ordercategories.length; index++) {
+    if (index<5) highcategories.push(ordercategories[index])
+    }
+
 
     var options = {
       series: highquantity,
@@ -141,17 +148,25 @@ $.ajax({
     var chart = new ApexCharts(document.querySelector("#pie"), options);
     chart.render();
 
-    orderquantity.sort(function(a, b) {
-      return   a-b;
-    });
+    // orderquantity.sort(function(a, b) {
+    //   return   a-b;
+    // });
     var lowquantity=[]
-    lowquantity.push(orderquantity[0],orderquantity[1],orderquantity[2],orderquantity[3])
+    for (let index = 0; index < orderquantity.length; index++) {
+      if (index>4)  lowquantity.push(orderquantity[index])
+      
+    }
 
-    ordercategories.sort(function(a, b) {
-      return   a-b;
-    });
+
+    // ordercategories.sort(function(a, b) {
+    //   return   a-b;
+    // });
     var lowcategories=[]
-    lowcategories.push(ordercategories[0],ordercategories[1],ordercategories[2],ordercategories[3])
+    for (let index = 0; index < ordercategories.length; index++) {
+      if (index>4)  lowcategories.push(ordercategories[index])
+      
+    }
+
 
     var options = {
       series: lowquantity,

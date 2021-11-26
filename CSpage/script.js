@@ -13,24 +13,32 @@ $(document).ready(function () {
     }
   })*/
   document.getElementById("btnCheckout").addEventListener("click", function () {
-    let cartid = $(".cartid").text();
-    let itemprice = $(".cartitemprice").text();
-    let quantity = $(".cartquantity option:selected").text();
-    let itemname = $(".cartitemname").text();
-    
-    var data = {
-      "name": itemname,
-      "cartid": cartid,
-      "itemprice": itemprice,
-      "quantity": quantity,
-      "userid":UserID
-    };
+    let senddata = [];
+    let cartid = document.getElementsByClassName("cartid");
+    let itemprice = document.getElementsByClassName("cartitemprice");
+    let quantity = document.getElementsByClassName("cartquantity");
+    let itemname = document.getElementsByClassName("cartitemname");
+
+
+    for (let index = 0; index < cartid.length; index++) {
+      var data = {
+        "name": itemname[index].innerHTML,
+        "cartid": cartid[index].innerHTML,
+        "itemprice": itemprice[index].innerHTML,
+        "quantity": quantity[index].value,
+        "userid": UserID
+      };
+      senddata.push(data);
+    }
+
+
+
     $.ajax({
       type: "post",
       url: "productinsert.php",
-      data: { send: JSON.stringify(data) },
+      data: { send: JSON.stringify(senddata) },
       success: function (data) {
-alert(data)
+        alert(data)
       },
       error: function () {
         alert("An Error has Occured");
