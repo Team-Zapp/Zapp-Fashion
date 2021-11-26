@@ -13,37 +13,24 @@ $(document).ready(function () {
     }
   })*/
   document.getElementById("btnCheckout").addEventListener("click", function () {
-    let name = $(".name").val();
-    let category = $(".inputGroupSelect02").val();
-    let saleprice = $(".itemPrice").val();
-    let stock = $(".stock").val();
-    let itemname = $(".card-item-title").text();
+    let cartid = $(".cartid").text();
+    let itemprice = $(".cartitemprice").text();
+    let quantity = $(".cartquantity option:selected").text();
+    let itemname = $(".cartitemname").text();
+    
     var data = {
-      name: name,
-
-      category: category,
-
-      saleprice: saleprice,
-
-      stock: stock,
-      id: id,
+      "name": itemname,
+      "cartid": cartid,
+      "itemprice": itemprice,
+      "quantity": quantity,
+      "userid":UserID
     };
     $.ajax({
       type: "post",
-      url: "nameUpdate.php",
+      url: "productinsert.php",
       data: { send: JSON.stringify(data) },
       success: function (data) {
-        Swal.fire({
-          title: "Product Successfully Updated",
-          icon: "success",
-          backdrop: false,
-          confirmButtonColor: "#3085d6",
-          confirmButtonText: "Ok",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            location.reload();
-          }
-        });
+alert(data)
       },
       error: function () {
         alert("An Error has Occured");
@@ -483,16 +470,16 @@ $(document).ready(function () {
             );
             cartItem.innerHTML = `<img src="
               ${item.img}
-              " id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">
+              " id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0 cartitemname">
             ${item.title}
             </p><span class="cart-item-id text-muted" class="mb-0" >(
-             ${item.ID}
-              )</p><span class="cart-item-id text-muted" class="mb-0" style="visibility: hidden;">  
+            ${item.ID}
+              )</p><span class="cart-item-id text-muted cartid" class="mb-0" style="visibility: hidden;">  
               ${item.itemid}
-              "</span>" 
-              </div><p id="itemPrice" class="font-weight-bold">
+              </span>
+              </div><p id="itemPrice" class="font-weight-bold cartitemprice">
               ${item.price} 
-              </p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>`;
+              </p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control cartquantity" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>`;
 
             var cart = document.getElementById("cart");
             var total = document.getElementsByClassName("cart-total-container");
