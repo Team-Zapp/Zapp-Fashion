@@ -30,6 +30,18 @@ $(document).ready(function () {
       senddata.push(data);
     }
 
+<<<<<<< HEAD
+    $.ajax({
+      type: "post",
+      url: "productinsert.php",
+      data: { send: JSON.stringify(senddata) },
+      success: function (data) {
+        alert(data);
+      },
+      error: function () {
+        alert("An Error has Occured");
+      },
+=======
     Swal.fire({
       icon: "success",
       title: "Purchse Successful",
@@ -50,6 +62,7 @@ $(document).ready(function () {
           },
         });
       }
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
     });
   });
   $("#feedback").click(function () {
@@ -132,7 +145,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Mshirtprice" id="${idMS}">${iterator.saleprice}$</h4>
                   <p class="card-text Mshirtname itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid${idMS}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idMS}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -169,7 +182,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Mpantprice" id="${idMP}">${iterator.saleprice}$</h4>
                   <p class="card-text Mpantname itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid${idMP}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idMP}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -206,8 +219,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Mshoeprice" id="${idMSH}">${iterator.saleprice}$</h4>
                   <p class="card-text Mshoename itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid">${iterator.id}</p>
-                  <p style="visibility: hidden;" id="itemid${idMSH}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idMSH}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -248,8 +260,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Wshirtprice" id="${idWS}">${iterator.saleprice}$</h4>
                   <p class="card-text Wshirtname itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid">${iterator.id}</p>
-                  <p style="visibility: hidden;" id="itemid${idWS}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idWS}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -286,7 +297,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Wpantprice" id="${idWP}">${iterator.saleprice}$</h4>
                   <p class="card-text Wpantname itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid${idWP}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idWP}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -323,7 +334,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Wshoeprice" id="${idWSH}">${iterator.saleprice}$</h4>
                   <p class="card-text Wshoename itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid${idWSH}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idWSH}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -363,7 +374,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Kidshirtprice" id="${idKS}">${iterator.saleprice}$</h4>
                   <p class="card-text Kidshirtname itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid${idKS}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idKS}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -400,7 +411,7 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Kidpantprice" id="${idKP}">${iterator.saleprice}$</h4>
                   <p class="card-text Kidpantname itemtag ">${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid${idKP}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idKP}">${iterator.id}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -417,7 +428,19 @@ $(document).ready(function () {
               loop8++;
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
+<<<<<<< HEAD
             } else if (KSH % 3 == 0) {
+=======
+<<<<<<< HEAD
+            } else if (KSH % 3 == 0) {
+=======
+<<<<<<< HEAD
+            } else if (KSH   % 3 == 0) {
+=======
+            } else if (KSH % 3 == 0) {
+>>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
+>>>>>>> 50b62e631da9130fcddc1f3474ebf22dd81daa57
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";
@@ -437,7 +460,8 @@ $(document).ready(function () {
                     flex-column">
                   <h4 class="card-title Kidshoeprice" id="${idKSH}">${iterator.saleprice}$</h4>
                   <p class="card-text Kidshoename itemtag " >${iterator.name}</p>
-                  <p style="visibility: hidden;" id="itemid${idKSH}">${iterator.id}</p>
+                  <p style="display: none;" id="itemid${idKSH}">${iterator.id}</p>
+                  <p>Remaining Stock : ${iterator.stock}</p>
                   <button href="" class="btn btn-primary btnaddcart">Add to Cart</button>
                 </div>
               </div>
@@ -665,6 +689,9 @@ $(".manbtn").click(function () {
   $(".Kid").css("display", "none");
   $(".Men").css("display", "block");
   $(".tag").text("MEN");
+  $("#shirt").css("display", "block");
+  $("#shoe").css("display", "block");
+  $("#pants").css("display", "block");
   document.getElementById("shirt").href = "#scrollspyHeading1";
   document.getElementById("pants").href = "#scrollspyHeading2";
   document.getElementById("shoe").href = "#scrollspyHeading3";
@@ -676,6 +703,9 @@ $(".kidbtn").click(function () {
   $(".Kid").css("display", "block");
   $(".Men").css("display", "none");
   $(".tag").text("KID");
+  $("#shirt").css("display", "block");
+  $("#shoe").css("display", "block");
+  $("#pants").css("display", "block");
   document.getElementById("shirt").href = "#scrollspyHeading7";
   document.getElementById("pants").href = "#scrollspyHeading8";
   document.getElementById("shoe").href = "#scrollspyHeading9";
@@ -687,6 +717,9 @@ $(".womanbtn").click(function () {
   $(".Men").css("display", "none");
   $(".Home").css("display", "none");
   $(".tag").text("WOMEN");
+  $("#shirt").css("display", "block");
+  $("#shoe").css("display", "block");
+  $("#pants").css("display", "block");
   document.getElementById("shirt").href = "#scrollspyHeading4";
   document.getElementById("pants").href = "#scrollspyHeading5";
   document.getElementById("shoe").href = "#scrollspyHeading6";
@@ -698,11 +731,27 @@ $(".homebtn").click(function () {
   $(".Men").css("display", "none");
   $(".Home").css("display", "block");
   $(".tag").text("HOME");
+  $("#shirt").css("display", "none");
+  $("#shoe").css("display", "none");
+  $("#pants").css("display", "none");
   document.getElementById("shirt").href = "#scrollspyHeading10";
   document.getElementById("pants").href = "#scrollspyHeading11";
   document.getElementById("shoe").href = "#scrollspyHeading12";
 });
 
+//Home Btn
+$("#hmbtn1").click(function () {
+  $(".Women").css("display", "none");
+  $(".Kid").css("display", "none");
+  $(".Men").css("display", "block");
+  $(".Home").css("display", "none");
+});
+$("#hmbtn2").click(function () {
+  $(".Women").css("display", "block");
+  $(".Kid").css("display", "none");
+  $(".Men").css("display", "none");
+  $(".Home").css("display", "none");
+});
 // HOME PAGE JS
 // HOME PAGE JS
 (function () {

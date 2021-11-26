@@ -38,25 +38,19 @@
         <span class="name manbtn">MEN</span>
         <span class="name womanbtn">WOMEN</span>
         <span class="name kidbtn">KID</span>
-        <input class="form-control me-2 SearchBar border border-3" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-dark search" type="submit">
-          <ion-icon name="search-outline" class="Search"></ion-icon>
-        </button>
         <button class="btn btn-outline-dark user" type="submit" id="feedback">
           <a href="" id="feedbackform">
             <ion-icon name="pencil-outline" class="User"></ion-icon>
           </a>
 
         </button>
-        <button class="btn btn-outline-dark cart" type="submit">
-          <ion-icon name="cart-outline" class="Cart"></ion-icon>
-        </button>
+
       </div>
     </div>
 
     <!--FixedBar Start-->
     <div class="FixedBar">
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary ulclass">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark ulclass">
         <div class="container">
           <a class="navbar-brand tag" href="#">HOME</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
@@ -76,13 +70,17 @@
             </ul>
           </div>
           <div id="cart-alert-parent" class="container d-flex justify-content-center">
-              <div id="cart-alert" class="alert alert-success" role="alert">
+              <div id="cart-alert" class="alert alert-success addtocart" role="alert">
                 Add to Your Cart!
               </div>
             </div>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" >
               <li class="nav-item">
-                <div id="cart-button" class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-shopping-cart fa-2x"></i><span id="cart-total-page" class="badge badge-pill badge-danger">0</span></div>
+                <div id="cart-button" class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                          <button class="btn btn-outline-warning cart" type="submit">
+                        <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        <span id="cart-total-page" class="badge badge-pill badge-danger">0</span></button>
+                </div>
               </li>
             </ul>
           <!-- navbar-collapse.// -->
@@ -248,7 +246,7 @@
                     data-aos-duration="700">
                     <img src="dave-goudreau-rsphsaAROz0-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body hmslide1body">
-                        <a href="#" class="btn btn-primary hmslidebt">Shop Now</a>
+                        <a href="#" class="btn btn-primary hmslidebt" id="hmbtn1">Shop Now</a>
                     </div>
                 </div>
                 <div class="homeslider1_text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
@@ -267,7 +265,7 @@
                     data-aos-duration="700">
                     <img src="homeslide2.jpg" class="card-img-top hmcard2" alt="...">
                     <div class="card-body hmslide2body">
-                        <a href="#" class="btn btn-primary hmslidebt">Shop Now</a>
+                        <a href="#" class="btn btn-primary hmslidebt" id="hmbtn2">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -335,41 +333,38 @@
         <h2 class="mb-3 fs-2 fw-bold fst-italic">Trending</h2>
       </div>
       <div class="card1" style>
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
         <!--Card1-->
-        <div class="card-body">
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Shoe</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div href="" class="btn btn-primary btnaddcart" id="1000">Add to Cart</div>
+          <div href="#scrollspyHeading3" class="btn btn-primary">Shop Now</div>
         </div>
       </div>
       <!--Card1-->
       <div class="card1" style>
         <!--Card2-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Shirt</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div href="" class="btn btn-primary btnaddcart" id="1001">Add to Cart</div>
+          <div href="#scrollspyHeading1" class="btn btn-primary">Shop Now</div>
         </div>
       </div>
       <!--Card2-->
       <div class="card1" style>
         <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Pants</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div href="" class="btn btn-primary  btnaddcart" id="1002">Add to Cart</div>
+          <div href="#scrollspyHeading2" class="btn btn-primary" >Shop Now</div>
         </div>
       </div>
       <!--Card3-->
@@ -512,41 +507,38 @@
         <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
       </div>
       <div class="card1" style>
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
         <!--Card1-->
-        <div class="card-body">
-          <h5 class="card-title">Shoe</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary btnaddcart">Add to Cart</a>
+        <div class="card-body  
+                    justify-content-center
+                    d-flex
+                    flex-column">
+          <a href="#scrollspyHeading8" class="btn btn-primary ">Shop Now</a>
         </div>
       </div>
       <!--Card1-->
       <div class="card1" style>
         <!--Card2-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Shirt</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
+          <a href="#scrollspyHeading6" class="btn btn-primary">Shop Now</a>
         </div>
       </div>
       <!--Card2-->
       <div class="card1" style>
         <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Pants</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
+
+          <a href="#scrollspyHeading7" class="btn btn-primary">Shop Now</a>
         </div>
       </div>
       <!--Card3-->
@@ -688,41 +680,39 @@
         <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
       </div>
       <div class="card1" style>
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
         <!--Card1-->
-        <div class="card-body">
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Shoe</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
+          <a href="#scrollspyHeading12" class="btn btn-primary">Shop Now</a>
         </div>
       </div>
       <!--Card1-->
       <div class="card1" style>
         <!--Card2-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Shirt</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="" class="btn btn-primary btnaddcart">Add to Cart</a>
+
+          <a href="#scrollspyHeading11" class="btn btn-primary">Shop Now</a>
         </div>
       </div>
       <!--Card2-->
       <div class="card1" style>
         <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
+        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
+        <div class="card-body
+        justify-content-center
+                    d-flex
+                    flex-column">
           <h5 class="card-title">Pants</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="" class="btn btn-primary mx-7">Show Details</a>
+          <a href="#scrollspyHeading9" class="btn btn-primary mx-7">Shop Now</a>
         </div>
       </div>
       <!--Card3-->

@@ -6,7 +6,7 @@
 .goldTier {
   display: block;
   margin: auto;
-  top: 2%;
+  margin-top: 100px;
   width: 50%;
   height: 60vh;
   background: rgb(212, 220, 118);
