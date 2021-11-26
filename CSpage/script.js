@@ -417,7 +417,11 @@ $(document).ready(function () {
               loop8++;
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
+<<<<<<< HEAD
             } else if (KSH   % 3 == 0) {
+=======
+            } else if (KSH % 3 == 0) {
+>>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";
