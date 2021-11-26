@@ -47,8 +47,7 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
         var orderid = x.orderid;
         var name = x.username;
         var buydate=x.buy_date;
-        
-        $("#table").after(
+        $("#table1").after(
           `
           <tr class="tr table-success">
           <td class="name table-primary">${name}</td>

@@ -22,8 +22,8 @@
         <h4>Gold Tier</h4>
 
         <div class="table">
-            <table class="table-secondary table">
-                <tr class="table-secondary table" id="table1">
+            <table class="table-secondary table" id="table1">
+                <tr class="table-secondary table">
                     <th class="primary"></th>
                     <th class="primary ">Name</th>
                     <th class="primary">E-mail</th>
@@ -35,11 +35,11 @@
             </table>
         </div>
     </div>
-
-
+<div></div>
+<div class="secondblk">
     <div class="silverTier">
         <h4>Silver Tier</h4>
-        <table class="table-secondary table">
+        <table class="table-secondary table" id="table2">
             <tr class="table-secondary table">
                 <th class="primary"></th>
                 <th class="primary ">Name</th>
@@ -48,94 +48,7 @@
                 <th class="primary">Address</th>
                 <th class="primary">Total Buget Used</th>
             </tr>
-            <tr class="table-success">
-                <td class="table-primary">1</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">2</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">3</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">4</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">5</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">6</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">7</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">8</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">9</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">10</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">11</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
+
         </table>
     </div>
     <div class="bronzeTier">
@@ -149,95 +62,8 @@
                 <th class="primary">Address</th>
                 <th class="primary">Total Buget Used</th>
             </tr>
-            <tr class="table-success">
-                <td class="table-primary">1</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">2</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">3</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">4</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">5</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">6</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">7</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">8</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">9</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">10</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
-            <tr class="table-success">
-                <td class="table-primary">11</td>
-                <td class="table-primary">John</td>
-                <td class="table-primary">John@gmail.com</td>
-                <td class="table-primary">091234456</td>
-                <td class="table-primary">no15</td>
-                <td class="table-primary">1500$</td>
-            </tr>
         </table>
+    </div>
     </div>
 </body>
 

@@ -10,14 +10,7 @@
     <script src="stockmgmt.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
-    <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>"
-<<<<<<< HEAD
-
-=======
-    <script src='sweetalert2.min.js'></script>"
-    <link rel='stylesheet' href='sweetalert2.min.css'>"
->>>>>>> 9ecdc3317e24395c0ec27725495a9692db000cbf
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
     <link rel="shortcut icon" href="logo 2.png" type="image/x-icon" />
     <link rel="stylesheet" href="stockmgmt.css">
 </head>
