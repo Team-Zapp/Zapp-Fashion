@@ -406,11 +406,11 @@ $(document).ready(function () {
             let start = "";
             let end = "";
             let inner = "#Kidshoe";
-            if (KP == 0) {
+            if (KSH == 0) {
               loop8++;
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
-            } else if (KP % 3 == 0) {
+            } else if (KSH % 3 == 0) {
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";

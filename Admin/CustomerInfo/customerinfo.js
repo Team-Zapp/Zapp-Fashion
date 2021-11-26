@@ -15,7 +15,7 @@ $(document).ready(function () {
         var email = x.email;
         var phnumber=x.phonenumber;
         var address=x.address;
-        if(x.totalbudget>1099){
+        if(x.totalbudget>3099){
           count1++;
           $("#table1").append(
             `
@@ -30,14 +30,15 @@ $(document).ready(function () {
           `
           )
         }
-        if(x.totalbudget>999){
+        if(x.totalbudget>999 &&
+          x.totalbudget<3000){
           count2++;
-          $("#table1").append(
+          $("#table2 tbody").append(
             `
             <tr class="tr table-success">
-            <td class="table-primary">${count1}</td>
-            <td class="name table-primary">${name}</td>
-            <td class="orderid table-primary">${email}</td>
+            <td class="table-primary">${count2}</td>
+            <td class="table-primary">${name}</td>
+            <td class="table-primary">${email}</td>
             <td class="table-primary">${phnumber}</td>
             <td class="table-primary">${address}</td>
             <td class="table-primary">${totalbudget}$</td>
@@ -45,7 +46,22 @@ $(document).ready(function () {
           `
           )
         }
-
+        if(x.totalbudget>500&&
+          x.totalbudget<1000 ){
+          count3++;
+          $("#table3 tbody").append(
+            `
+            <tr class="tr table-success">
+            <td class="table-primary">${count3}</td>
+            <td class="table-primary">${name}</td>
+            <td class="table-primary">${email}</td>
+            <td class="table-primary">${phnumber}</td>
+            <td class="table-primary">${address}</td>
+            <td class="table-primary">${totalbudget}$</td>
+        </tr>
+          `
+          )
+        }
       }
       
     }

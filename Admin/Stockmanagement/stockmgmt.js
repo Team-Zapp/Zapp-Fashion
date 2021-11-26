@@ -22,24 +22,34 @@ $(document).ready(function () {
         let stock = $("#stock").val();
         let photoname = res;
         var data = {
-          pdname: name,
-          pdgender: gender,
-          category: category,
-          orgprice: orgprice,
-          saleprice: saleprice,
-          madeof: made,
-          stock: stock,
-          photonames: photoname,
+          "pdname": name,
+          "pdgender": gender,
+          "category": category,
+          "orgprice": orgprice,
+          "saleprice": saleprice,
+          "madeof": made,
+          "stock": stock,
+          "photonames": photoname
         };
         $.ajax({
           type: "post",
           url: "../../Controllers/stockmgmtinsert.php",
           data: { send: JSON.stringify(data) },
           success: function (data) {
+            Swal.fire({
+              title: "Success",
+              backdrop: false,
+              text: "Your file has been submitted.",
+              icon: "success",
+              confirmButtonColor: "#3085d6",
+              confirmButtonText: "Ok",
+              backdrop: false,
+            })
             document.getElementById("chart").innerHTML = "";
             stock = [];
             categories = [];
             remainStock();
+
           },
           error: function () {
             alert("An Error has Occured");
@@ -58,14 +68,14 @@ $(document).ready(function () {
     let stock = $("#stock").val();
     let id = $("#forid").text();
     var data = {
-      name: name,
-      gender: gender,
-      category: category,
-      orgprice: orgprice,
-      saleprice: saleprice,
-      made: made,
-      stock: stock,
-      id: id,
+      "name": name,
+      "gender": gender,
+      "category": category,
+      "orgprice": orgprice,
+      "saleprice": saleprice,
+      "made": made,
+      "stock": stock,
+      "id": id,
     };
     $.ajax({
       type: 'post',

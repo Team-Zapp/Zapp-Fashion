@@ -84,6 +84,71 @@ chart.render();
 
   }
 })
+var revenue = [];
+var revenuecategory=[];
+$.ajax({
+  type:'get',
+  url:'secondchart.php',
+  success :function(data){
+    let json = JSON.parse(data);
+    for (const x of json) {
+      revenue.push(x.revenue)
+      var gender = x.ordergender;
+      var category = x.ordercategory;
+      if(gender=="1") gender="Man"
+      else if(gender=="2") gender="Woman"
+      else if(gender=="3") gender="Kid"
+      if(category=="1") category="Shirt"
+      else if(category=="2") category="Pant"
+      else if(category=="3") category="Shoe"
+      revenuecategory.push(category +"("+gender+")")
+    }
+    var options = {
+      series: [
+        {
+          name: "Desktops",
+          data: revenue,
+        },
+      ],
+      chart: {
+        height: 350,
+        type: "line",
+        zoom: {
+          enabled: false,
+        },
+        toolbar: {
+          show: false
+          }
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      stroke: {
+        curve: "straight",
+      },
+      title: {
+        text: "Earning",
+        align: "left",
+            style: {
+          fontSize:  '20px'
+        }
+      },
+      grid: {
+        row: {
+          colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+          opacity: 0.5,
+        },
+      },
+      xaxis: {
+        categories:revenuecategory ,
+      },
+    };
+    
+    var chart = new ApexCharts(document.querySelector("#secChart"), options);
+    chart.render();
+    
+  }
+})
 
 $.ajax({
   type:'get',
@@ -257,51 +322,58 @@ if (sessionStorage.getItem("AdminName")=="Phu"){
       $("#totalorder").text(json)
     }
   })
-
-//second chart
-var options = {
-  series: [
-    {
-      name: "Desktops",
-      data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-    },
-  ],
-  chart: {
-    height: 350,
-    type: "line",
-    zoom: {
-      enabled: false,
-    },
-    toolbar: {
-      show: false
-      }
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  stroke: {
-    curve: "straight",
-  },
-  title: {
-    text: "Earning",
-    align: "left",
-        style: {
-      fontSize:  '20px'
+  $.ajax({
+    type:'get',
+    url:'totalrevenue.php',
+    success :function(data){
+      let json = JSON.parse(data);
+      $("#revenue").text(data)
     }
-  },
-  grid: {
-    row: {
-      colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
-      opacity: 0.5,
-    },
-  },
-  xaxis: {
-    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
-  },
-};
+  })
+//second chart
+// var options = {
+//   series: [
+//     {
+//       name: "Desktops",
+//       data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+//     },
+//   ],
+//   chart: {
+//     height: 350,
+//     type: "line",
+//     zoom: {
+//       enabled: false,
+//     },
+//     toolbar: {
+//       show: false
+//       }
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   stroke: {
+//     curve: "straight",
+//   },
+//   title: {
+//     text: "Earning",
+//     align: "left",
+//         style: {
+//       fontSize:  '20px'
+//     }
+//   },
+//   grid: {
+//     row: {
+//       colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+//       opacity: 0.5,
+//     },
+//   },
+//   xaxis: {
+//     categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+//   },
+// };
 
-var chart = new ApexCharts(document.querySelector("#secChart"), options);
-chart.render();
+// var chart = new ApexCharts(document.querySelector("#secChart"), options);
+// chart.render();
 
 
 //donut

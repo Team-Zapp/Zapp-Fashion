@@ -35,7 +35,7 @@ if (isset($_FILES['pdimage'])) {
     $orgprice = $data['orgprice'];
     $saleprice = $data['saleprice'];
     $stock = $data['stock'];
-    $photoname = $data['photoname'];
+    $photoname = $data['photonames'];
     //call DB Class
     $db = new Dbconnect();
     $dbconnect = $db->connect();
