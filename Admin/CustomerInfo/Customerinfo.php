@@ -49,24 +49,6 @@
                     <th class="primary">Total Buget Used</th>
                 </tr>
 
-<<<<<<< HEAD
-        </table>
-    </div>
-    <div class="bronzeTier">
-        <h4>Bronze Tier</h4>
-        <table class="table-secondary table">
-            <tr class="table-secondary table">
-                <th class="primary"></th>
-                <th class="primary ">Name</th>
-                <th class="primary">E-mail</th>
-                <th class="primary">Phone Number</th>
-                <th class="primary">Address</th>
-                <th class="primary">Total Buget Used</th>
-            </tr>
-            
-        </table>
-    </div>
-=======
             </table>
         </div>
         <div class="bronzeTier">
@@ -83,7 +65,6 @@
 
             </table>
         </div>
->>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
     </div>
 </body>
 
