@@ -13,37 +13,29 @@ $(document).ready(function () {
     }
   })*/
   document.getElementById("btnCheckout").addEventListener("click", function () {
-    let name = $(".name").val();
-    let category = $(".inputGroupSelect02").val();
-    let saleprice = $(".itemPrice").val();
-    let stock = $(".stock").val();
-    let itemname = $(".card-item-title").text();
-    var data = {
-      name: name,
+    let senddata = [];
+    let cartid = document.getElementsByClassName("cartid");
+    let itemprice = document.getElementsByClassName("cartitemprice");
+    let quantity = document.getElementsByClassName("cartquantity");
+    let itemname = document.getElementsByClassName("cartitemname");
 
-      category: category,
+    for (let index = 0; index < cartid.length; index++) {
+      var data = {
+        name: itemname[index].innerHTML,
+        cartid: cartid[index].innerHTML,
+        itemprice: itemprice[index].innerHTML,
+        quantity: quantity[index].value,
+        userid: UserID,
+      };
+      senddata.push(data);
+    }
 
-      saleprice: saleprice,
-
-      stock: stock,
-      id: id,
-    };
     $.ajax({
       type: "post",
-      url: "nameUpdate.php",
-      data: { send: JSON.stringify(data) },
+      url: "productinsert.php",
+      data: { send: JSON.stringify(senddata) },
       success: function (data) {
-        Swal.fire({
-          title: "Product Successfully Updated",
-          icon: "success",
-          backdrop: false,
-          confirmButtonColor: "#3085d6",
-          confirmButtonText: "Ok",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            location.reload();
-          }
-        });
+        alert(data);
       },
       error: function () {
         alert("An Error has Occured");
@@ -483,16 +475,16 @@ $(document).ready(function () {
             );
             cartItem.innerHTML = `<img src="
               ${item.img}
-              " id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">
-              ${item.title}
-              </p><span class="cart-item-id text-muted" class="mb-0" >(
-              ${item.ID}
-              )</p><span class="cart-item-id text-muted" class="mb-0" style="visibility: hidden;">  
+              " id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0 cartitemname">
+            ${item.title}
+            </p><span class="cart-item-id text-muted" class="mb-0" >(
+            ${item.ID}
+              )</p><span class="cart-item-id text-muted cartid" class="mb-0" style="visibility: hidden;">  
               ${item.itemid}
-              "</span>" 
-              </div><p id="itemPrice" class="font-weight-bold">
+              </span>
+              </div><p id="itemPrice" class="font-weight-bold cartitemprice">
               ${item.price} 
-              </p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>`;
+              </p><div class="form-group row"><div class="col-xs-1"><div class="form-group"><select class="form-control cartquantity" id="sel1"><option value=1 selected>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select></div></div></div><button type="button" class="btn-close cart-item-remove" aria-label="Close"></button>`;
 
             var cart = document.getElementById("cart");
             var total = document.getElementsByClassName("cart-total-container");
