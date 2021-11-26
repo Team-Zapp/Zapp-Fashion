@@ -1,3 +1,41 @@
+$(document).ready(function () {
+
+
+  $.ajax({
+    type: 'get',
+    url: 'usertier.php',
+    success: function (data) {
+      let json = JSON.parse(data);
+      var count=1;
+      for (const x of json) {
+        var totalbudget = x.totalbudget;
+        var name = x.username;
+        var email = x.email;
+        var phnumber=x.phonenumber;
+        var address=x.address;
+        if(x.totalbudget>1499){
+          $("#table1").append(
+            `
+            <tr class="tr table-success">
+            <td class="table-primary">${count}</td>
+            <td class="name table-primary">${name}</td>
+            <td class="orderid table-primary">${email}</td>
+            <td class="table-primary">${phnumber}</td>
+            <td class="table-primary">${address}</td>
+            <td class="table-primary">${totalbudget}$</td>
+        </tr>
+          `
+          )
+        }
+
+        count++;
+      }
+      
+    }
+  
+    })
+  });
+
 $.get("../../def.html", function (data) {
   $("body").prepend(data);
 });
@@ -33,4 +71,8 @@ $.get("../../deflink.html", function (data) {
   if (sessionStorage.getItem("AdminName")=="Phu"){
     document.getElementById("adminPic").setAttribute("src","flower.jpg")
   }
+
+ 
+
+
 });

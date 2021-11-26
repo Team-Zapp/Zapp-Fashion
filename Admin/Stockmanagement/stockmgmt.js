@@ -68,13 +68,15 @@ $(document).ready(function () {
       id: id,
     };
     $.ajax({
-      type: "post",
-      url: "nameUpdate.php",
-      data: { send: JSON.stringify(data) },
-      success: function (data) {
+      type: 'post',
+      url: 'nameUpdate.php',
+      data: {send : JSON.stringify(data)},
+      success :function(data){
+
         Swal.fire({
           title: "Product Successfully Updated",
           icon: "success",
+          backdrop: false,
           confirmButtonColor: "#3085d6",
           confirmButtonText: "Ok",
         }).then((result) => {
@@ -83,11 +85,13 @@ $(document).ready(function () {
           }
         });
       },
-      error: function () {
-        alert("An Error has Occured");
-      },
-    });
-  });
+      error: function(){
+        alert("An Error has Occured")
+      }
+  })
+
+
+  })
   document.getElementById("delete").addEventListener("click", function () {
     let id = $("#forid").text();
     var data = {
@@ -97,6 +101,7 @@ $(document).ready(function () {
       title: "Are you sure?",
       text: "You won't be able to revert this!",
       icon: "warning",
+      backdrop: false,
       showDenyButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
@@ -112,6 +117,7 @@ $(document).ready(function () {
           success: function (data) {
             Swal.fire({
               title: "Deleted!",
+              backdrop: false,
               text: "Your file has been deleted.",
               icon: "success",
               confirmButtonColor: "#3085d6",
@@ -128,6 +134,7 @@ $(document).ready(function () {
         Swal.fire({
           title: "Changes are not saved",
           icon: "info",
+          backdrop: false,
           confirmButtonColor: "#3085d6",
           confirmButtonText: "Ok",
         }).then((result) => {
