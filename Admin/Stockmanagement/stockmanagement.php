@@ -10,7 +10,7 @@
     <script src="stockmgmt.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
-    <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="logo 2.png" type="image/x-icon" />
     <link rel="stylesheet" href="stockmgmt.css">
 </head>

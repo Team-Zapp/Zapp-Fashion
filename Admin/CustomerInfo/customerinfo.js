@@ -4,18 +4,31 @@ $(document).ready(function () {
     url: "usertier.php",
     success: function (data) {
       let json = JSON.parse(data);
+<<<<<<< HEAD
       var count = 1;
+=======
+      var count1=0;
+      var count2=0;
+      var count3=0;
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
       for (const x of json) {
         var totalbudget = x.totalbudget;
         var name = x.username;
         var email = x.email;
+<<<<<<< HEAD
         var phnumber = x.phonenumber;
         var address = x.address;
         if (x.totalbudget > 4000) {
+=======
+        var phnumber=x.phonenumber;
+        var address=x.address;
+        if(x.totalbudget>3099){
+          count1++;
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
           $("#table1").append(
             `
             <tr class="tr table-success">
-            <td class="table-primary">${count}</td>
+            <td class="table-primary">${count1}</td>
             <td class="name table-primary">${name}</td>
             <td class="orderid table-primary">${email}</td>
             <td class="table-primary">${phnumber}</td>
@@ -38,8 +51,38 @@ $(document).ready(function () {
           `
           );
         }
-
-        count++;
+        if(x.totalbudget>999 &&
+          x.totalbudget<3000){
+          count2++;
+          $("#table2 tbody").append(
+            `
+            <tr class="tr table-success">
+            <td class="table-primary">${count2}</td>
+            <td class="table-primary">${name}</td>
+            <td class="table-primary">${email}</td>
+            <td class="table-primary">${phnumber}</td>
+            <td class="table-primary">${address}</td>
+            <td class="table-primary">${totalbudget}$</td>
+        </tr>
+          `
+          )
+        }
+        if(x.totalbudget>500&&
+          x.totalbudget<1000 ){
+          count3++;
+          $("#table3 tbody").append(
+            `
+            <tr class="tr table-success">
+            <td class="table-primary">${count3}</td>
+            <td class="table-primary">${name}</td>
+            <td class="table-primary">${email}</td>
+            <td class="table-primary">${phnumber}</td>
+            <td class="table-primary">${address}</td>
+            <td class="table-primary">${totalbudget}$</td>
+        </tr>
+          `
+          )
+        }
       }
     },
   });

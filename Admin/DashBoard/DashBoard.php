@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="jquary.js"></script>
     <script src="script.js" defer></script>
-
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link rel="shortcut icon" href="logo 2.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
@@ -15,7 +14,6 @@
 </head>
 
 <body>
-
     <script>
         let AdminName = "<?php echo $_GET["name"] ?>";
     </script>
@@ -26,7 +24,7 @@
         </div>
         <div class="Torder">
             <p class="head">Total Revenue</p>
-            <p class="foot">1000 $</p>
+            <p class="foot" id="revenue"></p>
         </div>
         <div class="Torder">
             <p class="head">Visit</p>

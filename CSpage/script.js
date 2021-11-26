@@ -30,6 +30,7 @@ $(document).ready(function () {
       senddata.push(data);
     }
 
+<<<<<<< HEAD
     $.ajax({
       type: "post",
       url: "productinsert.php",
@@ -40,6 +41,28 @@ $(document).ready(function () {
       error: function () {
         alert("An Error has Occured");
       },
+=======
+    Swal.fire({
+      icon: "success",
+      title: "Purchse Successful",
+      text: "Thanks for your purchase",
+      confirmButtonColor: "#3085d6",
+      confirmButtonText: "Ok",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        $.ajax({
+          type: "post",
+          url: "productinsert.php",
+          data: { send: JSON.stringify(senddata) },
+          success: function (data) {
+            location.reload();
+          },
+          error: function () {
+            alert("An Error has Occured");
+          },
+        });
+      }
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
     });
   });
   $("#feedback").click(function () {
@@ -116,7 +139,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -153,7 +176,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -190,7 +213,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -231,7 +254,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -268,7 +291,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -305,7 +328,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -345,7 +368,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -382,7 +405,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -405,7 +428,15 @@ $(document).ready(function () {
               loop8++;
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
+<<<<<<< HEAD
             } else if (KSH % 3 == 0) {
+=======
+<<<<<<< HEAD
+            } else if (KSH   % 3 == 0) {
+=======
+            } else if (KSH % 3 == 0) {
+>>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";
@@ -419,7 +450,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
