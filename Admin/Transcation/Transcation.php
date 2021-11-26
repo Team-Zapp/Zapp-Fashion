@@ -20,12 +20,15 @@
         let AdminName = "<?php echo $_GET["name"] ?>"
     </script>
     <div class="container tablediv">
-        <table class="table table-striped">
-            <tr class="table-secondary table" id="table1">
+        <br>
+        <table class="table table-striped" id="table1">
+            <tr class="table-secondary table" >
+                <th class="primary">No.</th>
                 <th class="primary ">Name</th>
                 <th class="primary">Transcation ID</th>
                 <th class="primary">Buy Time</th>
                 <th class="primary">Total Buget Used </th>
+                <th class="primary"></th>
             </tr>
 
 

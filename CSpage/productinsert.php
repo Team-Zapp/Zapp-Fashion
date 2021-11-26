@@ -5,6 +5,8 @@ $Userid;
 $Username = "";
 $loopCount = 0;
 $totalBg = 0;
+$stockdeduct=0;
+$overstock=true;
 
 //connect database
 require "../DBconnect.php";
@@ -16,6 +18,29 @@ $dbconnect = $db->connect();
 //extract for each item from sender ajax
 $data = json_decode($_POST['send'], true);
 
+
+// stock and quantity check
+foreach ($data as $key => $value){
+
+            $itemid = $value['cartid'];
+            $quantity = $value['quantity'];
+
+            $sql = $dbconnect->prepare("SELECT stock,name FROM stock_mgmt WHERE id=:id");
+            $sql->bindValue(":id", $itemid);
+            // sql execute
+            $sql->execute();
+            $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+            $checkorginalstock = $result[0]["stock"];
+            $outofstockname =$result[0]["name"];
+
+            if ( $quantity > $checkorginalstock){
+                $overstock=false;
+                echo ("$outofstockname is out of Stock");
+                break;
+            }
+}
+
+if ($overstock){
 // loop for each item
 foreach ($data as $key => $value) {
     // get all item from array
@@ -39,8 +64,10 @@ foreach ($data as $key => $value) {
 //insert Order table
 insertOrder($dbconnect);
 insertOrderDetail($dbconnect, $data);
+stockdeduct($dbconnect,$data);
 //check
 checkInsert();
+}
 
 
 /**
@@ -148,6 +175,45 @@ function insertOrderDetail($dbconnect, $data)
     }
 }
 
+
+function stockdeduct($dbconnect,$data){
+ foreach ($data as $key => $value) {
+            $itemid = $value['cartid'];
+            $quantity = $value['quantity'];
+        
+            print_r($quantity);
+            //search for ordercategory,ordergender according to itemid
+            $sql = $dbconnect->prepare("SELECT stock FROM stock_mgmt WHERE id=:id");
+            $sql->bindValue(":id", $itemid);
+            // sql execute
+            $sql->execute();
+            $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+            $originalstock = $result[0]["stock"];
+            $stockdeduct=(int)$originalstock-(int)$quantity;
+            echo ("SPACE");
+            echo ($stockdeduct);
+            //deduct stock from stock mgmt table
+            try {
+                // prepare for deduct data
+                $sql = $dbconnect->prepare(
+                "UPDATE stock_mgmt SET 
+
+                stock = :stock
+                WHERE id=:id;
+            "
+                );
+                $sql->bindValue(":stock", $stockdeduct );
+                $sql->bindValue(":id", $itemid);
+                // sql execute
+                $sql->execute();
+                // if insert success
+            } catch (Exception $e) {
+                // if insert fail
+                print_r($e);
+                $insert = false;
+            }
+        }
+    }
 
 
 

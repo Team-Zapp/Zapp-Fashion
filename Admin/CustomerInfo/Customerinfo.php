@@ -36,7 +36,7 @@
         </div>
     </div>
 
-
+<div class="secondblk">
     <div class="silverTier">
         <h4>Silver Tier</h4>
         <table class="table-secondary table" id="table2">
@@ -151,6 +151,7 @@
                 <td class="table-primary">1500$</td>
             </tr>
         </table>
+    </div>
     </div>
 </body>
 
