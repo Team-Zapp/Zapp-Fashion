@@ -484,9 +484,9 @@ $(document).ready(function () {
             cartItem.innerHTML = `<img src="
               ${item.img}
               " id="item-img" alt=""><div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">
-            ${item.title}
-            </p><span class="cart-item-id text-muted" class="mb-0" >(
-             ${item.ID}
+              ${item.title}
+              </p><span class="cart-item-id text-muted" class="mb-0" >(
+              ${item.ID}
               )</p><span class="cart-item-id text-muted" class="mb-0" style="visibility: hidden;">  
               ${item.itemid}
               "</span>" 
