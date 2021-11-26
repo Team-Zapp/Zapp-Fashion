@@ -7,6 +7,7 @@ $(document).ready(function () {
     type:'get',
     url:'getfeedback.php',
     success :function(data){
+      
       let json = JSON.parse(data);
       console.log(json)
       for (const x of json) {

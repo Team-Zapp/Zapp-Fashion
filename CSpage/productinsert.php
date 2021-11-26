@@ -1,4 +1,7 @@
 <?php
+
+// echo  "<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+
 //GB
 $insert = false;
 $Userid;
@@ -36,6 +39,12 @@ foreach ($data as $key => $value){
             if ( $quantity > $checkorginalstock){
                 $overstock=false;
                 echo ("$outofstockname is out of Stock");
+                // echo "<body><script>
+                //          Swal.fire({
+                //          icon: 'error',
+                //          title: 'Oops... $outofstockname is out of Stock !',
+                //          text: '$outofstockname only left $checkorginalstock items '});
+                //         </script></body>";
                 break;
             }
 }

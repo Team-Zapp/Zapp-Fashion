@@ -19,30 +19,37 @@ $(document).ready(function () {
     let quantity = document.getElementsByClassName("cartquantity");
     let itemname = document.getElementsByClassName("cartitemname");
 
-
     for (let index = 0; index < cartid.length; index++) {
       var data = {
-        "name": itemname[index].innerHTML,
-        "cartid": cartid[index].innerHTML,
-        "itemprice": itemprice[index].innerHTML,
-        "quantity": quantity[index].value,
-        "userid": UserID
+        name: itemname[index].innerHTML,
+        cartid: cartid[index].innerHTML,
+        itemprice: itemprice[index].innerHTML,
+        quantity: quantity[index].value,
+        userid: UserID,
       };
       senddata.push(data);
     }
 
-
-
-    $.ajax({
-      type: "post",
-      url: "productinsert.php",
-      data: { send: JSON.stringify(senddata) },
-      success: function (data) {
-        alert(data)
-      },
-      error: function () {
-        alert("An Error has Occured");
-      },
+    Swal.fire({
+      icon: "success",
+      title: "Purchse Successful",
+      text: "Thanks for your purchase",
+      confirmButtonColor: "#3085d6",
+      confirmButtonText: "Ok",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        $.ajax({
+          type: "post",
+          url: "productinsert.php",
+          data: { send: JSON.stringify(senddata) },
+          success: function (data) {
+            location.reload();
+          },
+          error: function () {
+            alert("An Error has Occured");
+          },
+        });
+      }
     });
   });
   $("#feedback").click(function () {
@@ -119,7 +126,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -156,7 +163,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -193,7 +200,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -235,7 +242,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -273,7 +280,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -310,7 +317,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -350,7 +357,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -387,7 +394,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
@@ -406,11 +413,11 @@ $(document).ready(function () {
             let start = "";
             let end = "";
             let inner = "#Kidshoe";
-            if (KP == 0) {
+            if (KSH == 0) {
               loop8++;
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
-            } else if (KP % 3 == 0) {
+            } else if (KSH   % 3 == 0) {
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";
@@ -424,7 +431,7 @@ $(document).ready(function () {
               `${start}
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img class="img-fluid" src="Kid shirt.jpg" />
+                <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
                     flex-column">
