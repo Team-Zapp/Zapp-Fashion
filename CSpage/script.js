@@ -416,6 +416,20 @@ $(document).ready(function () {
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
             } else if (KSH % 3 == 0) {
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+            } else if (KSH % 3 == 0) {
+=======
+<<<<<<< HEAD
+            } else if (KSH   % 3 == 0) {
+=======
+            } else if (KSH % 3 == 0) {
+>>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
+>>>>>>> 50b62e631da9130fcddc1f3474ebf22dd81daa57
+>>>>>>> b81eb299f68c3fb05e37f1eab4f925477e1b1caf
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";
