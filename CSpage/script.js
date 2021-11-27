@@ -30,18 +30,6 @@ $(document).ready(function () {
       senddata.push(data);
     }
 
-<<<<<<< HEAD
-    $.ajax({
-      type: "post",
-      url: "productinsert.php",
-      data: { send: JSON.stringify(senddata) },
-      success: function (data) {
-        alert(data);
-      },
-      error: function () {
-        alert("An Error has Occured");
-      },
-=======
     Swal.fire({
       icon: "success",
       title: "Purchse Successful",
@@ -62,7 +50,6 @@ $(document).ready(function () {
           },
         });
       }
->>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
     });
   });
   $("#feedback").click(function () {
@@ -428,19 +415,7 @@ $(document).ready(function () {
               loop8++;
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
-<<<<<<< HEAD
             } else if (KSH % 3 == 0) {
-=======
-<<<<<<< HEAD
-            } else if (KSH % 3 == 0) {
-=======
-<<<<<<< HEAD
-            } else if (KSH   % 3 == 0) {
-=======
-            } else if (KSH % 3 == 0) {
->>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
->>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
->>>>>>> 50b62e631da9130fcddc1f3474ebf22dd81daa57
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";
@@ -532,7 +507,7 @@ $(document).ready(function () {
             showTotals();
 
             //Show Shopping Cart Dialog
-            $("#cart-button").trigger("click");
+            // $("#cart-button").trigger("click");
           } else {
             //you can show Already in your Cart msg with sweet alert
             var dupeTrue = document.getElementById("cart-alert-parent");

@@ -1,8 +1,7 @@
 <?php
 
 echo "<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-echo "<script src='sweetalert2.min.js'></script>";
-echo "<link rel=stylesheet' href='sweetalert2.min.css'>";
+
 //On this page we are going to check Username and Password if they are both correct 
 //And we are going seperate the path to the admin view or customer view depending on Username and Password
 

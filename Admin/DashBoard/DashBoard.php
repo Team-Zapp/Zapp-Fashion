@@ -8,6 +8,7 @@
     <script src="jquary.js"></script>
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="logo 2.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
@@ -19,8 +20,12 @@
     </script>
     <div class="row">
         <div class="Torder">
-            <p class="head">Total Orders</p>
+            <p class="head"> Orders</p>
             <p class="foot" id="totalorder"></p>
+        </div>
+        <div class="Torder">
+            <p class="head">Total Stocks</p>
+            <p class="foot" id="totalstocks"></p>
         </div>
         <div class="Torder">
             <p class="head">Total Revenue</p>
@@ -56,7 +61,7 @@
             <div id="donut"></div>
         </div>
     </div>
-    <div class="footer">FOOTER</div>
+    <div class="footer"> Copyright : <span>&#169;</span>ZAPP</div>
 </body>
 
 </html>

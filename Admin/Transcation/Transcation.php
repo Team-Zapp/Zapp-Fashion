@@ -34,7 +34,7 @@
 
         </table>
     </div>
-
+<div class="footer"> Copyright : <span>&#169;</span>ZAPP</div>
 </body>
 
 </html>

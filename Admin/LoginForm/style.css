@@ -28,7 +28,7 @@ a {
 }
 .white-panel {
   background-color: rgba(255, 255, 255, 1);
-  height: 500px;
+  height: 560px;
   position: absolute;
   top: -50px;
   width: 50%;
@@ -114,7 +114,7 @@ a {
   left: 58vh;
   width: 10vh;
   height: 3vh;
-  bottom: 38vh;
+  top: 26vh;
   cursor: pointer;
 }
 #icon2 {
@@ -122,7 +122,7 @@ a {
   left: 58vh;
   width: 10vh;
   height: 3vh;
-  bottom: 18vh;
+  bottom: 15vh;
   cursor: pointer;
 }
 .login-show input[type="submit"] {
@@ -240,4 +240,8 @@ a {
 .checkbox {
   position: absolute;
   margin-left: 180px;
+}
+
+input:invalid {
+  border: 3px solid red;
 }

@@ -102,8 +102,10 @@ $(document).ready(function () {
           <td class="name table-primary">${name}</td>
           <td class="orderid table-primary">#ZAPP${orderid}</td>
           <td class="table-primary">${buydate}</td>
-          <td class="table-primary">${totalbudget}$</td>
-          <td class="table-primary text-danger"> ※ Click Me for more details !</td>
+          <td class="table-primary">${totalbudget
+            .toString()
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}$</td>
+          <td class="table-primary text-danger fw-bold"> ※ Click Me for more details !</td>
       </tr>
         `
         );
@@ -129,7 +131,10 @@ $(document).ready(function () {
               else if (category == "3") category = "Shoe";
 
               html += `
-          <p>Item Id : ${x.itemid}</p> <br>
+          
+          <p>Item Name : ${x.name}</p> <br>
+          <img src="../Stockmanagement/pdphotos/${x.photoname}" class="transactioninfophoto" alt=""><br>
+          <p>Item ID : ${x.itemid}</p> <br>
           <p>Item Category : ${category}</p> <br>
           <p>Gender: ${gender}</p> <br>
           <p>Quantity : ${x.quantity}</p> <br>

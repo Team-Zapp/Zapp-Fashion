@@ -1,18 +1,14 @@
 <?php
-
-
-$orderid = $_POST['orderid'];
-
 require "../../DBconnect.php";
 $db = new Dbconnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT
-    *
+    SUM(stock)
 FROM
-    m_orderdetail
-INNER JOIN stock_mgmt ON m_orderdetail.itemid = stock_mgmt.id
-");
+    `stock_mgmt`
+WHERE
+    del_flag = 0
+"); //Get Userinfo from DataBase
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
-
-echo json_encode($result);
+echo $result[0]["SUM(stock)"];

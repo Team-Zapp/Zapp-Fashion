@@ -17,12 +17,12 @@
         let AdminName = "<?php echo $_GET["name"] ?>"
     </script>
     <div class="feedbackForm" id="feedbackForm">
-        <h4>Reviews</h4>
+        <h4>Customer Reviews</h4>
 
 
     </div>
 
-
+<div class="footer"> Copyright : <span>&#169;</span>ZAPP</div>
 </body>
 
 </html>

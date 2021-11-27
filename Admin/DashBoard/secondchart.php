@@ -3,7 +3,8 @@ require "../../DBconnect.php";
 $db = new Dbconnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT
-ordercategory,ordergender,(saleprice - orgprice)*quantity AS revenue
+ordercategory,ordergender,
+SUM((saleprice - orgprice)*quantity) AS revenue
 FROM
 m_orderdetail
 INNER JOIN m_order  ON m_orderdetail.orderid = m_order.orderid

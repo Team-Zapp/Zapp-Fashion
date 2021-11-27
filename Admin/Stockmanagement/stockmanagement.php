@@ -76,9 +76,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-
-    </div>
+    <div class="footer"> Copyright : <span>&#169;</span>ZAPP</div>
     <script>
         let AdminName = "<?php echo $_GET["name"] ?>"
     </script>

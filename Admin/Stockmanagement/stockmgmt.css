@@ -146,13 +146,19 @@ span {
 }
 
 .footer {
-  bottom: 0;
   margin-top: 10vh;
   width: 100%;
-  height: 5vh;
-  background: #000000;
+  height: 8vh;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  background-color: white;
+  color: #000000;
 }
-
 .update {
   background-color: rgb(90, 90, 90);
   color: rgb(255, 255, 255);
