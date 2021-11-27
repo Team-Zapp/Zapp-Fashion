@@ -125,7 +125,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -162,7 +162,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -199,7 +199,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -240,7 +240,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -277,7 +277,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -314,7 +314,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -354,7 +354,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -391,7 +391,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -416,6 +416,23 @@ $(document).ready(function () {
               start = ` <div class="carousel-item active"><div class="row Kidshoe${loop8}">`;
               end = "</div></div>";
             } else if (KSH % 3 == 0) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+            } else if (KSH % 3 == 0) {
+=======
+<<<<<<< HEAD
+            } else if (KSH   % 3 == 0) {
+=======
+            } else if (KSH % 3 == 0) {
+>>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
+>>>>>>> 50b62e631da9130fcddc1f3474ebf22dd81daa57
+>>>>>>> b81eb299f68c3fb05e37f1eab4f925477e1b1caf
+>>>>>>> 1185f433524b4a02ee13db66b63f61ad4e61d432
               loop8++;
               start = `<div class="carousel-item "><div class="row Kidshoe${loop8}"> `;
               end = "</div></div>";
@@ -428,7 +445,7 @@ $(document).ready(function () {
             $(`${inner}`).append(
               `${start}
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card slcard">
                 <img class="img-fluid" src="../Admin/Stockmanagement/pdphotos/${iterator.photoname}" />
                 <div class="card-body justify-content-center
                     d-flex
@@ -650,13 +667,6 @@ function remveActiveClasses() {
 }
 
 //display function
-// let menDisplay = document.querySelector(".Men");
-// let womenDisplay = document.querySelector(".Women");
-// let kidDisplay = document.querySelector(".Kid");
-
-// let manBtn =document.querySelector(".manbtn");
-// let manBtn =document.querySelector(".womenbtn");
-// let manBtn =document.querySelector(".kidbtn");
 
 $(".manbtn").click(function () {
   $(".Women").css("display", "none");
@@ -713,19 +723,41 @@ $(".homebtn").click(function () {
   document.getElementById("pants").href = "#scrollspyHeading11";
   document.getElementById("shoe").href = "#scrollspyHeading12";
 });
-
+//logo click
+$(".logo").click(function () {
+  $(".Women").css("display", "none");
+  $(".Kid").css("display", "none");
+  $(".Men").css("display", "none");
+  $(".Home").css("display", "block");
+  $(".tag").text("HOME");
+  $("#shirt").css("display", "none");
+  $("#shoe").css("display", "none");
+  $("#pants").css("display", "none");
+});
 //Home Btn
 $("#hmbtn1").click(function () {
   $(".Women").css("display", "none");
   $(".Kid").css("display", "none");
   $(".Men").css("display", "block");
   $(".Home").css("display", "none");
+  $(".tag").text("MEN");
+  $("#shirt").css("display", "block");
+  $("#shoe").css("display", "block");
+  $("#pants").css("display", "block");
 });
 $("#hmbtn2").click(function () {
   $(".Women").css("display", "block");
   $(".Kid").css("display", "none");
   $(".Men").css("display", "none");
   $(".Home").css("display", "none");
+  $(".tag").text("WOMEN");
+  $("#shirt").css("display", "block");
+  $("#shoe").css("display", "block");
+  $("#pants").css("display", "block");
+});
+//user Profile click
+$(".profile").click(function () {
+  $(".userprofile").toggleClass("userprofileactive", 2000);
 });
 // HOME PAGE JS
 // HOME PAGE JS

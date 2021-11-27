@@ -35,6 +35,7 @@
             </table>
         </div>
     </div>
+<<<<<<< HEAD
 <div class="secondblk">
     <div class="silverTier">
         <h4>Silver Tier</h4>
@@ -47,6 +48,29 @@
                 <th class="primary">Address</th>
                 <th class="primary">Total Buget Used</th>
             </tr>
+=======
+
+    <div class="secondblk">
+        <div class="silverTier">
+            <h4>Silver Tier</h4>
+            <table class="table-secondary table" id="table2">
+                <tr class="table-secondary table">
+                    <th class="primary"></th>
+                    <th class="primary ">Name</th>
+                    <th class="primary">E-mail</th>
+                    <th class="primary">Phone Number</th>
+                    <th class="primary">Address</th>
+                    <th class="primary">Total Buget Used</th>
+                </tr>
+
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
+>>>>>>> 1185f433524b4a02ee13db66b63f61ad4e61d432
         </table>
     </div>
     <div class="bronzeTier">
@@ -62,8 +86,38 @@
             </tr>
         </table>
     </div>
+<<<<<<< HEAD
         
         
+=======
+=======
+>>>>>>> 50b62e631da9130fcddc1f3474ebf22dd81daa57
+            </table>
+        </div>
+>>>>>>> b81eb299f68c3fb05e37f1eab4f925477e1b1caf
+        <div class="bronzeTier">
+            <h4>Bronze Tier</h4>
+            <table class="table-secondary table" id="table3">
+                <tr class="table-secondary table">
+                    <th class="primary"></th>
+                    <th class="primary ">Name</th>
+                    <th class="primary">E-mail</th>
+                    <th class="primary">Phone Number</th>
+                    <th class="primary">Address</th>
+                    <th class="primary">Total Buget Used</th>
+                </tr>
+
+            </table>
+        </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7e20d2b6557bdd8eb851420793fb11f685059760
+>>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
+>>>>>>> 50b62e631da9130fcddc1f3474ebf22dd81daa57
+>>>>>>> b81eb299f68c3fb05e37f1eab4f925477e1b1caf
+>>>>>>> 1185f433524b4a02ee13db66b63f61ad4e61d432
     </div>
     <div class="footer"> Copyright : <span>&#169;</span>ZAPP</div>
 </body>

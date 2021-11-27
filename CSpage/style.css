@@ -11,30 +11,86 @@ body {
   overflow-x: hidden;
 }
 .logo {
-  width: 10%;
+  width: 12%;
   margin-top: 10px;
   margin-right: 200px;
+  cursor: pointer;
 }
 .titles {
   display: flex;
+  margin-top: 20px;
 }
 .head {
   display: flex;
+  height: 20vh;
 }
 .name {
   margin: 25px;
-  margin-left: 90px;
+  margin-left: 50px;
   font-size: 1.6rem;
   text-decoration: none !important;
   cursor: pointer !important;
   font-weight: bold;
+  transition: transform 0.6s linear;
+}
+.name:hover {
+  color: coral;
+  transform: rotate(360deg) scale(1.1);
+  border-bottom: 3px solid;
+}
+.userprofile {
+  margin-top: -33px;
+  margin-left: 200px;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: rgb(221, 197, 189);
+  visibility: hidden;
+}
+.userpic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.usernames {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.logout {
+  margin-top: -10px;
+  width: 90px;
+  border-radius: 10px;
+  transition: background-color 0.5s linear;
+}
+.logout:hover {
+  background-color: red;
+  box-shadow: 3px 3px 9px grey;
+}
+.userprofileactive {
+  margin-left: 200px;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: rgb(221, 197, 189);
+  visibility: visible;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .addtocart {
   margin-top: 15px;
 }
+.profile {
+  margin-bottom: 3px;
+  margin-left: 20px;
+}
 .user {
   margin-top: 20px;
-  margin-left: 320px;
+  margin-left: 30px;
   height: 50px !important;
 }
 .User {
@@ -55,26 +111,29 @@ body {
   font-size: 35px !important;
 }
 .feature {
-  position: absolute;
-  left: 100px;
-  bottom: 520px;
+  margin-top: 30px;
+  margin-left: 130px;
 }
 .slider {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+.slimg {
+  height: 90vh !important;
 }
 .trending {
-  position: absolute;
-  left: 100px;
-  bottom: -280px;
+  margin-left: 130px;
 }
 .btn1 {
   border-radius: 50% !important;
   margin-left: 10px;
 }
+.topslide {
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 .cards1 {
-  display: flex;
-  flex-direction: row;
-  margin-left: 15px;
+  margin-top: 60px;
 }
 .card1 {
   margin-top: 150px;
@@ -84,6 +143,14 @@ body {
   box-shadow: 5px 5px 15px grey;
   width: 400px;
   overflow: hidden;
+}
+.slcard {
+  margin: 10px !important;
+  transition: transform 1s linear, box-shadow 0.5s linear;
+}
+.slcard:hover {
+  transform: scale(1.05) translate(5px);
+  box-shadow: 5px 10px 15px gray;
 }
 .Cart {
   padding-left: 6px;
@@ -100,8 +167,9 @@ body {
   margin-top: 70px;
 }
 .itemtag {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 500;
+  color: lightslategray;
 }
 .trendcard {
   height: 50vh;
@@ -155,12 +223,13 @@ body {
   }
   .panel:nth-of-type(4),
   .panel:nth-of-type(5) {
+    border: none;
     /* display: none;*/
   }
 }
 .footer {
   background-color: black;
-  height: 25vh;
+  height: 35vh;
   margin-top: 10vh;
   color: white;
 }
@@ -199,6 +268,7 @@ body {
 }
 .copy {
   text-align: center;
+  font-size: 1.3rem;
 }
 
 /* Home Page CSS */
