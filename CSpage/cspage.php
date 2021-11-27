@@ -32,22 +32,28 @@
 
   <div class="header">
     <div class="bg-white py-3 head">
-      <img src="LogoSample_ByTailorBrands.png" alt="" class="logo" />
+      <img src="LogoSample_ByTailorBrands.png" alt="" class="logo" href="#"/>
       <div class="titles">
         <span class="name homebtn">HOME</span>
         <span class="name manbtn">MEN</span>
         <span class="name womanbtn">WOMEN</span>
         <span class="name kidbtn">KID</span>
+        <div class="userprofile">
+          <div class="userinfo">
+            <img src="men shirt 2.jpg" alt="" class="userpic" id="userpic">
+            <p class="usernames" id="usernames">Username</p>
+            <button class="logout" id="logout">Logout</button>
+          </div>
+        </div>
+ 
         <button class="btn btn-outline-dark user" type="submit" id="feedback">
           <a href="" id="feedbackform">
             <ion-icon name="pencil-outline" class="User"></ion-icon>
           </a>
-
         </button>
-
       </div>
     </div>
-
+    
     <!--FixedBar Start-->
     <div class="FixedBar">
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark ulclass">
@@ -83,6 +89,9 @@
                 </div>
               </li>
             </ul>
+            <button class="btn btn-outline-warning profile" type="submit" >
+        <ion-icon name="person-outline" class="User"></ion-icon>
+        </button>
           <!-- navbar-collapse.// -->
         </div>
         <!-- container-fluid.// -->
@@ -296,7 +305,41 @@
     <div class="feature">
       <h2 class="fs-2 fw-bold fst-italic">Feature</h2>
     </div>
-    <div class="slider">
+    <div class="topslide">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="men slider1.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 4.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 3.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 5.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 6.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+    <div class="cards1">
+      <!-- Card start-->
+      <div class="trending">
+        <h2 class="mb-3 fs-2 fw-bold fst-italic">Trending</h2>
+      </div>
+      <div class="slider">
       <div class="container">
         <!--Expanding Card start-->
         <div class="panel active" style="
@@ -327,47 +370,6 @@
       </div>
       <!--Expanding Card End-->
     </div>
-    <div class="cards1">
-      <!-- Card start-->
-      <div class="trending">
-        <h2 class="mb-3 fs-2 fw-bold fst-italic">Trending</h2>
-      </div>
-      <div class="card1" style>
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <!--Card1-->
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Shoe</h5>
-          <div href="#scrollspyHeading3" class="btn btn-primary">Shop Now</div>
-        </div>
-      </div>
-      <!--Card1-->
-      <div class="card1" style>
-        <!--Card2-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Shirt</h5>
-          <div href="#scrollspyHeading1" class="btn btn-primary">Shop Now</div>
-        </div>
-      </div>
-      <!--Card2-->
-      <div class="card1" style>
-        <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Pants</h5>
-          <div href="#scrollspyHeading2" class="btn btn-primary" >Shop Now</div>
-        </div>
-      </div>
-      <!--Card3-->
     </div>
     <!-- Card End-->
     <!-- Nslidercard 1 start-->
@@ -436,7 +438,7 @@
     <!-- Parallx Card 3 Start -->
     <div class="nslidecard">
       <section class="pt-5 pb-5">
-        <div class="container">
+        <div class="container slcontainer">
           <div class="row">
             <div class="col-6" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
               <h3 class="mb-3 fs-2 fw-bold fst-italic" id="scrollspyHeading3">Shoes</h3>
@@ -470,7 +472,41 @@
     <div class="feature">
       <h2 class="fs-2 fw-bold fst-italic">Feature</h2>
     </div>
-    <div class="slider">
+    <div class="topslide">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="men slider1.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 4.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 3.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 5.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 6.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+    <div class="cards1">
+      <!-- Card start-->
+      <div class="trending">
+        <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
+      </div>
+      <div class="slider">
       <div class="container">
         <!--Expanding Card start-->
         <div class="panel active" style="
@@ -501,47 +537,6 @@
       </div>
       <!--Expanding Card End-->
     </div>
-    <div class="cards1">
-      <!-- Card start-->
-      <div class="trending">
-        <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
-      </div>
-      <div class="card1" style>
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <!--Card1-->
-        <div class="card-body  
-                    justify-content-center
-                    d-flex
-                    flex-column">
-          <a href="#scrollspyHeading8" class="btn btn-primary ">Shop Now</a>
-        </div>
-      </div>
-      <!--Card1-->
-      <div class="card1" style>
-        <!--Card2-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Shirt</h5>
-          <a href="#scrollspyHeading6" class="btn btn-primary">Shop Now</a>
-        </div>
-      </div>
-      <!--Card2-->
-      <div class="card1" style>
-        <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Pants</h5>
-
-          <a href="#scrollspyHeading7" class="btn btn-primary">Shop Now</a>
-        </div>
-      </div>
-      <!--Card3-->
     </div>
     <!-- Card End-->
     <!-- Wshirt Card start-->
@@ -643,7 +638,41 @@
     <div class="feature">
       <h2 class="fs-2 fw-bold fst-italic">Feature</h2>
     </div>
-    <div class="slider">
+    <div class="topslide">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="men slider1.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 4.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 3.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 5.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="men slider 6.jpg" class="d-block w-100 slimg" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+    <div class="cards1">
+      <!-- Card start-->
+      <div class="trending">
+        <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
+      </div>
+      <div class="slider">
       <div class="container">
         <!--Expanding Card start-->
         <div class="panel active" style="
@@ -652,70 +681,28 @@
           <h3>Explore the World</h3>
         </div>
         <div class="panel" style="
-              background-image: url('https://images.unsplash.com/photo-1604156425963-9be03f86a428?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+              background-image: url('women slider 1.jpg');
             ">
           <h3>Get Paid</h3>
         </div>
         <div class="panel" style="
-              background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
+              background-image: url('women slider 2.jpg');
             ">
           <h3>Workout</h3>
         </div>
         <div class="panel" style="
-              background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+              background-image: url('women slider 3.jpg');
             ">
           <h3>Be Better</h3>
         </div>
         <div class="panel" style="
-              background-image: url('burgess-milner-OYYE4g-I5ZQ-unsplash.jpg');
+              background-image: url('women slider 4.jpg');
             ">
           <h3>Care</h3>
         </div>
       </div>
       <!--Expanding Card End-->
     </div>
-    <div class="cards1">
-      <!-- Card start-->
-      <div class="trending">
-        <h2 class="fs-2 fw-bold fst-italic">Trending</h2>
-      </div>
-      <div class="card1" style>
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <!--Card1-->
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Shoe</h5>
-          <a href="#scrollspyHeading12" class="btn btn-primary">Shop Now</a>
-        </div>
-      </div>
-      <!--Card1-->
-      <div class="card1" style>
-        <!--Card2-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Shirt</h5>
-
-          <a href="#scrollspyHeading11" class="btn btn-primary">Shop Now</a>
-        </div>
-      </div>
-      <!--Card2-->
-      <div class="card1" style>
-        <!--Card3-->
-        <img src="men-s-shoes-clothing-accessories.jpg" class="card-img-top trendcard" alt="..." />
-        <div class="card-body
-        justify-content-center
-                    d-flex
-                    flex-column">
-          <h5 class="card-title">Pants</h5>
-          <a href="#scrollspyHeading9" class="btn btn-primary mx-7">Shop Now</a>
-        </div>
-      </div>
-      <!--Card3-->
     </div>
     <!-- Card End-->
     <!-- Parallx Card start-->
@@ -821,9 +808,9 @@
       </marquee>
     </div>
     <div class="contact">
-      <li>Contact</li>
+      <li>Contact Us</li>
       <ul style="list-style-type: square;">
-        <li>ZappFashio@gmail.com</li>
+        <li>ZappFashion@gmail.com</li>
         <li>+016577289</li>
       </ul>
     </div>

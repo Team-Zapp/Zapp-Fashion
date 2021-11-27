@@ -4,27 +4,17 @@ $(document).ready(function () {
     url: "usertier.php",
     success: function (data) {
       let json = JSON.parse(data);
-<<<<<<< HEAD
-      var count = 1;
-=======
-      var count1=0;
-      var count2=0;
-      var count3=0;
->>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
+      var count1 = 0;
+      var count2 = 0;
+      var count3 = 0;
       for (const x of json) {
         var totalbudget = x.totalbudget;
         var name = x.username;
         var email = x.email;
-<<<<<<< HEAD
         var phnumber = x.phonenumber;
         var address = x.address;
-        if (x.totalbudget > 4000) {
-=======
-        var phnumber=x.phonenumber;
-        var address=x.address;
-        if(x.totalbudget>3099){
+        if (x.totalbudget > 3099) {
           count1++;
->>>>>>> 8802dc6852cd3a1c2c1e299fdf1c2e12a367027c
           $("#table1").append(
             `
             <tr class="tr table-success">
@@ -51,8 +41,7 @@ $(document).ready(function () {
           `
           );
         }
-        if(x.totalbudget>999 &&
-          x.totalbudget<3000){
+        if (x.totalbudget > 999 && x.totalbudget < 3000) {
           count2++;
           $("#table2 tbody").append(
             `
@@ -65,10 +54,9 @@ $(document).ready(function () {
             <td class="table-primary">${totalbudget}$</td>
         </tr>
           `
-          )
+          );
         }
-        if(x.totalbudget>500&&
-          x.totalbudget<1000 ){
+        if (x.totalbudget > 500 && x.totalbudget < 1000) {
           count3++;
           $("#table3 tbody").append(
             `
@@ -81,7 +69,7 @@ $(document).ready(function () {
             <td class="table-primary">${totalbudget}$</td>
         </tr>
           `
-          )
+          );
         }
       }
     },
